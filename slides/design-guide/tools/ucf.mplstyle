@@ -1,0 +1,44 @@
+# Texas UCF deck style for matplotlib.
+# Use: plt.style.use("tools/ucf.mplstyle")
+# Export: fig.savefig("name.pdf")  (vector; Overleaf scales it cleanly)
+
+figure.figsize: 6.4, 3.2
+figure.dpi: 150
+figure.facecolor: white
+savefig.bbox: tight
+savefig.pad_inches: 0.05
+savefig.transparent: False
+
+font.family: sans-serif
+font.sans-serif: Fira Sans, Helvetica, Arial, DejaVu Sans
+font.size: 11
+axes.titlesize: 12
+axes.titleweight: bold
+axes.titlelocation: left
+axes.titlepad: 10
+axes.labelsize: 10.5
+axes.labelcolor: 3D434B
+xtick.labelsize: 9.5
+ytick.labelsize: 9.5
+xtick.color: 6B7178
+ytick.color: 6B7178
+legend.fontsize: 9.5
+legend.frameon: False
+
+axes.edgecolor: B9BEC4
+axes.linewidth: 0.8
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+axes.grid.axis: y
+grid.color: E6E8EB
+grid.linewidth: 0.8
+axes.axisbelow: True
+xtick.major.size: 0
+ytick.major.size: 0
+
+lines.linewidth: 2.0
+lines.markersize: 5
+
+# Burnt orange first, then neutrals and two quiet accents.
+axes.prop_cycle: cycler("color", ["BF5700", "333F48", "9CADB7", "579D42", "005F86", "D6D2C4"])
