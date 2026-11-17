@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%}</style></head><body><title>Classical microstructure · Microstructure Night Run</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* layout: lab notebook. sticky section rail on the left, one reading column, figures on white plates */
+:root{
+  --paper:#f5f6f8; --surface:#ffffff; --ink:#18202b; --muted:#5b6676; --line:#dde2ea; --accent:#0f6e78;
+  --crypto:#2a6fdb; --sports:#d06a2a; --perp:#2f9472; --good:#2f8a4e; --warn:#b7791f; --bad:#b83a3a;
+  --plate:#ffffff; --code:#eef1f5;
+  --f-display:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --f-body:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; }
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);gap:40px;padding-block:28px 80px}
+nav{position:sticky;top:env(safe-area-inset-top, 0px);align-self:start;padding-top:6px}
+nav .brand{font:600 13px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+nav a{display:block;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;font-size:14px}
+nav a:hover{color:var(--ink);background:var(--surface)}
+nav a.on{color:var(--ink);background:var(--surface);box-shadow:inset 3px 0 0 var(--accent)}
+nav a:focus-visible, a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{min-width:0}
+h1{font:600 32px/1.15 var(--f-display);margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
+h2{font:600 21px/1.25 var(--f-display);margin:44px 0 10px;text-wrap:balance}
+h3{font:600 16px/1.3 var(--f-display);margin:26px 0 6px}
+p,li{max-width:72ch}
+.lede{color:var(--muted);font-size:16px;margin:0 0 22px;max-width:72ch}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.answer{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0 8px}
+.answer h3{margin-top:0}
+.answer ul{margin:6px 0 0;padding-left:20px}
+figure{margin:18px 0 26px}
+figure .plate{background:var(--plate);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto}
+figcaption{color:var(--muted);font-size:13px;margin-top:8px;max-width:80ch}
+.tbl{overflow-x:auto;margin:12px 0 22px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font:600 12px/1.3 var(--f-mono);color:var(--muted);letter-spacing:.02em;background:var(--code)}
+tr:last-child td{border-bottom:0}
+code,.mono{font-family:var(--f-mono);font-size:13px;background:var(--code);padding:1px 5px;border-radius:4px}
+.pill{display:inline-block;font:600 11px/1 var(--f-mono);padding:4px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.pill.done{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.pill.run{background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn)}
+.pill.fail{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.pill.wait{background:var(--code);color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .v{font:600 26px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpi .l{color:var(--muted);font-size:13px;margin-top:4px}
+.log{font:13px/1.55 var(--f-mono);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;white-space:pre-wrap}
+.c-crypto{color:var(--crypto)} .c-sports{color:var(--sports)} .c-perp{color:var(--perp)}
+.note{color:var(--muted);font-size:13px}
+.pending{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted);background:var(--surface)}
+footer{color:var(--muted);font-size:12px;margin-top:60px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:820px){ .wrap{grid-template-columns:1fr;gap:12px} nav{position:static;display:flex;flex-wrap:wrap;gap:4px}
+  nav .brand{width:100%} h1{font-size:26px} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+</style>
+<div class="wrap">
+<nav><div class="brand">Kalshi microstructure<br>study · Nov 17</div><a href="index.html" class="">Overview</a><a href="classical.html" class="on">Classical microstructure</a><a href="classify.html" class="">Market-type classifiers</a><a href="autoencoder.html" class="">Autoencoder embedding</a><a href="trades.html" class="">Toxic vs retail flow</a><a href="fair.html" class="">Raw-event fair models</a><a href="curves.html" class="">Training curves</a><a href="ops.html" class="">Run log &amp; data</a></nav>
+<main>
+<div class="eyebrow">Analysis · Part 1</div>
+<h1>Classical microstructure</h1>
+<p class="lede">Plain statistics of the order book and order flow, computed with features that do not depend on volume, price level or tick size.</p>
+<div class="answer"><h3>What we found</h3><ul><li><b>Yes, crypto and sports books behave differently even after removing volume, price level and tick size.</b> The biggest raw separator is event rate (BTC 15m vs sports d = 3.6), which is exactly the trivial difference we exclude; many differences remain without it.</li><li><b>Timing.</b> Crypto binaries and perps update in bursts: 68% of BTC 15m events and 63–78% of perp events arrive within 1 ms of the previous one, against 26–41% for sports. After dividing by each market's own mean gap, sports inter-arrival times are more irregular (CV 2.8–3.9 vs 2.3 for BTC 15m).</li><li><b>The BTC 15m book churns without moving.</b> Only 0.4% of its book events change the mid, against 6–16% in sports and 5–8% in perps. Its spread is one tick almost all the time, and it is wide relative to how far the mid actually travels (spread/volatility well above the sports median).</li><li><b>Where liquidity sits.</b> The touch holds 27% of top-5 depth in BTC 15m and 29% in MLB, but only 4–10% in perps, whose liquidity sits a few levels back.</li><li><b>Order-book imbalance predicts the next second in crypto and perps, not in sports.</b> Going from imbalance −0.9 to +0.9 shifts the expected 1 s mid move from −0.42 to +0.42 ticks in crypto and from −1.4 to +1.6 ticks in perps. In sports the curve is flat (within ±0.08 ticks): sports prices move on game events, not on queue pressure.</li><li><b>Shared behaviour.</b> Trade signs are persistent everywhere (lag-1 autocorrelation 0.45–0.65), which is consistent with order splitting, and the mid bounces everywhere (negative lag-1 autocorrelation of mid changes).</li><li><b>Sports taker flow is mostly benign; perp flow is close to a coin flip.</b> One second after a taker order the mid has moved past the fill price for 12–17% of sports orders, 26% of BTC 15m orders, 27–37% of other crypto binaries and about 47% of perp orders. After two taker fees and the exit spread, 21% of BTC 15m round trips are profitable at 10 s, against 3–5% in sports.</li><li><b>The most toxic orders are the ones that exactly clear the touch</b> (size ≈ displayed depth): 59% toxic in crypto, 65% in perps and 43% in sports, against 3–19% for small orders. Orders that follow a move of more than 3 ticks in the prior 10 s in their own direction are also more toxic (sports 30% vs 10% when the price was flat).</li></ul></div><h2>Data in this comparison</h2><div class="tbl"><table><thead><tr><th>market class</th><th>sampled windows</th><th>distinct market-days</th></tr></thead><tbody><tr><td>NCAAF</td><td>691,332</td><td>15,212</td></tr><tr><td>NFL</td><td>466,249</td><td>10,035</td></tr><tr><td>MLB</td><td>438,286</td><td>13,501</td></tr><tr><td>BTC15M</td><td>272,746</td><td>554</td></tr><tr><td>SOCCER</td><td>250,250</td><td>6,406</td></tr><tr><td>alt15M</td><td>244,591</td><td>1,672</td></tr><tr><td>cryptoHourly</td><td>241,860</td><td>4,598</td></tr><tr><td>otherSport</td><td>237,020</td><td>6,211</td></tr><tr><td>cryptoRange</td><td>158,891</td><td>3,030</td></tr><tr><td>altPERP</td><td>131,614</td><td>20</td></tr><tr><td>WNBA</td><td>75,761</td><td>1,909</td></tr><tr><td>TENNIS</td><td>32,389</td><td>789</td></tr><tr><td>BTCPERP</td><td>17,912</td><td>1</td></tr><tr><td>ETHPERP</td><td>17,911</td><td>1</td></tr></tbody></table></div><h2>Fingerprint</h2><figure><div class="plate"><img src="img/classical/fingerprint_heatmap.png" alt="Class medians of every scale-free window feature (last 256 events), z-scored across classes. Red is above the cross-class average, blue below." loading="lazy"></div><figcaption>Class medians of every scale-free window feature (last 256 events), z-scored across classes. Red is above the cross-class average, blue below.</figcaption></figure><figure><div class="plate"><img src="img/classical/feature_boxes.png" alt="Distributions of key features per market (box = interquartile range)." loading="lazy"></div><figcaption>Distributions of key features per market (box = interquartile range).</figcaption></figure><figure><div class="plate"><img src="img/classical/effect_sizes.png" alt="Cohen&#x27;s d between coarse classes. |d| above 0.8 is a large difference." loading="lazy"></div><figcaption>Cohen's d between coarse classes. |d| above 0.8 is a large difference.</figcaption></figure><h2>Order flow and price dynamics</h2><figure><div class="plate"><img src="img/classical/stylized_facts.png" alt="Left: persistence of trade signs. Middle: bounce in the mid-price. Right: shape of inter-event times after dividing by each market&#x27;s own mean, which removes activity level." loading="lazy"></div><figcaption>Left: persistence of trade signs. Middle: bounce in the mid-price. Right: shape of inter-event times after dividing by each market's own mean, which removes activity level.</figcaption></figure><figure><div class="plate"><img src="img/classical/depth_profile.png" alt="Share of the top-5 book depth that sits at each level." loading="lazy"></div><figcaption>Share of the top-5 book depth that sits at each level.</figcaption></figure><figure><div class="plate"><img src="img/classical/imbalance_response.png" alt="Average next-second mid move against L1 order-book imbalance." loading="lazy"></div><figcaption>Average next-second mid move against L1 order-book imbalance.</figcaption></figure><h2>What happens after a taker order</h2><figure><div class="plate"><img src="img/classical/markouts.png" alt="Left: mid move after a taker order in units of half-spread. Middle: share of orders that end up past the fill price (toxic for the maker). Right: share of round trips that clear two taker fees and the exit spread." loading="lazy"></div><figcaption>Left: mid move after a taker order in units of half-spread. Middle: share of orders that end up past the fill price (toxic for the maker). Right: share of round trips that clear two taker fees and the exit spread.</figcaption></figure><figure><div class="plate"><img src="img/classical/impact_vs_size.png" alt="Impact and toxicity against order size relative to displayed depth at the touch." loading="lazy"></div><figcaption>Impact and toxicity against order size relative to displayed depth at the touch.</figcaption></figure><div class="tbl"><table><thead><tr><th>class</th><th>taker orders</th><th>median spread (ticks)</th><th>fee/side (ticks)</th><th>P(toxic) 1s</th><th>P(toxic) 10s</th><th>P(net&gt;0) 1s</th><th>P(net&gt;0) 10s</th></tr></thead><tbody><tr><td>BTC15M</td><td>2,180,327</td><td>1.000</td><td>1.277</td><td>0.262</td><td>0.444</td><td>0.039</td><td>0.206</td></tr><tr><td>alt15M</td><td>1,299,925</td><td>1.000</td><td>0.941</td><td>0.344</td><td>0.471</td><td>0.072</td><td>0.240</td></tr><tr><td>cryptoHourly</td><td>707,624</td><td>1.000</td><td>0.988</td><td>0.266</td><td>0.373</td><td>0.042</td><td>0.119</td></tr><tr><td>cryptoRange</td><td>120,420</td><td>2.000</td><td>1.166</td><td>0.370</td><td>0.423</td><td>0.076</td><td>0.179</td></tr><tr><td>NFL</td><td>689,296</td><td>2.000</td><td>1.347</td><td>0.117</td><td>0.178</td><td>0.010</td><td>0.030</td></tr><tr><td>NCAAF</td><td>710,132</td><td>2.000</td><td>1.347</td><td>0.171</td><td>0.241</td><td>0.012</td><td>0.040</td></tr><tr><td>MLB</td><td>288,567</td><td>1.000</td><td>1.441</td><td>0.170</td><td>0.247</td><td>0.012</td><td>0.036</td></tr><tr><td>SOCCER</td><td>411,193</td><td>1.000</td><td>1.277</td><td>0.134</td><td>0.218</td><td>0.014</td><td>0.037</td></tr><tr><td>WNBA</td><td>56,162</td><td>2.000</td><td>1.497</td><td>0.119</td><td>0.192</td><td>0.009</td><td>0.040</td></tr><tr><td>TENNIS</td><td>155,494</td><td>1.000</td><td>1.201</td><td>0.199</td><td>0.289</td><td>0.024</td><td>0.053</td></tr><tr><td>otherSport</td><td>418,519</td><td>1.000</td><td>1.077</td><td>0.193</td><td>0.277</td><td>0.021</td><td>0.044</td></tr><tr><td>BTCPERP</td><td>24,000</td><td>3.000</td><td>16.325</td><td>0.471</td><td>0.511</td><td>0.005</td><td>0.056</td></tr><tr><td>ETHPERP</td><td>24,000</td><td>1.000</td><td>5.302</td><td>0.518</td><td>0.523</td><td>0.015</td><td>0.093</td></tr><tr><td>altPERP</td><td>247,632</td><td>17.000</td><td>8.756</td><td>0.465</td><td>0.461</td><td>0.052</td><td>0.126</td></tr></tbody></table></div><h2>Method</h2><p><p>All three families are Kalshi markets recorded by the same collector: order-book deltas, snapshots and trades. For each market-day I rebuilt the top-5 book on both sides after every event. For binaries the NO bids are mapped to YES asks, so every market is on one bid/ask grid. Windows are the last N book events (N = 16, 64, 256, 1024) or the last W seconds (1, 10, 60, 600 s). Every feature is a ratio, share, correlation or normalised quantity: shares of event types, inter-event-time shape after dividing by its own mean, spread relative to realised volatility, depth shares by level, autocorrelations, impact per trade. A separate <i>trivial</i> group (event rate, absolute depth, price level/bound, relative tick size) is computed but kept out of every model unless a row says otherwise.</p></p>
+<footer>Built from the run on <span class="mono">kalshi-analysis</span>. Last rebuilt 2026-11-17 21:11 UTC. wandb project: <span class="mono">kalshi-microstructure</span>.</footer>
+</main></div></body></html>

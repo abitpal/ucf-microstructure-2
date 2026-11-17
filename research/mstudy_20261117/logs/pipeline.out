@@ -1,0 +1,591 @@
+[09:29:19] BTC15M baselines: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 09:29:20 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 09:29:20 INFO server: accepting connections addr=/tmp/wandb-471453-471502-1310301810/socket
+2026/11/17 09:29:20 INFO server: will exit if parent process dies ppid=471453
+2026/11/17 09:29:20 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 09:29:20 INFO handleInformInit: received streamId=r66wbdc0 id=1(@)
+2026/11/17 09:29:20 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 09:29:20 INFO handleInformInit: stream started streamId=r66wbdc0 id=1(@)
+2026/11/17 09:31:50 INFO handleInformFinish: finish message received streamId=r66wbdc0 id=1(@)
+[09:31:50] DONE BTC15M baselines: {'ridge (handcrafted)': [0.07790791988372803, 0.07841289043426514, 0.06585556268692017, 0.009604215621948242], 'LightGBM (handcrafted)': [0.23150551319122314, 0.15231335163116455, 0.11418640613555908, 0.014923453330993652], 'MLP (handcrafted)': [0.23394161462783813, 0.1482122540473938, 0.11271440982818604, 0.013984143733978271], 'zero': [-9.5367431640625e-06, -0.00014412403106689453, -0.0001392364501953125, 4.792213439941406e-05]}
+2026/11/17 09:31:50 INFO handleInformFinish: stream closed streamId=r66wbdc0 id=1(@)
+2026/11/17 09:31:50 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 09:31:50 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 09:31:50 INFO server: is shutting down
+2026/11/17 09:31:50 INFO connection: closing id=1(@)
+2026/11/17 09:31:50 INFO processOutgoingData: finished id=1(@)
+2026/11/17 09:31:50 INFO connection: closed successfully id=1(@)
+2026/11/17 09:31:50 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 09:31:50 INFO server: listener closed addr=/tmp/wandb-471453-471502-1310301810/socket
+2026/11/17 09:31:50 INFO server: all connections closed
+pushed 1931 KB
+[09:32:09] BTC15M transformer: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 09:32:09 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 09:32:09 INFO server: accepting connections addr=/tmp/wandb-471856-471899-3180571739/socket
+2026/11/17 09:32:09 INFO server: will exit if parent process dies ppid=471856
+2026/11/17 09:32:10 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 09:32:10 INFO handleInformInit: received streamId=b4aqbgo1 id=1(@)
+2026/11/17 09:32:10 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 09:32:10 INFO handleInformInit: stream started streamId=b4aqbgo1 id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:87: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(lay, layers)
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+2026/11/17 09:42:35 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 09:42:35 INFO server: accepting connections addr=/tmp/wandb-853608-853644-756016111/socket
+2026/11/17 09:42:35 INFO server: will exit if parent process dies ppid=853608
+2026/11/17 09:42:35 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 09:42:35 INFO handleInformInit: received streamId=afc6i33b id=1(@)
+2026/11/17 09:42:35 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 09:42:35 INFO handleInformInit: stream started streamId=afc6i33b id=1(@)
+2026/11/17 09:47:44 INFO handleInformFinish: finish message received streamId=afc6i33b id=1(@)
+[09:47:44] classical analysis done
+2026/11/17 09:47:44 INFO handleInformFinish: stream closed streamId=afc6i33b id=1(@)
+2026/11/17 09:47:44 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 09:47:44 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 09:47:44 INFO server: is shutting down
+2026/11/17 09:47:44 INFO connection: closing id=1(@)
+2026/11/17 09:47:44 INFO connection: closed successfully id=1(@)
+2026/11/17 09:47:44 INFO processOutgoingData: finished id=1(@)
+2026/11/17 09:47:44 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 09:47:44 INFO server: listener closed addr=/tmp/wandb-853608-853644-756016111/socket
+2026/11/17 09:47:44 INFO server: all connections closed
+pushed 2564 KB
+2026/11/17 09:47:47 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 09:47:47 INFO server: accepting connections addr=/tmp/wandb-854224-854291-4011166476/socket
+2026/11/17 09:47:47 INFO server: will exit if parent process dies ppid=854224
+2026/11/17 09:47:47 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 09:47:47 INFO handleInformInit: received streamId=ktuu2we1 id=1(@)
+2026/11/17 09:47:47 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 09:47:47 INFO handleInformInit: stream started streamId=ktuu2we1 id=1(@)
+[09:47:55] classify: 255823 anchors; test frac 0.215
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:00]   nontrivial coarse N16: bal_acc=0.936 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:06]   nontrivial coarse N64: bal_acc=0.961 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:12]   nontrivial coarse N256: bal_acc=0.979 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:18]   nontrivial coarse N1024: bal_acc=0.990 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:23]   nontrivial coarse W1: bal_acc=0.947 cov=0.69
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:28]   nontrivial coarse W10: bal_acc=0.970 cov=0.88
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:34]   nontrivial coarse W60: bal_acc=0.985 cov=0.96
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:48:39]   nontrivial coarse W600: bal_acc=0.994 cov=0.99
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:49:00]   nontrivial fine N16: bal_acc=0.731 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:49:21]   nontrivial fine N64: bal_acc=0.793 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:49:43]   nontrivial fine N256: bal_acc=0.843 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:50:05]   nontrivial fine N1024: bal_acc=0.881 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:50:22]   nontrivial fine W1: bal_acc=0.758 cov=0.69
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:50:41]   nontrivial fine W10: bal_acc=0.810 cov=0.88
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:00]   nontrivial fine W60: bal_acc=0.850 cov=0.96
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:19]   nontrivial fine W600: bal_acc=0.884 cov=0.99
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:24]   strict coarse N16: bal_acc=0.906 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:30]   strict coarse N64: bal_acc=0.939 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:35]   strict coarse N256: bal_acc=0.969 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:41]   strict coarse N1024: bal_acc=0.986 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:45]   strict coarse W1: bal_acc=0.929 cov=0.69
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:50]   strict coarse W10: bal_acc=0.962 cov=0.88
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:51:55]   strict coarse W60: bal_acc=0.981 cov=0.96
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:52:00]   strict coarse W600: bal_acc=0.992 cov=0.99
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:52:18]   strict fine N16: bal_acc=0.678 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:52:39]   strict fine N64: bal_acc=0.749 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:53:01]   strict fine N256: bal_acc=0.813 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:53:21]   strict fine N1024: bal_acc=0.862 cov=1.00
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:53:37]   strict fine W1: bal_acc=0.721 cov=0.69
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:53:56]   strict fine W10: bal_acc=0.786 cov=0.88
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:54:14]   strict fine W60: bal_acc=0.829 cov=0.96
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[09:54:30]   strict fine W600: bal_acc=0.869 cov=0.99
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+[10:01:34]   transformer step 1500 ep 0 val R2 [0.1919 0.1241 0.0906 0.0128] 1762s
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:49: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = D[D[cols].notna().mean(1) > 0.5]
+/mnt/scratch/mstudy/code/classify.py:96: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  D = W[W[cols].notna().mean(1) > 0.5].copy()
+/mnt/scratch/mstudy/code/classify.py:124: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({'mlp/epoch': ep, 'mlp/val_bal_acc': ba, 'mlp/train_loss': float(l)})
+2026/11/17 10:06:10 INFO handleInformFinish: finish message received streamId=ktuu2we1 id=1(@)
+[10:06:10] classify done
+2026/11/17 10:06:10 INFO handleInformFinish: stream closed streamId=ktuu2we1 id=1(@)
+2026/11/17 10:06:10 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 10:06:10 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 10:06:10 INFO connection: closing id=1(@)
+2026/11/17 10:06:10 INFO processOutgoingData: finished id=1(@)
+2026/11/17 10:06:10 INFO server: is shutting down
+2026/11/17 10:06:10 INFO connection: closed successfully id=1(@)
+2026/11/17 10:06:10 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 10:06:10 INFO server: listener closed addr=/tmp/wandb-854224-854291-4011166476/socket
+2026/11/17 10:06:10 INFO server: all connections closed
+pushed 3489 KB
+2026/11/17 10:06:15 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:06:15 INFO server: accepting connections addr=/tmp/wandb-857837-857910-3274595734/socket
+2026/11/17 10:06:15 INFO server: will exit if parent process dies ppid=857837
+2026/11/17 10:06:15 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:06:15 INFO handleInformInit: received streamId=zat5naj6 id=1(@)
+2026/11/17 10:06:15 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:06:15 INFO handleInformInit: stream started streamId=zat5naj6 id=1(@)
+[10:06:23] AE: 3348432 seqs, train 298893 test 74988
+/mnt/scratch/mstudy/code/ae.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({'ae/train_mse': float(loss), 'ae/step': step})
+[10:09:07] BTC15M transformer_long: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 10:09:07 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:09:07 INFO server: will exit if parent process dies ppid=858570
+2026/11/17 10:09:07 INFO server: accepting connections addr=/tmp/wandb-858570-858623-148661463/socket
+2026/11/17 10:09:08 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:09:08 INFO handleInformInit: received streamId=xx7uq37x id=1(@)
+2026/11/17 10:09:08 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:09:08 INFO handleInformInit: stream started streamId=xx7uq37x id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:87: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(lay, layers)
+[10:09:20]   AE ep0 val_mse=0.5449 (mean-baseline 1.2871) 175s
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[10:12:32]   transformer step 2064 ep 0 val R2 [0.2089 0.1313 0.0963 0.0097] 2421s
+[10:12:40]   AE ep1 val_mse=0.5152 (mean-baseline 1.2871) 374s
+2026/11/17 10:14:52 INFO handleInformFinish: finish message received streamId=b4aqbgo1 id=1(@)
+[10:14:52] DONE BTC15M transformer: {'transformer (raw events)': [0.23079288005828857, 0.1517254114151001, 0.1152607798576355, 0.015231668949127197]}
+2026/11/17 10:14:52 INFO handleInformFinish: stream closed streamId=b4aqbgo1 id=1(@)
+2026/11/17 10:14:52 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 10:14:52 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 10:14:52 INFO connection: closing id=1(@)
+2026/11/17 10:14:52 INFO server: is shutting down
+2026/11/17 10:14:52 INFO connection: closed successfully id=1(@)
+2026/11/17 10:14:52 INFO processOutgoingData: finished id=1(@)
+2026/11/17 10:14:52 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 10:14:52 INFO server: listener closed addr=/tmp/wandb-471856-471899-3180571739/socket
+2026/11/17 10:14:52 INFO server: all connections closed
+pushed 3509 KB
+[10:15:06] BTC15M gru: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 10:15:06 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:15:06 INFO server: accepting connections addr=/tmp/wandb-859155-859200-3678134047/socket
+2026/11/17 10:15:06 INFO server: will exit if parent process dies ppid=859155
+2026/11/17 10:15:06 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:15:06 INFO handleInformInit: received streamId=4fmb4mnx id=1(@)
+2026/11/17 10:15:06 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:15:06 INFO handleInformInit: stream started streamId=4fmb4mnx id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[10:16:09]   AE ep2 val_mse=0.5017 (mean-baseline 1.2871) 583s
+[10:19:15]   AE ep3 val_mse=0.4952 (mean-baseline 1.2871) 770s
+[10:21:27]   AE ep4 val_mse=0.4936 (mean-baseline 1.2871) 902s
+[10:22:30]   probe coarse: linear 0.781 gbm 0.834
+[10:22:54]   probe fine: linear 0.449 gbm 0.536
+[10:24:25]   SeqClf ep0 val bal_acc=0.696
+[10:25:26]   gru step 1500 ep 0 val R2 [0.2027 0.1289 0.0959 0.0092] 618s
+[10:25:55]   SeqClf ep1 val bal_acc=0.774
+[10:27:23]   SeqClf ep2 val bal_acc=0.805
+[10:28:52]   SeqClf ep3 val bal_acc=0.828
+[10:30:16]   SeqClf ep4 val bal_acc=0.834
+[10:31:42]   SeqClf ep5 val bal_acc=0.839
+[10:33:04]   SeqClf ep6 val bal_acc=0.847
+[10:33:42]   embedded 93665 trades from crypto_2026-09-18_seq.npy
+[10:34:13]   embedded 93723 trades from crypto_2026-09-19_seq.npy
+[10:34:45]   embedded 93791 trades from crypto_2026-09-20_seq.npy
+[10:35:16]   embedded 97465 trades from crypto_2026-09-21_seq.npy
+[10:35:38]   gru step 3000 ep 1 val R2 [0.2393 0.1403 0.1025 0.0081] 1230s
+[10:35:49]   embedded 95852 trades from crypto_2026-09-22_seq.npy
+[10:35:52]   transformer_long step 1500 ep 0 val R2 [0.1683 0.109  0.0793 0.0036] 1602s
+[10:36:21]   embedded 95924 trades from crypto_2026-09-23_seq.npy
+[10:37:16]   embedded 166038 trades from football_2026-09-19_seq.npy
+[10:38:11]   embedded 172235 trades from football_2026-09-20_seq.npy
+[10:38:57]   embedded 143594 trades from football_2026-09-21_seq.npy
+[10:39:07]   embedded 33000 trades from perps_2026-09-18_seq.npy
+[10:39:19]   embedded 33000 trades from perps_2026-09-19_seq.npy
+[10:39:30]   embedded 33000 trades from perps_2026-09-20_seq.npy
+[10:39:42]   embedded 33000 trades from perps_2026-09-21_seq.npy
+[10:39:52]   embedded 33000 trades from perps_2026-09-22_seq.npy
+[10:40:04]   embedded 33000 trades from perps_2026-09-23_seq.npy
+2026/11/17 10:40:04 INFO handleInformFinish: finish message received streamId=zat5naj6 id=1(@)
+[10:40:04] AE done
+2026/11/17 10:40:04 INFO handleInformFinish: stream closed streamId=zat5naj6 id=1(@)
+2026/11/17 10:40:04 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 10:40:04 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 10:40:04 INFO server: is shutting down
+2026/11/17 10:40:04 INFO connection: closing id=1(@)
+2026/11/17 10:40:04 INFO processOutgoingData: finished id=1(@)
+2026/11/17 10:40:04 INFO connection: closed successfully id=1(@)
+2026/11/17 10:40:04 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 10:40:04 INFO server: listener closed addr=/tmp/wandb-857837-857910-3274595734/socket
+2026/11/17 10:40:04 INFO server: all connections closed
+pushed 5419 KB
+2026/11/17 10:40:09 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:40:09 INFO server: will exit if parent process dies ppid=861323
+2026/11/17 10:40:09 INFO server: accepting connections addr=/tmp/wandb-861323-861397-2654217268/socket
+2026/11/17 10:40:09 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:40:09 INFO handleInformInit: received streamId=7flehlpn id=1(@)
+2026/11/17 10:40:09 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:40:09 INFO handleInformInit: stream started streamId=7flehlpn id=1(@)
+[10:40:14] trade model: 1175075 orders train 814016 val 126343 test 234716
+/mnt/scratch/mstudy/code/trade_model.py:116: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{tag}/val_tox_auc_mean': score, f'{tag}/loss': float(loss), f'{tag}/epoch': ep})
+[10:43:42]   trade_only: tox AUC [0.91, 0.877, 0.854, 0.769] net AUC [0.898, 0.875, 0.861, 0.805]
+[10:45:18]   gru step 4447 ep 1 val R2 [0.2504 0.148  0.1078 0.0124] 1810s
+2026/11/17 10:46:25 INFO handleInformFinish: finish message received streamId=4fmb4mnx id=1(@)
+[10:46:25] DONE BTC15M gru: {'gru (raw events)': [0.2511335015296936, 0.1581525206565857, 0.11926048994064331, 0.018341481685638428]}
+2026/11/17 10:46:25 INFO handleInformFinish: stream closed streamId=4fmb4mnx id=1(@)
+2026/11/17 10:46:25 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 10:46:25 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 10:46:25 INFO connection: closing id=1(@)
+2026/11/17 10:46:25 INFO connection: closed successfully id=1(@)
+2026/11/17 10:46:25 INFO server: is shutting down
+2026/11/17 10:46:25 INFO processOutgoingData: finished id=1(@)
+2026/11/17 10:46:25 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 10:46:25 INFO server: listener closed addr=/tmp/wandb-859155-859200-3678134047/socket
+2026/11/17 10:46:25 INFO server: all connections closed
+pushed 5439 KB
+[10:46:50] BTCPERP baselines: n=240000 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 10:46:50 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:46:50 INFO server: accepting connections addr=/tmp/wandb-862317-862358-1741410626/socket
+2026/11/17 10:46:50 INFO server: will exit if parent process dies ppid=862317
+2026/11/17 10:46:50 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:46:50 INFO handleInformInit: received streamId=ehb4bwz1 id=1(@)
+2026/11/17 10:46:50 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:46:50 INFO handleInformInit: stream started streamId=ehb4bwz1 id=1(@)
+[10:47:01]   trade+window: tox AUC [0.918, 0.884, 0.862, 0.778] net AUC [0.912, 0.887, 0.872, 0.822]
+2026/11/17 10:47:22 INFO handleInformFinish: finish message received streamId=ehb4bwz1 id=1(@)
+[10:47:22] DONE BTCPERP baselines: {'ridge (handcrafted)': [0.027772188186645508, 0.013876497745513916, 0.008047163486480713, -0.004123091697692871], 'LightGBM (handcrafted)': [0.12756478786468506, 0.04396790266036987, 0.02332913875579834, -0.00219571590423584], 'MLP (handcrafted)': [0.06403130292892456, 0.01922661066055298, 0.013056635856628418, -0.0016902685165405273], 'zero': [-0.000331878662109375, -0.00015866756439208984, -1.0251998901367188e-05, -5.173683166503906e-05]}
+2026/11/17 10:47:22 INFO handleInformFinish: stream closed streamId=ehb4bwz1 id=1(@)
+2026/11/17 10:47:22 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 10:47:22 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 10:47:22 INFO processOutgoingData: finished id=1(@)
+2026/11/17 10:47:22 INFO connection: closing id=1(@)
+2026/11/17 10:47:22 INFO server: is shutting down
+2026/11/17 10:47:22 INFO connection: closed successfully id=1(@)
+2026/11/17 10:47:22 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 10:47:22 INFO server: listener closed addr=/tmp/wandb-862317-862358-1741410626/socket
+2026/11/17 10:47:22 INFO server: all connections closed
+pushed 5446 KB
+[10:47:27] BTCPERP transformer: n=240000 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 10:47:27 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 10:47:27 INFO server: accepting connections addr=/tmp/wandb-862469-862512-3920310178/socket
+2026/11/17 10:47:27 INFO server: will exit if parent process dies ppid=862469
+2026/11/17 10:47:27 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 10:47:27 INFO handleInformInit: received streamId=iovzqsto id=1(@)
+2026/11/17 10:47:27 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 10:47:27 INFO handleInformInit: stream started streamId=iovzqsto id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:87: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(lay, layers)
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[10:49:40]   trade+window+AE: tox AUC [0.917, 0.884, 0.861, 0.777] net AUC [0.912, 0.887, 0.873, 0.82]
+[10:52:42]   trade+window+AE+clf: tox AUC [0.917, 0.884, 0.862, 0.777] net AUC [0.909, 0.884, 0.871, 0.82]
+[10:56:19]   trade+AE+clf (no handcrafted window): tox AUC [0.915, 0.881, 0.859, 0.773] net AUC [0.906, 0.882, 0.867, 0.813]
+[10:59:31]   LGBM: tox AUC [0.927, 0.892, 0.87, 0.785]
+2026/11/17 11:01:18 INFO handleInformFinish: finish message received streamId=7flehlpn id=1(@)
+[11:01:18] trade model done
+2026/11/17 11:01:18 INFO handleInformFinish: stream closed streamId=7flehlpn id=1(@)
+2026/11/17 11:01:18 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 11:01:18 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 11:01:18 INFO server: is shutting down
+2026/11/17 11:01:18 INFO connection: closing id=1(@)
+2026/11/17 11:01:18 INFO processOutgoingData: finished id=1(@)
+2026/11/17 11:01:18 INFO connection: closed successfully id=1(@)
+2026/11/17 11:01:18 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 11:01:18 INFO server: listener closed addr=/tmp/wandb-861323-861397-2654217268/socket
+2026/11/17 11:01:18 INFO server: all connections closed
+pushed 6034 KB
+2026/11/17 11:01:23 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 11:01:23 INFO server: will exit if parent process dies ppid=863681
+2026/11/17 11:01:23 INFO server: accepting connections addr=/tmp/wandb-863681-863754-2492321963/socket
+2026/11/17 11:01:23 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 11:01:23 INFO handleInformInit: received streamId=dei04tqi id=1(@)
+2026/11/17 11:01:23 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 11:01:23 INFO handleInformInit: stream started streamId=dei04tqi id=1(@)
+[11:01:45] AE: 3348432 seqs, train 298893 test 74988
+/mnt/scratch/mstudy/code/ae.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({'ae/train_mse': float(loss), 'ae/step': step})
+[11:02:56]   transformer_long step 3000 ep 1 val R2 [0.2191 0.1347 0.0985 0.0119] 3227s
+[11:05:05]   AE ep0 val_mse=0.4613 (mean-baseline 1.1099) 197s
+[11:08:19]   AE ep1 val_mse=0.4223 (mean-baseline 1.1099) 392s
+[11:11:33]   AE ep2 val_mse=0.4098 (mean-baseline 1.1099) 586s
+[11:11:49]   AE ep3 val_mse=0.4126 (mean-baseline 1.1099) 602s
+[11:12:49]   probe coarse: linear 0.687 gbm 0.766
+[11:12:50]   transformer step 1297 ep 2 val R2 [0.0971 0.0401 0.0244 0.003 ] 1521s
+[11:13:08]   probe fine: linear 0.271 gbm 0.404
+2026/11/17 11:13:09 INFO connection: cancelling request id=1(@) requestId=ab9l8zivyvqb
+2026/11/17 11:13:09 INFO handleInformFinish: finish message received streamId=dei04tqi id=1(@)
+[11:13:09] AE strict done
+2026/11/17 11:13:09 INFO handleInformFinish: stream closed streamId=dei04tqi id=1(@)
+2026/11/17 11:13:10 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 11:13:10 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 11:13:10 INFO connection: closing id=1(@)
+2026/11/17 11:13:10 INFO connection: closed successfully id=1(@)
+2026/11/17 11:13:10 INFO processOutgoingData: finished id=1(@)
+2026/11/17 11:13:10 INFO server: is shutting down
+2026/11/17 11:13:10 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 11:13:10 INFO server: listener closed addr=/tmp/wandb-863681-863754-2492321963/socket
+2026/11/17 11:13:10 INFO server: all connections closed
+pushed 7710 KB
+pushed 7710 KB
+2026/11/17 11:13:29 INFO handleInformFinish: finish message received streamId=iovzqsto id=1(@)
+[11:13:29] DONE BTCPERP transformer: {'transformer (raw events)': [0.12340885400772095, 0.053956568241119385, 0.032200515270233154, 0.00237882137298584]}
+2026/11/17 11:13:29 INFO handleInformFinish: stream closed streamId=iovzqsto id=1(@)
+2026/11/17 11:13:29 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 11:13:29 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 11:13:29 INFO connection: closing id=1(@)
+2026/11/17 11:13:29 INFO server: is shutting down
+2026/11/17 11:13:29 INFO connection: closed successfully id=1(@)
+2026/11/17 11:13:29 INFO processOutgoingData: finished id=1(@)
+2026/11/17 11:13:29 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 11:13:29 INFO server: listener closed addr=/tmp/wandb-862469-862512-3920310178/socket
+2026/11/17 11:13:29 INFO server: all connections closed
+pushed 7711 KB
+[11:13:32] BTCPERP gru: n=240000 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 11:13:32 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 11:13:32 INFO server: accepting connections addr=/tmp/wandb-864833-864910-3096290910/socket
+2026/11/17 11:13:32 INFO server: will exit if parent process dies ppid=864833
+2026/11/17 11:13:33 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 11:13:33 INFO handleInformInit: received streamId=54in0si9 id=1(@)
+2026/11/17 11:13:33 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 11:13:33 INFO handleInformInit: stream started streamId=54in0si9 id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[11:22:33]   gru step 1500 ep 2 val R2 [0.1267 0.0508 0.029  0.004 ] 539s
+[11:24:21]   transformer_long step 4237 ep 1 val R2 [0.2239 0.1382 0.101  0.0127] 4511s
+2026/11/17 11:25:39 INFO handleInformFinish: finish message received streamId=xx7uq37x id=1(@)
+[11:25:39] DONE BTC15M transformer_long: {'transformer_long (raw events)': [0.23277199268341064, 0.15352332592010498, 0.1163589358329773, 0.017504513263702393]}
+2026/11/17 11:25:39 INFO handleInformFinish: stream closed streamId=xx7uq37x id=1(@)
+2026/11/17 11:25:39 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 11:25:39 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 11:25:39 INFO connection: closing id=1(@)
+2026/11/17 11:25:39 INFO connection: closed successfully id=1(@)
+2026/11/17 11:25:39 INFO processOutgoingData: finished id=1(@)
+2026/11/17 11:25:39 INFO server: is shutting down
+2026/11/17 11:25:39 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 11:25:39 INFO server: listener closed addr=/tmp/wandb-858570-858623-148661463/socket
+2026/11/17 11:25:39 INFO server: all connections closed
+[11:30:56]   gru step 3000 ep 4 val R2 [0.1497 0.0635 0.0352 0.0047] 1043s
+[11:33:42]   gru step 3502 ep 5 val R2 [0.1415 0.059  0.0325 0.0025] 1208s
+2026/11/17 11:33:57 INFO handleInformFinish: finish message received streamId=54in0si9 id=1(@)
+[11:33:57] DONE BTCPERP gru: {'gru (raw events)': [0.1873151659965515, 0.07768303155899048, 0.045964598655700684, 0.004914820194244385]}
+2026/11/17 11:33:57 INFO handleInformFinish: stream closed streamId=54in0si9 id=1(@)
+2026/11/17 11:33:57 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 11:33:57 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 11:33:57 INFO connection: closing id=1(@)
+2026/11/17 11:33:57 INFO server: is shutting down
+2026/11/17 11:33:57 INFO connection: closed successfully id=1(@)
+2026/11/17 11:33:57 INFO processOutgoingData: finished id=1(@)
+2026/11/17 11:33:57 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 11:33:57 INFO server: listener closed addr=/tmp/wandb-864833-864910-3096290910/socket
+2026/11/17 11:33:57 INFO server: all connections closed
+pushed 7733 KB
+[11:36:12] BTC15M gru_long: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 11:36:12 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 11:36:12 INFO server: will exit if parent process dies ppid=866462
+2026/11/17 11:36:12 INFO server: accepting connections addr=/tmp/wandb-866462-866511-4237753830/socket
+2026/11/17 11:36:12 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 11:36:12 INFO handleInformInit: received streamId=qj1wknwv id=1(@)
+2026/11/17 11:36:12 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 11:36:12 INFO handleInformInit: stream started streamId=qj1wknwv id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:156: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[11:43:53]   gru_long step 1500 ep 0 val R2 [0.1962 0.1252 0.0923 0.0095] 459s
+[11:51:29]   gru_long step 3000 ep 1 val R2 [0.2318 0.1402 0.1049 0.0112] 915s
+[11:59:08]   gru_long step 4500 ep 1 val R2 [0.2286 0.1433 0.1041 0.0086] 1374s
+[12:06:48]   gru_long step 6000 ep 2 val R2 [0.2508 0.1506 0.1096 0.0073] 1834s
+[12:14:31]   gru_long step 7500 ep 3 val R2 [0.2607 0.1575 0.1147 0.0113] 2297s
+[12:22:12]   gru_long step 9000 ep 3 val R2 [0.2486 0.1498 0.1098 0.0104] 2758s
+[12:29:49]   gru_long step 10500 ep 4 val R2 [0.269  0.1609 0.1173 0.0116] 3215s
+[12:36:20]   gru_long step 11777 ep 5 val R2 [0.2631 0.1579 0.1151 0.0112] 3606s
+2026/11/17 12:37:04 INFO connection: cancelling request id=1(@) requestId=a9a3z0sae2hv
+2026/11/17 12:37:04 INFO handleInformFinish: finish message received streamId=qj1wknwv id=1(@)
+[12:37:04] DONE BTC15M gru_long: {'gru_long (raw events)': [0.2615370750427246, 0.16373306512832642, 0.12319672107696533, 0.018221557140350342]}
+2026/11/17 12:37:04 INFO handleInformFinish: stream closed streamId=qj1wknwv id=1(@)
+2026/11/17 12:37:04 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 12:37:04 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 12:37:04 INFO server: is shutting down
+2026/11/17 12:37:04 INFO connection: closing id=1(@)
+2026/11/17 12:37:04 INFO processOutgoingData: finished id=1(@)
+2026/11/17 12:37:04 INFO connection: closed successfully id=1(@)
+2026/11/17 12:37:04 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 12:37:04 INFO server: listener closed addr=/tmp/wandb-866462-866511-4237753830/socket
+2026/11/17 12:37:04 INFO server: all connections closed
+[19:34:28] BTC15M transformer_cont: n=832333 days=[np.str_('2026-09-18'), np.str_('2026-09-19'), np.str_('2026-09-20'), np.str_('2026-09-21'), np.str_('2026-09-22'), np.str_('2026-09-23')] test=2026-09-23
+2026/11/17 19:34:28 ERROR main: failed to get logger path error="failed to get logger path"
+2026/11/17 19:34:28 INFO server: accepting connections addr=/tmp/wandb-874314-874379-3082234583/socket
+2026/11/17 19:34:28 INFO server: will exit if parent process dies ppid=874314
+2026/11/17 19:34:28 INFO connection: ManageConnectionData: new connection created id=1(@)
+2026/11/17 19:34:28 INFO handleInformInit: received streamId=ah0cw07b id=1(@)
+2026/11/17 19:34:28 ERROR Unable to find cache directory, using .wandb_cache err="neither $XDG_CACHE_HOME nor $HOME are defined"
+2026/11/17 19:34:28 INFO handleInformInit: stream started streamId=ah0cw07b id=1(@)
+/mnt/scratch/mstudy/code/fair_models.py:87: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(lay, layers)
+[19:34:30]   transformer_cont: resumed weights from /mnt/scratch/mstudy/models_fair_BTC15M_transformer_long.pt (prior steps 0)
+[19:34:45]   transformer_cont resumed val R2 [0.2239 0.1382 0.101  0.0127]
+/mnt/scratch/mstudy/code/fair_models.py:172: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  run.log({f'{kind}/train_loss': float(loss), f'{kind}/lr': lr, 'step': step})
+[20:20:38]   transformer_cont step 1500 ep 1 val R2 [0.2438 0.1466 0.106  0.012 ] 2769s
+[21:04:36]   transformer_cont step 2941 ep 2 val R2 [0.252  0.1524 0.1109 0.0134] 5406s
+2026/11/17 21:05:19 INFO handleInformFinish: finish message received streamId=ah0cw07b id=1(@)
+[21:05:19] DONE BTC15M transformer_cont: {'transformer_cont (raw events)': [0.24410253763198853, 0.15798377990722656, 0.11897343397140503, 0.01684105396270752]}
+2026/11/17 21:05:19 INFO handleInformFinish: stream closed streamId=ah0cw07b id=1(@)
+2026/11/17 21:05:19 INFO handleInformTeardown: server teardown initiated id=1(@)
+2026/11/17 21:05:19 INFO handleInformTeardown: server shutdown complete id=1(@)
+2026/11/17 21:05:19 INFO processOutgoingData: finished id=1(@)
+2026/11/17 21:05:19 INFO connection: closing id=1(@)
+2026/11/17 21:05:19 INFO server: is shutting down
+2026/11/17 21:05:19 INFO connection: closed successfully id=1(@)
+2026/11/17 21:05:19 INFO connection: ManageConnectionData: connection closed id=1(@)
+2026/11/17 21:05:19 INFO server: listener closed addr=/tmp/wandb-874314-874379-3082234583/socket
+2026/11/17 21:05:19 INFO server: all connections closed

@@ -1,0 +1,173 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%}</style></head><body><title>Training curves · Microstructure Night Run</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* layout: lab notebook. sticky section rail on the left, one reading column, figures on white plates */
+:root{
+  --paper:#f5f6f8; --surface:#ffffff; --ink:#18202b; --muted:#5b6676; --line:#dde2ea; --accent:#0f6e78;
+  --crypto:#2a6fdb; --sports:#d06a2a; --perp:#2f9472; --good:#2f8a4e; --warn:#b7791f; --bad:#b83a3a;
+  --plate:#ffffff; --code:#eef1f5;
+  --f-display:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --f-body:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; }
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);gap:40px;padding-block:28px 80px}
+nav{position:sticky;top:env(safe-area-inset-top, 0px);align-self:start;padding-top:6px}
+nav .brand{font:600 13px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+nav a{display:block;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;font-size:14px}
+nav a:hover{color:var(--ink);background:var(--surface)}
+nav a.on{color:var(--ink);background:var(--surface);box-shadow:inset 3px 0 0 var(--accent)}
+nav a:focus-visible, a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{min-width:0}
+h1{font:600 32px/1.15 var(--f-display);margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
+h2{font:600 21px/1.25 var(--f-display);margin:44px 0 10px;text-wrap:balance}
+h3{font:600 16px/1.3 var(--f-display);margin:26px 0 6px}
+p,li{max-width:72ch}
+.lede{color:var(--muted);font-size:16px;margin:0 0 22px;max-width:72ch}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.answer{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0 8px}
+.answer h3{margin-top:0}
+.answer ul{margin:6px 0 0;padding-left:20px}
+figure{margin:18px 0 26px}
+figure .plate{background:var(--plate);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto}
+figcaption{color:var(--muted);font-size:13px;margin-top:8px;max-width:80ch}
+.tbl{overflow-x:auto;margin:12px 0 22px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font:600 12px/1.3 var(--f-mono);color:var(--muted);letter-spacing:.02em;background:var(--code)}
+tr:last-child td{border-bottom:0}
+code,.mono{font-family:var(--f-mono);font-size:13px;background:var(--code);padding:1px 5px;border-radius:4px}
+.pill{display:inline-block;font:600 11px/1 var(--f-mono);padding:4px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.pill.done{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.pill.run{background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn)}
+.pill.fail{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.pill.wait{background:var(--code);color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .v{font:600 26px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpi .l{color:var(--muted);font-size:13px;margin-top:4px}
+.log{font:13px/1.55 var(--f-mono);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;white-space:pre-wrap}
+.c-crypto{color:var(--crypto)} .c-sports{color:var(--sports)} .c-perp{color:var(--perp)}
+.note{color:var(--muted);font-size:13px}
+.pending{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted);background:var(--surface)}
+footer{color:var(--muted);font-size:12px;margin-top:60px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:820px){ .wrap{grid-template-columns:1fr;gap:12px} nav{position:static;display:flex;flex-wrap:wrap;gap:4px}
+  nav .brand{width:100%} h1{font-size:26px} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+
+.viz{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--grid:#e3e6eb;--axis:#8a93a0}
+@media (prefers-color-scheme: dark){:root:where(:not([data-theme="light"])) .viz{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--grid:#2a3441;--axis:#6b7684}}
+:root[data-theme="dark"] .viz{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--grid:#2a3441;--axis:#6b7684}
+.viz{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:14px 0 22px}
+.viz .hdr{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline;justify-content:space-between}
+.viz .ttl{font:600 15px/1.3 var(--f-display)}
+.viz .sub{color:var(--muted);font-size:12.5px;margin-top:2px;max-width:70ch}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.seg button{font:500 12px/1 var(--f-mono);padding:7px 10px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--code);color:var(--ink)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 0 4px;font-size:12.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:16px;height:0;border-top:2px solid}
+.plot{position:relative;overflow-x:auto}
+.plot svg{display:block;width:100%;height:auto;min-width:520px}
+.plot text{fill:var(--muted);font:11px var(--f-mono)}
+.plot .dl{font:600 11px var(--f-body);fill:var(--ink)}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:8px 10px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.12);min-width:180px;display:none;z-index:2}
+.tip .x{color:var(--muted);font:11px var(--f-mono);margin-bottom:4px}
+.tip .r{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.tip .r b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.tip .r span{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
+.tip .r i{display:inline-block;width:12px;border-top:2px solid}
+details.tv{margin-top:6px} details.tv summary{cursor:pointer;color:var(--muted);font-size:12.5px}
+</style>
+<div class="wrap">
+<nav><div class="brand">Kalshi microstructure<br>study · Nov 17</div><a href="index.html" class="">Overview</a><a href="classical.html" class="">Classical microstructure</a><a href="classify.html" class="">Market-type classifiers</a><a href="autoencoder.html" class="">Autoencoder embedding</a><a href="trades.html" class="">Toxic vs retail flow</a><a href="fair.html" class="">Raw-event fair models</a><a href="curves.html" class="on">Training curves</a><a href="ops.html" class="">Run log &amp; data</a></nav>
+<main>
+<div class="eyebrow">Predict · Part 2</div>
+<h1>Training curves</h1>
+<p class="lede">How each model learned: validation scores over the course of training, for the raw-event fair models and the analysis models.</p>
+<h2>Raw-event fair models</h2><div class="viz" id="c15" data-spec='{"title": "BTC 15m validation R\u00b2", "xlabel": "training samples seen (millions)", "ylabel": "validation R\u00b2", "hz": true, "x0": 0, "series": [{"name": "Transformer \u00b7 40 min", "pts": [{"x": 0.384, "y": [0.1919, 0.1241, 0.0906, 0.0128], "resume": false, "secs": 1762}, {"x": 0.5284, "y": [0.2089, 0.1313, 0.0963, 0.0097], "resume": false, "secs": 2421}]}, {"name": "GRU \u00b7 30 min", "pts": [{"x": 0.384, "y": [0.2027, 0.1289, 0.0959, 0.0092], "resume": false, "secs": 618}, {"x": 0.768, "y": [0.2393, 0.1403, 0.1025, 0.0081], "resume": false, "secs": 1230}, {"x": 1.1384, "y": [0.2504, 0.148, 0.1078, 0.0124], "resume": false, "secs": 1810}]}, {"name": "Transformer \u00b7 75 min + continued", "pts": [{"x": 0.384, "y": [0.1683, 0.109, 0.0793, 0.0036], "resume": false, "secs": 1602}, {"x": 0.768, "y": [0.2191, 0.1347, 0.0985, 0.0119], "resume": false, "secs": 3227}, {"x": 1.0847, "y": [0.2239, 0.1382, 0.101, 0.0127], "resume": false, "secs": 4511}, {"x": 1.8527, "y": [0.2438, 0.1466, 0.106, 0.012], "resume": false, "secs": 2769}, {"x": 2.5905, "y": [0.252, 0.1524, 0.1109, 0.0134], "resume": false, "secs": 5406}]}, {"name": "GRU \u00b7 60 min", "pts": [{"x": 0.384, "y": [0.1962, 0.1252, 0.0923, 0.0095], "resume": false, "secs": 459}, {"x": 0.768, "y": [0.2318, 0.1402, 0.1049, 0.0112], "resume": false, "secs": 915}, {"x": 1.152, "y": [0.2286, 0.1433, 0.1041, 0.0086], "resume": false, "secs": 1374}, {"x": 1.536, "y": [0.2508, 0.1506, 0.1096, 0.0073], "resume": false, "secs": 1834}, {"x": 1.92, "y": [0.2607, 0.1575, 0.1147, 0.0113], "resume": false, "secs": 2297}, {"x": 2.304, "y": [0.2486, 0.1498, 0.1098, 0.0104], "resume": false, "secs": 2758}, {"x": 2.688, "y": [0.269, 0.1609, 0.1173, 0.0116], "resume": false, "secs": 3215}, {"x": 3.0149, "y": [0.2631, 0.1579, 0.1151, 0.0112], "resume": false, "secs": 3606}]}]}'><div class="hdr"><div><div class="ttl">BTC 15m: validation R² while training</div><div class="sub">Each point is one validation pass on Sep 22 (unseen markets). The 75-minute Transformer was resumed from its saved weights at the hollow point and kept training (batch 512, 30 threads). Pick a horizon above the chart.</div></div><div class="seg" role="group" aria-label="Horizon"><button type="button" id="c15-h0" data-h="0" aria-pressed="true">0.1s</button><button type="button" id="c15-h1" data-h="1" aria-pressed="false">0.5s</button><button type="button" id="c15-h2" data-h="2" aria-pressed="false">1s</button><button type="button" id="c15-h3" data-h="3" aria-pressed="false">10s</button></div></div><div class="legend"></div><div class="plot"><div class="tip" role="status"></div></div><details class="tv"><summary>Show data table</summary><div class="tbl"><table><thead></thead><tbody></tbody></table></div></details></div><div class="viz" id="cperp" data-spec='{"title": "BTC perp validation R\u00b2", "xlabel": "training samples seen (millions)", "ylabel": "validation R\u00b2", "hz": true, "x0": 0, "series": [{"name": "Transformer \u00b7 25 min", "pts": [{"x": 0.332, "y": [0.0971, 0.0401, 0.0244, 0.003], "secs": 1521}]}, {"name": "GRU \u00b7 20 min", "pts": [{"x": 0.384, "y": [0.1267, 0.0508, 0.029, 0.004], "secs": 539}, {"x": 0.768, "y": [0.1497, 0.0635, 0.0352, 0.0047], "secs": 1043}, {"x": 0.8965, "y": [0.1415, 0.059, 0.0325, 0.0025], "secs": 1208}]}]}'><div class="hdr"><div><div class="ttl">BTC perp: validation R² while training</div><div class="sub">The perp Transformer got only one validation pass in its 25-minute budget.</div></div><div class="seg" role="group" aria-label="Horizon"><button type="button" id="cperp-h0" data-h="0" aria-pressed="true">0.1s</button><button type="button" id="cperp-h1" data-h="1" aria-pressed="false">0.5s</button><button type="button" id="cperp-h2" data-h="2" aria-pressed="false">1s</button><button type="button" id="cperp-h3" data-h="3" aria-pressed="false">10s</button></div></div><div class="legend"></div><div class="plot"><div class="tip" role="status"></div></div><details class="tv"><summary>Show data table</summary><div class="tbl"><table><thead></thead><tbody></tbody></table></div></details></div><h3>Held-out test R² (Sep 23) at the end of each run</h3><div class="tbl"><table><thead><tr><th>market</th><th>model</th><th>0.1s</th><th>0.5s</th><th>1s</th><th>10s</th></tr></thead><tbody><tr><td>BTC 15m</td><td>LightGBM (handcrafted)</td><td>0.2315</td><td>0.1523</td><td>0.1142</td><td>0.0149</td></tr><tr><td>BTC 15m</td><td>Transformer · 40 min</td><td>0.2308</td><td>0.1517</td><td>0.1153</td><td>0.0152</td></tr><tr><td>BTC 15m</td><td>Transformer · 75 min</td><td>0.2328</td><td>0.1535</td><td>0.1164</td><td>0.0175</td></tr><tr><td>BTC 15m</td><td>Transformer · 75 min + continued</td><td>0.2441</td><td>0.1580</td><td>0.1190</td><td>0.0168</td></tr><tr><td>BTC 15m</td><td>GRU · 30 min</td><td>0.2511</td><td>0.1582</td><td>0.1193</td><td>0.0183</td></tr><tr><td>BTC 15m</td><td>GRU · 60 min</td><td>0.2615</td><td>0.1637</td><td>0.1232</td><td>0.0182</td></tr><tr><td>BTC perp</td><td>LightGBM (handcrafted)</td><td>0.1276</td><td>0.0440</td><td>0.0233</td><td>-0.0022</td></tr><tr><td>BTC perp</td><td>Transformer · 25 min</td><td>0.1234</td><td>0.0540</td><td>0.0322</td><td>0.0024</td></tr><tr><td>BTC perp</td><td>GRU · 20 min</td><td>0.1873</td><td>0.0777</td><td>0.0460</td><td>0.0049</td></tr></tbody></table></div><h2>Other training curves</h2><div class="viz" id="cae" data-spec='{"title": "Autoencoder", "xlabel": "epoch", "ylabel": "validation MSE", "series": [{"name": "Autoencoder", "pts": [{"x": 1, "y": 0.5448536276817322}, {"x": 2, "y": 0.5152462124824524}, {"x": 3, "y": 0.5016871094703674}, {"x": 4, "y": 0.4952033758163452}, {"x": 5, "y": 0.4935906231403351}]}, {"name": "Autoencoder \u00b7 strict (no tick fields)", "pts": [{"x": 1, "y": 0.4612501263618469}, {"x": 2, "y": 0.4223349094390869}, {"x": 3, "y": 0.4097698926925659}, {"x": 4, "y": 0.4126306176185608}]}]}'><div class="hdr"><div><div class="ttl">Autoencoder reconstruction</div><div class="sub">Validation MSE per epoch; the mean-prediction baseline is 1.29 (main) on the same standardised tokens. Lower is better.</div></div></div><div class="legend"></div><div class="plot"><div class="tip" role="status"></div></div><details class="tv"><summary>Show data table</summary><div class="tbl"><table><thead></thead><tbody></tbody></table></div></details></div><div class="viz" id="ccl" data-spec='{"title": "Market-type classifiers", "xlabel": "epoch", "ylabel": "validation balanced accuracy", "yfmt": "pct", "series": [{"name": "GRU on 64 raw events", "pts": [{"x": 1, "y": 0.6964024302337555}, {"x": 2, "y": 0.7742771084337348}, {"x": 3, "y": 0.804728297806611}, {"x": 4, "y": 0.8275335186901452}, {"x": 5, "y": 0.8335731129646794}, {"x": 6, "y": 0.8388560910307898}, {"x": 7, "y": 0.8473272577489445}]}, {"name": "MLP on N=256 window features", "pts": [{"x": 1, "y": 0.7366186408087227}, {"x": 2, "y": 0.7755869001861738}, {"x": 3, "y": 0.7905199249333615}, {"x": 4, "y": 0.8039073204990197}, {"x": 5, "y": 0.8106560484086468}, {"x": 6, "y": 0.818175718821374}, {"x": 7, "y": 0.8245767434079206}, {"x": 8, "y": 0.8256013726996886}, {"x": 9, "y": 0.828497336524037}, {"x": 10, "y": 0.8310661577189706}, {"x": 11, "y": 0.8338426940722896}, {"x": 12, "y": 0.8329965538332533}, {"x": 13, "y": 0.8382101466046048}, {"x": 14, "y": 0.840036130607298}, {"x": 15, "y": 0.8405243800116656}, {"x": 16, "y": 0.8416024612282353}, {"x": 17, "y": 0.8415364549315949}, {"x": 18, "y": 0.8379215375708354}, {"x": 19, "y": 0.8430193634675848}, {"x": 20, "y": 0.8448443156083477}, {"x": 21, "y": 0.845846878393731}, {"x": 22, "y": 0.8466905068762356}, {"x": 23, "y": 0.8450360637812964}, {"x": 24, "y": 0.8471735179707404}, {"x": 25, "y": 0.8471652451641093}, {"x": 26, "y": 0.8464193012951141}, {"x": 27, "y": 0.8484735184369333}, {"x": 28, "y": 0.84829143168267}, {"x": 29, "y": 0.8469433715050438}, {"x": 30, "y": 0.8417011190659142}, {"x": 31, "y": 0.8481958428039358}, {"x": 32, "y": 0.8482413660364865}, {"x": 33, "y": 0.8509203696757204}, {"x": 34, "y": 0.8487666365671871}, {"x": 35, "y": 0.8481607126218265}, {"x": 36, "y": 0.8494376404146199}, {"x": 37, "y": 0.8512658059513638}, {"x": 38, "y": 0.8505354463663134}, {"x": 39, "y": 0.850870046074152}, {"x": 40, "y": 0.8503080317089105}]}]}'><div class="hdr"><div><div class="ttl">Market-type classifiers</div><div class="sub">Validation balanced accuracy per epoch for the 13-class task (chance 0.08).</div></div></div><div class="legend"></div><div class="plot"><div class="tip" role="status"></div></div><details class="tv"><summary>Show data table</summary><div class="tbl"><table><thead></thead><tbody></tbody></table></div></details></div><div class="viz" id="ctr" data-spec='{"title": "Trade model", "xlabel": "epoch", "ylabel": "val toxic AUC (mean of 4 horizons)", "series": [{"name": "trade only", "pts": [{"x": 1, "y": 0.8322921401343669}, {"x": 2, "y": 0.8414386255364792}, {"x": 3, "y": 0.8461440749671484}, {"x": 4, "y": 0.8502824195331128}, {"x": 5, "y": 0.8518366062450203}, {"x": 6, "y": 0.8539622790366423}, {"x": 7, "y": 0.8554768713150396}, {"x": 8, "y": 0.8568162995010385}, {"x": 9, "y": 0.85670985133826}, {"x": 10, "y": 0.8571892076228131}, {"x": 11, "y": 0.8579788760915174}, {"x": 12, "y": 0.8582743939168435}, {"x": 13, "y": 0.859574097620894}, {"x": 14, "y": 0.859570932180898}, {"x": 15, "y": 0.8601422556813901}, {"x": 16, "y": 0.8612337917446765}, {"x": 17, "y": 0.8615101956609785}, {"x": 18, "y": 0.8613854644995651}, {"x": 19, "y": 0.8618354771107123}, {"x": 20, "y": 0.862451473096405}, {"x": 21, "y": 0.8621679697569214}, {"x": 22, "y": 0.8619935356722}, {"x": 23, "y": 0.8623400120678602}, {"x": 24, "y": 0.8622473706855922}, {"x": 25, "y": 0.862898086120344}, {"x": 26, "y": 0.8630884169202178}, {"x": 27, "y": 0.862802437927707}, {"x": 28, "y": 0.8626844924939306}, {"x": 29, "y": 0.8623938630251518}, {"x": 30, "y": 0.8633952976821255}, {"x": 31, "y": 0.862890048468848}, {"x": 32, "y": 0.8628163566643783}, {"x": 33, "y": 0.8631305541827874}, {"x": 34, "y": 0.8626783764183268}, {"x": 35, "y": 0.8632956956176353}, {"x": 36, "y": 0.8627299540044304}]}, {"name": "trade+window", "pts": [{"x": 1, "y": 0.8503911825047102}, {"x": 2, "y": 0.857583829592746}, {"x": 3, "y": 0.8619875144341108}, {"x": 4, "y": 0.8645218738175018}, {"x": 5, "y": 0.8658029430711962}, {"x": 6, "y": 0.8673490164758333}, {"x": 7, "y": 0.8683801735375007}, {"x": 8, "y": 0.8683780300357913}, {"x": 9, "y": 0.8698059466644446}, {"x": 10, "y": 0.8704609871617552}, {"x": 11, "y": 0.8700777947420184}, {"x": 12, "y": 0.8711019987435071}, {"x": 13, "y": 0.8720032940907303}, {"x": 14, "y": 0.8717296042096523}, {"x": 15, "y": 0.8717813593520753}, {"x": 16, "y": 0.8724139127782383}, {"x": 17, "y": 0.8723604293291904}, {"x": 18, "y": 0.8722775350590739}, {"x": 19, "y": 0.8725076160615134}, {"x": 20, "y": 0.8727091558042679}, {"x": 21, "y": 0.8724618754609833}, {"x": 22, "y": 0.8724811081546368}, {"x": 23, "y": 0.8727320924809883}, {"x": 24, "y": 0.8732830457486505}, {"x": 25, "y": 0.8727870874779482}, {"x": 26, "y": 0.8730941844964568}, {"x": 27, "y": 0.8729649877892685}, {"x": 28, "y": 0.873637598195067}, {"x": 29, "y": 0.8734071828036519}, {"x": 30, "y": 0.8729175664642418}, {"x": 31, "y": 0.8730310246662218}, {"x": 32, "y": 0.8730236130601763}, {"x": 33, "y": 0.8732063113081102}, {"x": 34, "y": 0.872998357813613}]}, {"name": "trade+window+AE", "pts": [{"x": 1, "y": 0.8503525807900432}, {"x": 2, "y": 0.858558106016453}, {"x": 3, "y": 0.8629626432973447}, {"x": 4, "y": 0.8648407801222475}, {"x": 5, "y": 0.8662529875501808}, {"x": 6, "y": 0.8679484948206468}, {"x": 7, "y": 0.8678021977785777}, {"x": 8, "y": 0.8693735584060786}, {"x": 9, "y": 0.8692694589948142}, {"x": 10, "y": 0.8703836175898003}, {"x": 11, "y": 0.8708348490465018}, {"x": 12, "y": 0.8707606888300314}, {"x": 13, "y": 0.8713562451493119}, {"x": 14, "y": 0.8715171898554034}, {"x": 15, "y": 0.8714528272050577}, {"x": 16, "y": 0.8719878029223561}, {"x": 17, "y": 0.8718663889684067}, {"x": 18, "y": 0.8719274965432344}, {"x": 19, "y": 0.8723328889349321}, {"x": 20, "y": 0.8725177782180702}, {"x": 21, "y": 0.8718863403704312}, {"x": 22, "y": 0.8729484409669354}, {"x": 23, "y": 0.8727428664967511}, {"x": 24, "y": 0.8724634642049895}, {"x": 25, "y": 0.8728562316033052}, {"x": 26, "y": 0.8725197644878366}, {"x": 27, "y": 0.8723161396292889}, {"x": 28, "y": 0.8722758855924914}]}, {"name": "trade+window+AE+clf", "pts": [{"x": 1, "y": 0.8504762598305922}, {"x": 2, "y": 0.8600562813106019}, {"x": 3, "y": 0.8624227950345572}, {"x": 4, "y": 0.865351874115327}, {"x": 5, "y": 0.8652952349240453}, {"x": 6, "y": 0.8670201545503033}, {"x": 7, "y": 0.8690703813365308}, {"x": 8, "y": 0.8689979111434551}, {"x": 9, "y": 0.8697079431228436}, {"x": 10, "y": 0.8704837153942759}, {"x": 11, "y": 0.8711477442187485}, {"x": 12, "y": 0.8709623981652774}, {"x": 13, "y": 0.8715940378761244}, {"x": 14, "y": 0.8715329391053048}, {"x": 15, "y": 0.8718779887406152}, {"x": 16, "y": 0.8723637739245829}, {"x": 17, "y": 0.8720794715364228}, {"x": 18, "y": 0.8729231490334599}, {"x": 19, "y": 0.872434323612259}, {"x": 20, "y": 0.8726156083219635}, {"x": 21, "y": 0.872214718127847}, {"x": 22, "y": 0.8721524539301335}, {"x": 23, "y": 0.8722681809880859}, {"x": 24, "y": 0.8729856930203411}, {"x": 25, "y": 0.872653637054812}, {"x": 26, "y": 0.8730840022267798}, {"x": 27, "y": 0.8729175923581531}, {"x": 28, "y": 0.8728970799392116}, {"x": 29, "y": 0.8725761199116286}, {"x": 30, "y": 0.8723507604410669}, {"x": 31, "y": 0.8728975938355089}, {"x": 32, "y": 0.8721638621294978}]}, {"name": "trade+AE+clf (no handcrafted window)", "pts": [{"x": 1, "y": 0.8415266434899635}, {"x": 2, "y": 0.8513592321352161}, {"x": 3, "y": 0.856172455988325}, {"x": 4, "y": 0.8582333827405033}, {"x": 5, "y": 0.860600664266487}, {"x": 6, "y": 0.8616463002697947}, {"x": 7, "y": 0.8618080722980108}, {"x": 8, "y": 0.862873834890334}, {"x": 9, "y": 0.8639292829618292}, {"x": 10, "y": 0.864440116187565}, {"x": 11, "y": 0.8654987207677622}, {"x": 12, "y": 0.8659945819623458}, {"x": 13, "y": 0.8651041402529999}, {"x": 14, "y": 0.8663330518661638}, {"x": 15, "y": 0.8670301304198413}, {"x": 16, "y": 0.8668037805268235}, {"x": 17, "y": 0.8673956759457052}, {"x": 18, "y": 0.8670322421986789}, {"x": 19, "y": 0.8672207691851989}, {"x": 20, "y": 0.868214518188569}, {"x": 21, "y": 0.8676015696008232}, {"x": 22, "y": 0.8681151085262673}, {"x": 23, "y": 0.8681803386845952}, {"x": 24, "y": 0.8685194768409186}, {"x": 25, "y": 0.8674352421046185}, {"x": 26, "y": 0.8682339241809257}, {"x": 27, "y": 0.8684339881784447}, {"x": 28, "y": 0.8684282262390056}, {"x": 29, "y": 0.8677138557177899}, {"x": 30, "y": 0.8686689448601608}, {"x": 31, "y": 0.8683154038954465}, {"x": 32, "y": 0.8685899978219707}, {"x": 33, "y": 0.8684031727849963}, {"x": 34, "y": 0.8690493194375873}, {"x": 35, "y": 0.868610509143307}, {"x": 36, "y": 0.8678853291458137}, {"x": 37, "y": 0.8681616690392286}, {"x": 38, "y": 0.8688478523996521}, {"x": 39, "y": 0.8689552886271046}, {"x": 40, "y": 0.8688691477378531}]}]}'><div class="hdr"><div><div class="ttl">Trade toxicity model</div><div class="sub">Validation toxic-flow AUC per epoch for each input set (early stopping on this curve).</div></div></div><div class="legend"></div><div class="plot"><div class="tip" role="status"></div></div><details class="tv"><summary>Show data table</summary><div class="tbl"><table><thead></thead><tbody></tbody></table></div></details></div><p class="note">Fair-model points come from the training log on the VM, which records every validation pass. Several of those runs were first synced to wandb while still training, and wandb kept only the part synced at that time, so their wandb charts are incomplete. The autoencoder, classifier and trade curves come straight from wandb.</p>
+<footer>Built from the run on <span class="mono">kalshi-analysis</span>. Last rebuilt 2026-11-17 21:11 UTC. wandb project: <span class="mono">kalshi-microstructure</span>.</footer>
+</main></div><script type="application/json" id="curve-data">{"horizons": ["0.1s", "0.5s", "1s", "10s"]}</script><script>
+(function(){
+const DATA = JSON.parse(document.getElementById('curve-data').textContent);
+const COLORS=['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)'];
+const NS='http://www.w3.org/2000/svg';
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+function nice(lo,hi,n){const span=hi-lo||1;const step=Math.pow(10,Math.floor(Math.log10(span/n)));const err=span/n/step;
+  const m=err>=7.5?10:err>=3.5?5:err>=1.5?2:1;const s=m*step;const a=Math.floor(lo/s)*s,b=Math.ceil(hi/s)*s;const t=[];for(let v=a;v<=b+s/2;v+=s)t.push(+v.toFixed(10));return t;}
+function draw(box){
+  const spec=JSON.parse(box.dataset.spec);
+  const plot=box.querySelector('.plot'); const tip=box.querySelector('.tip'); const tbody=box.querySelector('tbody'); const thead=box.querySelector('thead');
+  let hz=0;
+  function seriesNow(){return spec.series.map((s,i)=>({name:s.name,color:COLORS[i],pts:s.pts.map(p=>({x:p.x,y:Array.isArray(p.y)?p.y[hz]:p.y,resume:p.resume,secs:p.secs}))}));}
+  function render(){
+    plot.querySelectorAll('svg').forEach(n=>n.remove());
+    const ser=seriesNow(); const W=760,H=300,L=56,R=150,T=12,B=40;
+    const xs=ser.flatMap(s=>s.pts.map(p=>p.x)), ys=ser.flatMap(s=>s.pts.map(p=>p.y));
+    const xt=nice(spec.x0??Math.min(...xs),Math.max(...xs),6); const pad=(Math.max(...ys)-Math.min(...ys))*.12||0.01;
+    const yt=nice(Math.min(...ys)-pad,Math.max(...ys)+pad,5);
+    const X=v=>L+(v-xt[0])/(xt[xt.length-1]-xt[0])*(W-L-R), Y=v=>T+(1-(v-yt[0])/(yt[yt.length-1]-yt[0]))*(H-T-B);
+    const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':spec.title});
+    yt.forEach(v=>{el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),stroke:'var(--grid)','stroke-width':1},svg);const t=el('text',{x:L-8,y:Y(v)+4,'text-anchor':'end'},svg);t.textContent=spec.yfmt==='pct'?v.toFixed(2):(+v.toFixed(4)).toString();});
+    xt.forEach(v=>{const t=el('text',{x:X(v),y:H-B+18,'text-anchor':'middle'},svg);t.textContent=(+v.toFixed(3)).toString();});
+    el('line',{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:'var(--axis)','stroke-width':1},svg);
+    const xl=el('text',{x:(L+W-R)/2,y:H-4,'text-anchor':'middle'},svg); xl.textContent=spec.xlabel;
+    const yl=el('text',{x:12,y:(T+H-B)/2,'text-anchor':'middle',transform:`rotate(-90 12 ${(T+H-B)/2})`},svg); yl.textContent=spec.ylabel+(spec.hz?` (${DATA.horizons[hz]})`:'');
+    const labels=[];
+    ser.forEach(s=>{
+      if(s.pts.length>1) el('path',{d:s.pts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+' '+Y(p.y).toFixed(1)).join(' '),fill:'none',stroke:s.color,'stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'},svg);
+      s.pts.forEach(p=>{el('circle',{cx:X(p.x),cy:Y(p.y),r:p.resume?6:4,fill:p.resume?'var(--surface)':s.color,stroke:p.resume?s.color:'var(--surface)','stroke-width':p.resume?2.5:2},svg);});
+      const last=s.pts[s.pts.length-1]; labels.push({y:Y(last.y),x:X(last.x),name:s.name,v:last.y});
+    });
+    labels.sort((a,b)=>a.y-b.y); for(let i=1;i<labels.length;i++) if(labels[i].y-labels[i-1].y<13) labels[i].y=labels[i-1].y+13;
+    labels.forEach(l=>{const t=el('text',{x:W-R+10,y:l.y+4,class:'dl'},svg);t.textContent=l.name.length>24?l.name.slice(0,23)+'…':l.name;});
+    const res=ser.flatMap(s=>s.pts.filter(p=>p.resume));
+    res.forEach(p=>{const t=el('text',{x:X(p.x),y:Y(p.y)-12,'text-anchor':'middle'},svg);t.textContent='resumed';});
+    const hair=el('line',{y1:T,y2:H-B,stroke:'var(--axis)','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'},svg);
+    const hit=el('rect',{x:L,y:T,width:W-L-R,height:H-T-B,fill:'transparent',tabindex:0},svg);
+    const allx=[...new Set(xs)].sort((a,b)=>a-b);
+    function show(px){
+      const vx=xt[0]+(px-L)/(W-L-R)*(xt[xt.length-1]-xt[0]);
+      let nx=allx[0];allx.forEach(x=>{if(Math.abs(x-vx)<Math.abs(nx-vx))nx=x;});
+      hair.setAttribute('x1',X(nx));hair.setAttribute('x2',X(nx));hair.setAttribute('visibility','visible');
+      tip.replaceChildren();const hx=document.createElement('div');hx.className='x';hx.textContent=`${spec.xlabel}: ${nx}`;tip.appendChild(hx);
+      const tol=(xt[xt.length-1]-xt[0])*0.06;
+      ser.forEach(s=>{let best=null;s.pts.forEach(p=>{if(Math.abs(p.x-nx)<=tol&&(!best||Math.abs(p.x-nx)<Math.abs(best.x-nx)))best=p;});
+        const r=document.createElement('div');r.className='r';const sp=document.createElement('span');const i=document.createElement('i');i.style.borderColor=s.color;sp.appendChild(i);sp.appendChild(document.createTextNode(s.name));
+        const b=document.createElement('b');b.textContent=best?best.y.toFixed(4):'–';r.appendChild(sp);r.appendChild(b);tip.appendChild(r);});
+      const bb=plot.getBoundingClientRect(), sx=bb.width/W; tip.style.display='block';
+      let left=X(nx)*sx+12; if(left+tip.offsetWidth>bb.width) left=X(nx)*sx-tip.offsetWidth-12; tip.style.left=left+'px'; tip.style.top='8px';}
+    hit.addEventListener('pointermove',e=>{const bb=svg.getBoundingClientRect();show((e.clientX-bb.left)/bb.width*W);});
+    hit.addEventListener('pointerleave',()=>{tip.style.display='none';hair.setAttribute('visibility','hidden');});
+    hit.addEventListener('focus',()=>show(X(allx[allx.length-1])));
+    hit.addEventListener('blur',()=>{tip.style.display='none';hair.setAttribute('visibility','hidden');});
+    plot.insertBefore(svg,tip);
+    // table
+    thead.replaceChildren(); tbody.replaceChildren();
+    const hr=document.createElement('tr');['series',spec.xlabel,spec.ylabel+(spec.hz?' ('+DATA.horizons[hz]+')':'')].forEach(h=>{const th=document.createElement('th');th.textContent=h;hr.appendChild(th);});thead.appendChild(hr);
+    ser.forEach(s=>s.pts.forEach(p=>{const tr=document.createElement('tr');[s.name+(p.resume?' (resume point)':''),p.x,p.y.toFixed(4)].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.appendChild(td);});tbody.appendChild(tr);}));
+  }
+  const lg=box.querySelector('.legend'); spec.series.forEach((s,i)=>{const sp=document.createElement('span');const ii=document.createElement('i');ii.style.borderColor=COLORS[i];sp.appendChild(ii);sp.appendChild(document.createTextNode(s.name));lg.appendChild(sp);});
+  box.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{hz=+b.dataset.h;box.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));render();}));
+  render(); window.addEventListener('resize',()=>{tip.style.display='none';});
+}
+document.querySelectorAll('.viz[data-spec]').forEach(draw);
+})();
+</script></body></html>

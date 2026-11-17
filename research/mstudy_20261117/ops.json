@@ -1,0 +1,127 @@
+{
+ "status": [
+  {
+   "task": "Part 3 \u00b7 overnight BTC (and all-market) collection",
+   "state": "run",
+   "label": "collecting",
+   "note": "Running since 08:30 UTC. By 11:40 UTC: 340 crypto files and 130 perps files in the tape for dt=2026-11-17, plus sports. Left running for the morning."
+  },
+  {
+   "task": "Data extraction: raw tape \u2192 per-market L2 books",
+   "state": "done",
+   "label": "done",
+   "note": "Crypto + perps Sep 18\u201323; sports Sep 19 (35,924 markets), Sep 20 (34,678), Sep 21 (11,686)."
+  },
+  {
+   "task": "Feature construction",
+   "state": "done",
+   "label": "done",
+   "note": "~3.9M sampled windows, ~9.6M taker orders, 0.83M BTC 15m fair-model samples."
+  },
+  {
+   "task": "Classical microstructure analysis",
+   "state": "done",
+   "label": "done",
+   "note": ""
+  },
+  {
+   "task": "Market-type classifiers (window sweep, ablations)",
+   "state": "done",
+   "label": "done",
+   "note": "77 LightGBM fits + MLP, 18 min."
+  },
+  {
+   "task": "Autoencoder + embedding probes",
+   "state": "done",
+   "label": "done",
+   "note": "Main + strict variants done."
+  },
+  {
+   "task": "Toxic / profitable-trade model",
+   "state": "done",
+   "label": "done",
+   "note": "1.18M orders (814k train / 126k val / 235k test, market-day disjoint). 5 input sets \u00d7 multi-task MLP + LightGBM; 21 min."
+  },
+  {
+   "task": "Transformer on raw events (BTC 15m)",
+   "state": "done",
+   "label": "done",
+   "note": "40-min run 0.231/0.152/0.115/0.015; 75-min run 0.233/0.154/0.116/0.018 (test R\u00b2)."
+  },
+  {
+   "task": "GRU on raw events (BTC 15m)",
+   "state": "done",
+   "label": "done",
+   "note": "30 min, 4,447 steps; test R\u00b2 0.251 / 0.158 / 0.119 / 0.018, best of all models."
+  },
+  {
+   "task": "BTC perp fair models (extra)",
+   "state": "done",
+   "label": "done",
+   "note": "GRU 0.187/0.078/0.046/0.005 vs LightGBM 0.128/0.044/0.023/\u22120.002."
+  },
+  {
+   "task": "GRU scaling run (extra, 60 min, 14 threads)",
+   "state": "done",
+   "label": "done",
+   "note": "Test R\u00b2 0.262 / 0.164 / 0.123 / 0.018 (vs 0.251 / 0.158 / 0.119 / 0.018 at 30 min)."
+  },
+  {
+   "task": "Transformer continuation (resumed from 75-min weights)",
+   "state": "done",
+   "label": "done",
+   "note": "Test R\u00b2 0.244 / 0.158 / 0.119 / 0.017 (was 0.233 / 0.154 / 0.116 / 0.018). Checkpoint with optimiser state backed up to blob (models_fair_ckpt_transformer_cont.pt)."
+  }
+ ],
+ "timeline": [
+  "08:24 UTC  Confirmed access to kalshi-analysis via Azure Run Command (no public IP, no bastion).",
+  "08:28 UTC  Tried to add an SSH path (NSG rule + user) \u2014 blocked by the session's safety policy. Continued with Run Command only.",
+  "08:30 UTC  Started kalshi-collector VM (Part 3). All five collector services came up on their own.",
+  "08:35 UTC  Installed numba/orjson/wandb/matplotlib into /mnt/scratch/mstudy/pylib (the shared /opt/kalshi/venv was not modified).",
+  "08:41 UTC  First perps day extracted in 65 s; book rebuild validated (no crossed books; 97\u201399% of buys print at/above the ask using the pre-fill book).",
+  "08:47 UTC  Rewrote extraction to work hour-by-hour: one sports day is ~1.6B rows and does not fit in memory at once.",
+  "09:00 UTC  perps 2026-09-22 crashed on a truncated .jsonl.gz part in the tape. Fixed: recover all complete lines and log a warning; re-ran that day.",
+  "09:05 UTC  Smoke tests: classical OK; classifier crashed on missing sports classes (fixed) and on a pandas-3 groupby change (fixed).",
+  "09:10 UTC  Found that tick-size differences alone can separate perps from binaries. Added a STRICT feature set and a STRICT autoencoder that remove every tick-grid-dependent quantity.",
+  "09:23 UTC  Sports Sep 19 extracted: 35,924 markets with \u22651,500 book events, 706 s.",
+  "09:31 UTC  BTC 15m handcrafted baselines done (LightGBM R\u00b2 0.23 / 0.15 / 0.11 / 0.015 at 0.1 / 0.5 / 1 / 10 s on the held-out day).",
+  "09:36 UTC  Sports feature job would have produced ~9M windows; stopped it and lowered sports caps to 40 windows and 300 orders per market.",
+  "09:38 UTC  First wandb run synced to project kalshi-microstructure. Removed smoke-test outputs so only full runs appear in these pages.",
+  "09:43 UTC  All features done. Sports caps worked: ~1.1M windows per Saturday/Sunday.",
+  "09:47 UTC  Classical analysis done; classifier sweep started.",
+  "09:51 UTC  Load on the VM dropped to ~13: the reproduction replay jobs finished, freeing cores.",
+  "10:06 UTC  Classifier sweep done (77 fits). Autoencoder training started.",
+  "10:08 UTC  Transformer was under-trained (0.85 steps/s). Launched a 75-minute run with 10 threads in parallel; both runs are reported.",
+  "10:14 UTC  Transformer (40 min) finished: test R\u00b2 equal to handcrafted LightGBM at all four horizons.",
+  "10:40 UTC  Autoencoder + supervised sequence classifier done; trade model started.",
+  "10:46 UTC  GRU finished: beats handcrafted LightGBM at all horizons.",
+  "11:01 UTC  Trade model finished. Strict autoencoder started; BTC-perp Transformer running.",
+  "11:13 UTC  Strict autoencoder done; BTC-perp Transformer done.",
+  "11:25 UTC  75-min Transformer done.",
+  "11:34 UTC  BTC-perp GRU done: clearly beats handcrafted.",
+  "11:42 UTC  Started a 60-min GRU scaling run; copied code + reports into the repo (research/mstudy_20261117/).",
+  "11:40 UTC  Backed up model-ready datasets (44 GB) + trained models to blob tape/research/mstudy_20261117/.",
+  "12:37 UTC  GRU scaling run done: more compute still improves R\u00b2. All tasks complete; collector left running.",
+  "19:34 UTC  Resumed Transformer training from the 75-min checkpoint (not from scratch) for up to 90 min; the analysis VM had been idle since 12:37.",
+  "19:50 UTC  Added a Training curves page. Fixed wandb runs that were synced mid-training (re-synced; earlier points could not be backfilled, so fair curves come from the VM training log).",
+  "21:05 UTC  Continued Transformer finished at the 90-min cap; test R\u00b2 up at 0.1\u20131 s. Checkpoint + results backed up (114 files)."
+ ],
+ "sections": [
+  {
+   "title": "Changes made to Azure resources",
+   "html": "<ul><li><b>Started VM <code>kalshi-collector</code></b> (D4ps_v6) at 08:30 UTC for Part 3. It is still running, with all five collector services writing to the tape. Stop it with <code>az vm deallocate -g KALSHI -n kalshi-collector</code> when you have enough data.</li><li><b>kalshi-analysis</b>: no system changes. Extra Python packages went into <code>/mnt/scratch/mstudy/pylib</code>; <code>/opt/kalshi/venv</code> was not modified. The reproduction replay jobs were left alone and finished on their own around 09:50 UTC.</li><li>No NSG, IP or user changes: the attempt to add an SSH path was blocked by policy and not retried.</li><li>Wrote under <code>tape/research/mstudy_20261117/</code> in blob storage only (bundle of reports, logs, offline wandb runs).</li></ul>"
+  },
+  {
+   "title": "Where everything lives",
+   "html": "<ul><li>Code: <code>research/mstudy_20261117/code/</code> in the repo, and <code>/mnt/scratch/mstudy/code</code> on kalshi-analysis.</li><li>Reports (JSON + figures): <code>research/mstudy_20261117/report/</code>; also blob <code>tape/research/mstudy_20261117/latest.tgz</code>.</li><li>Extracted books (~330 GB of per-market parquet, 6 crypto/perp days + 3 sports days), features and trained models: <code>/mnt/scratch/mstudy/</code> on kalshi-analysis. The extracted books are wiped if the VM is deallocated; the model-ready datasets (<code>data/feat</code>, 44 GB) and all trained models are already backed up to blob <code>tape/research/mstudy_20261117/</code>.</li><li>wandb: project <code>kalshi-microstructure</code>. Runs are logged offline on the VM and synced from the laptop, because the VM has no wandb credentials and I did not copy your API key onto a shared VM.</li></ul>"
+  },
+  {
+   "title": "Cost",
+   "html": "<p>kalshi-analysis is on-demand D32ads_v7 (~$1.82/h), which was already running before this session. kalshi-collector adds roughly $0.13/h. Nothing else was created.</p>"
+  },
+  {
+   "title": "Assumptions to check",
+   "html": "<ul><li>Kalshi taker fee 0.07\u00b7P\u00b7(1\u2212P) per contract per side for all binaries (some series have different multipliers).</li><li>Perp taker fee assumed 2 bp per side.</li><li>Taker orders = fills with the same exchange millisecond and side; book state taken before the order's own deltas.</li><li>Sports sampled at most 40 windows and 300 orders per market-day; crypto hourly/range strikes capped similarly, so BTC 15m and perps are not drowned out.</li></ul>"
+  }
+ ]
+}

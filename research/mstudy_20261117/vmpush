@@ -1,0 +1,5 @@
+#!/bin/bash
+# push scratchpad/code -> VM /mnt/scratch/mstudy/code, then optionally run a command
+S=/private/tmp/claude-501/-Users-abitpalgyawali-Documents-projects-pitch/91ec032f-0e55-41fb-82bd-64250d8782dc/scratchpad
+B64=$(cd $S/code && COPYFILE_DISABLE=1 tar czf - --exclude __pycache__ . | base64 | tr -d '\n')
+$S/vmrun -c "mkdir -p /mnt/scratch/mstudy/code; echo '$B64' | base64 -d | tar xzf - -C /mnt/scratch/mstudy/code 2>/dev/null; echo pushed \$(ls /mnt/scratch/mstudy/code | wc -l) files; $1"

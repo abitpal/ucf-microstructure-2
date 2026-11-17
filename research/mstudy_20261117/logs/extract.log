@@ -1,0 +1,413 @@
+[08:41:03] perps 2026-09-19: 293 files
+[08:41:04]   parsed 0/293 2s
+[08:41:42]   65,582,256 rows, 23 tickers, parse 39s
+[08:41:47]   building 20 markets
+[08:42:08] DONE perps 2026-09-19: 20 markets, 65s
+[08:46:34] perps 2026-09-19: 293 files, 24 hours
+[08:46:55]   hour 00: 3,569,850 rows 23 tickers  22s
+[08:46:58]   hour 01: 4,113,805 rows 23 tickers  24s
+[08:47:00]   hour 02: 3,220,726 rows 23 tickers  26s
+[08:47:02]   hour 03: 2,747,170 rows 23 tickers  28s
+[08:47:03]   hour 04: 2,867,473 rows 23 tickers  30s
+[08:47:05]   hour 05: 2,765,779 rows 23 tickers  31s
+[08:47:06]   hour 06: 2,571,971 rows 23 tickers  33s
+[08:47:08]   hour 07: 1,989,704 rows 23 tickers  34s
+[08:47:09]   hour 08: 2,362,349 rows 23 tickers  35s
+[08:47:11]   hour 09: 2,896,758 rows 23 tickers  37s
+[08:47:12]   hour 10: 2,340,027 rows 23 tickers  38s
+[08:47:13]   hour 11: 2,186,579 rows 23 tickers  40s
+[08:47:15]   hour 12: 2,268,146 rows 23 tickers  41s
+[08:47:16]   hour 13: 2,634,708 rows 23 tickers  43s
+[08:47:18]   hour 14: 2,819,836 rows 23 tickers  44s
+[08:47:20]   hour 15: 3,140,319 rows 23 tickers  46s
+[08:47:21]   hour 16: 2,829,036 rows 23 tickers  48s
+[08:47:24]   hour 17: 3,382,347 rows 23 tickers  50s
+[08:47:25]   hour 18: 2,868,530 rows 23 tickers  52s
+[08:47:27]   hour 19: 2,325,462 rows 23 tickers  53s
+[08:47:28]   hour 20: 2,389,608 rows 23 tickers  55s
+[08:47:30]   hour 21: 2,855,329 rows 23 tickers  56s
+[08:47:31]   hour 22: 2,438,336 rows 23 tickers  58s
+[08:47:33]   hour 23: 1,998,408 rows 23 tickers  59s
+[08:47:33]   building 20 markets (of 23)
+[08:47:49] DONE perps 2026-09-19: 20 markets, 76s
+[08:47:51] crypto 2026-09-19: 2424 files, 24 hours
+[08:48:13]   hour 00: 5,698,016 rows 21392 tickers  22s
+[08:48:17]   hour 01: 6,526,444 rows 20400 tickers  27s
+[08:48:21]   hour 02: 5,742,796 rows 19512 tickers  30s
+[08:48:26]   hour 03: 5,014,961 rows 18820 tickers  35s
+[08:48:30]   hour 04: 5,325,550 rows 18316 tickers  39s
+[08:48:34]   hour 05: 5,468,092 rows 17812 tickers  43s
+[08:48:38]   hour 06: 4,980,143 rows 17308 tickers  47s
+[08:48:41]   hour 07: 4,787,781 rows 16804 tickers  51s
+[08:48:45]   hour 08: 5,071,034 rows 16300 tickers  54s
+[08:48:55]   hour 09: 4,962,257 rows 32895 tickers  64s
+[08:48:59]   hour 10: 4,134,627 rows 32391 tickers  68s
+[08:49:01]   hour 11: 3,853,360 rows 31587 tickers  71s
+[08:49:05]   hour 12: 4,403,034 rows 30783 tickers  74s
+[08:49:09]   hour 13: 5,039,380 rows 29979 tickers  78s
+[08:49:13]   hour 14: 5,138,346 rows 29175 tickers  82s
+[08:49:16]   hour 15: 5,233,105 rows 28371 tickers  86s
+[08:49:21]   hour 16: 5,549,172 rows 27567 tickers  90s
+[08:49:25]   hour 17: 5,699,546 rows 26763 tickers  94s
+[08:49:29]   hour 18: 5,570,742 rows 25959 tickers  98s
+[08:49:32]   hour 19: 4,720,048 rows 25155 tickers  102s
+[08:49:36]   hour 20: 3,667,290 rows 24547 tickers  105s
+[08:49:40]   hour 21: 5,445,481 rows 23743 tickers  109s
+[08:49:44]   hour 22: 4,488,684 rows 23675 tickers  113s
+[08:49:47]   hour 23: 4,520,014 rows 22871 tickers  116s
+[08:49:47]   building 1726 markets (of 44951)
+[08:50:02] DONE crypto 2026-09-19: 1726 markets, 131s
+[08:50:03] perps 2026-09-20: 308 files, 24 hours
+[08:50:24]   hour 00: 2,165,834 rows 23 tickers  21s
+[08:50:25]   hour 01: 2,474,517 rows 23 tickers  22s
+[08:50:27]   hour 02: 3,739,570 rows 23 tickers  25s
+[08:50:30]   hour 03: 3,768,298 rows 23 tickers  27s
+[08:50:31]   hour 04: 2,401,039 rows 23 tickers  28s
+[08:50:32]   hour 05: 2,464,728 rows 23 tickers  30s
+[08:50:34]   hour 06: 2,526,343 rows 23 tickers  31s
+[08:50:35]   hour 07: 2,115,404 rows 23 tickers  32s
+[08:50:37]   hour 08: 2,248,524 rows 23 tickers  34s
+[08:50:38]   hour 09: 2,096,628 rows 23 tickers  35s
+[08:50:39]   hour 10: 2,283,231 rows 23 tickers  37s
+[08:50:41]   hour 11: 2,036,432 rows 23 tickers  38s
+[08:50:43]   hour 12: 2,622,002 rows 23 tickers  40s
+[08:50:45]   hour 13: 2,860,126 rows 23 tickers  42s
+[08:50:47]   hour 14: 3,256,400 rows 23 tickers  44s
+[08:50:50]   hour 15: 4,187,625 rows 23 tickers  47s
+[08:50:52]   hour 16: 5,225,551 rows 23 tickers  50s
+[08:50:55]   hour 17: 4,212,619 rows 23 tickers  52s
+[08:50:57]   hour 18: 3,631,728 rows 23 tickers  54s
+[08:50:59]   hour 19: 2,839,947 rows 23 tickers  56s
+[08:51:01]   hour 20: 2,761,673 rows 23 tickers  58s
+[08:51:03]   hour 21: 3,630,925 rows 23 tickers  60s
+[08:51:05]   hour 22: 4,139,424 rows 23 tickers  62s
+[08:51:07]   hour 23: 3,497,783 rows 23 tickers  64s
+[08:51:07]   building 20 markets (of 23)
+[08:51:24] DONE perps 2026-09-20: 20 markets, 81s
+[08:51:25] crypto 2026-09-20: 2418 files, 24 hours
+[08:51:45]   hour 00: 4,915,168 rows 22067 tickers  20s
+[08:51:49]   hour 01: 5,190,821 rows 21263 tickers  24s
+[08:51:54]   hour 02: 5,610,498 rows 20459 tickers  29s
+[08:51:59]   hour 03: 6,406,094 rows 19655 tickers  33s
+[08:52:03]   hour 04: 5,316,100 rows 18663 tickers  37s
+[08:52:06]   hour 05: 5,230,970 rows 17671 tickers  41s
+[08:52:11]   hour 06: 5,387,935 rows 16679 tickers  45s
+[08:52:14]   hour 07: 4,523,671 rows 15687 tickers  49s
+[08:52:17]   hour 08: 4,438,611 rows 14844 tickers  52s
+[08:52:25]   hour 09: 3,869,258 rows 31616 tickers  60s
+[08:52:29]   hour 10: 4,431,942 rows 30924 tickers  64s
+[08:52:33]   hour 11: 4,790,313 rows 30232 tickers  68s
+[08:52:36]   hour 12: 4,556,578 rows 29540 tickers  71s
+[08:52:40]   hour 13: 4,710,858 rows 28849 tickers  75s
+[08:52:44]   hour 14: 5,344,585 rows 28156 tickers  79s
+[08:52:48]   hour 15: 5,962,070 rows 27465 tickers  83s
+[08:52:56]   hour 16: 7,502,661 rows 26772 tickers  91s
+[08:53:03]   hour 17: 6,845,913 rows 26082 tickers  97s
+[08:53:07]   hour 18: 5,158,167 rows 25388 tickers  101s
+[08:53:10]   hour 19: 4,621,969 rows 24697 tickers  105s
+[08:53:15]   hour 20: 4,179,079 rows 24088 tickers  109s
+[08:53:19]   hour 21: 5,573,682 rows 23396 tickers  114s
+[08:53:24]   hour 22: 6,552,531 rows 23440 tickers  118s
+[08:53:28]   hour 23: 6,591,538 rows 22750 tickers  123s
+[08:53:28]   building 1776 markets (of 44828)
+[08:53:44] DONE crypto 2026-09-20: 1776 markets, 139s
+[08:53:46] perps 2026-09-21: 458 files, 24 hours
+[08:54:09]   hour 00: 6,767,817 rows 23 tickers  23s
+[08:54:12]   hour 01: 6,829,666 rows 23 tickers  27s
+[08:54:16]   hour 02: 5,212,437 rows 23 tickers  30s
+[08:54:18]   hour 03: 3,858,639 rows 23 tickers  33s
+[08:54:21]   hour 04: 3,652,234 rows 23 tickers  35s
+[08:54:23]   hour 05: 3,699,932 rows 23 tickers  37s
+[08:54:25]   hour 06: 4,230,777 rows 23 tickers  39s
+[08:54:28]   hour 07: 4,559,162 rows 23 tickers  42s
+[08:54:32]   hour 08: 8,457,326 rows 23 tickers  46s
+[08:54:36]   hour 09: 8,787,187 rows 23 tickers  50s
+[08:54:39]   hour 10: 5,857,235 rows 23 tickers  53s
+[08:54:41]   hour 11: 4,891,326 rows 23 tickers  56s
+[08:54:44]   hour 12: 5,524,329 rows 23 tickers  58s
+[08:54:48]   hour 13: 7,152,726 rows 23 tickers  62s
+[08:54:52]   hour 14: 8,117,703 rows 23 tickers  67s
+[08:54:56]   hour 15: 7,803,079 rows 23 tickers  71s
+[08:55:00]   hour 16: 6,821,402 rows 23 tickers  74s
+[08:55:05]   hour 17: 6,230,841 rows 23 tickers  79s
+[08:55:08]   hour 18: 5,234,763 rows 23 tickers  83s
+[08:55:14]   hour 19: 6,200,984 rows 23 tickers  88s
+[08:55:17]   hour 20: 6,543,561 rows 23 tickers  91s
+[08:55:20]   hour 21: 4,060,962 rows 23 tickers  94s
+[08:55:23]   hour 22: 5,220,975 rows 23 tickers  97s
+[08:55:26]   hour 23: 4,912,625 rows 23 tickers  100s
+[08:55:26]   building 20 markets (of 23)
+[08:56:08] DONE perps 2026-09-21: 20 markets, 142s
+[08:56:10] crypto 2026-09-21: 2512 files, 24 hours
+[08:56:33]   hour 00: 9,291,605 rows 22056 tickers  22s
+[08:56:41]   hour 01: 9,119,503 rows 21366 tickers  30s
+[08:56:47]   hour 02: 6,770,630 rows 20672 tickers  37s
+[08:56:52]   hour 03: 5,878,779 rows 20022 tickers  42s
+[08:56:57]   hour 04: 5,695,252 rows 19516 tickers  47s
+[08:57:03]   hour 05: 6,177,184 rows 19015 tickers  53s
+[08:57:08]   hour 06: 5,723,388 rows 18508 tickers  58s
+[08:57:13]   hour 07: 5,845,058 rows 17706 tickers  63s
+[08:57:20]   hour 08: 9,187,962 rows 16900 tickers  70s
+[08:57:33]   hour 09: 11,083,819 rows 35563 tickers  83s
+[08:57:40]   hour 10: 8,073,691 rows 34756 tickers  90s
+[08:57:46]   hour 11: 7,465,622 rows 33953 tickers  96s
+[08:57:53]   hour 12: 9,819,020 rows 33148 tickers  103s
+[08:58:03]   hour 13: 12,327,923 rows 32345 tickers  113s
+[08:58:12]   hour 14: 13,165,859 rows 31540 tickers  122s
+[08:58:21]   hour 15: 11,848,641 rows 30736 tickers  130s
+[08:58:28]   hour 16: 11,075,993 rows 29932 tickers  138s
+[08:58:35]   hour 17: 9,594,868 rows 29128 tickers  145s
+[08:58:43]   hour 18: 8,083,565 rows 28324 tickers  153s
+[08:58:53]   hour 19: 10,275,612 rows 27520 tickers  163s
+[08:58:59]   hour 20: 7,707,363 rows 26912 tickers  168s
+[08:59:03]   hour 21: 6,179,550 rows 26108 tickers  172s
+[08:59:08]   hour 22: 8,385,284 rows 26040 tickers  178s
+[08:59:13]   hour 23: 7,102,307 rows 25236 tickers  182s
+[08:59:13]   building 2753 markets (of 47316)
+[08:59:36] DONE crypto 2026-09-21: 2753 markets, 206s
+[08:59:38] perps 2026-09-22: 453 files, 24 hours
+[09:00:00]   hour 00: 6,524,181 rows 23 tickers  22s
+[09:00:03]   hour 01: 7,514,746 rows 23 tickers  26s
+[09:00:07]   hour 02: 6,214,678 rows 23 tickers  29s
+[09:00:10]   hour 03: 5,884,989 rows 23 tickers  32s
+[09:00:12]   hour 04: 5,550,477 rows 23 tickers  35s
+[09:00:15]   hour 05: 5,570,994 rows 23 tickers  38s
+[09:00:18]   hour 06: 4,903,925 rows 23 tickers  41s
+[09:00:20] crypto 2026-09-22: 2404 files, 24 hours
+[09:00:43]   hour 00: 8,484,788 rows 24432 tickers  24s
+[09:00:50]   hour 01: 10,407,413 rows 23628 tickers  31s
+[09:00:57]   hour 02: 8,837,658 rows 22824 tickers  37s
+[09:01:02]   hour 03: 8,176,104 rows 22020 tickers  43s
+[09:01:07]   hour 04: 8,109,109 rows 21216 tickers  48s
+[09:01:13]   hour 05: 7,814,642 rows 20412 tickers  53s
+[09:01:18]   hour 06: 6,913,199 rows 19608 tickers  58s
+[09:01:21]   hour 07: 4,356,360 rows 6430 tickers  61s
+[09:01:24]   hour 08: 5,124,935 rows 2408 tickers  65s
+[09:01:29]   hour 09: 5,773,499 rows 15257 tickers  70s
+[09:01:33]   hour 10: 5,350,543 rows 15257 tickers  73s
+[09:01:36]   hour 11: 4,901,560 rows 15259 tickers  76s
+[09:01:40]   hour 12: 6,451,475 rows 15259 tickers  81s
+[09:01:45]   hour 13: 7,430,499 rows 15257 tickers  86s
+[09:01:50]   hour 14: 10,109,480 rows 15259 tickers  91s
+[09:01:57]   hour 15: 8,675,816 rows 15257 tickers  97s
+[09:02:02]   hour 16: 7,673,749 rows 15258 tickers  102s
+[09:02:06]   hour 17: 6,400,627 rows 15257 tickers  107s
+[09:02:10]   hour 18: 5,921,222 rows 15257 tickers  110s
+[09:02:13]   hour 19: 5,692,367 rows 15257 tickers  113s
+[09:02:16]   hour 20: 3,601,596 rows 14667 tickers  116s
+[09:02:18]   hour 21: 2,908,281 rows 14665 tickers  118s
+[09:02:20]   hour 22: 4,080,548 rows 15403 tickers  121s
+[09:02:23]   hour 23: 4,144,971 rows 15401 tickers  123s
+[09:02:23]   building 2296 markets (of 40297)
+[09:02:40] DONE crypto 2026-09-22: 2296 markets, 140s
+[09:02:41] perps 2026-09-18: 386 files, 24 hours
+[09:03:02]   hour 00: 3,067,338 rows 23 tickers  22s
+[09:03:04]   hour 01: 3,513,398 rows 23 tickers  24s
+[09:03:07]   hour 02: 3,261,753 rows 23 tickers  26s
+[09:03:09]   hour 03: 4,497,499 rows 23 tickers  29s
+[09:03:11]   hour 04: 3,462,103 rows 23 tickers  31s
+[09:03:14]   hour 05: 4,217,770 rows 23 tickers  33s
+[09:03:16]   hour 06: 3,631,484 rows 23 tickers  35s
+[09:03:18]   hour 07: 3,949,793 rows 23 tickers  38s
+[09:03:21]   hour 08: 4,887,123 rows 23 tickers  41s
+[09:03:24]   hour 09: 4,604,904 rows 23 tickers  43s
+[09:03:26]   hour 10: 3,833,878 rows 23 tickers  46s
+[09:03:29]   hour 11: 4,806,870 rows 23 tickers  49s
+[09:03:32]   hour 12: 4,245,073 rows 23 tickers  51s
+[09:03:36]   hour 13: 8,426,399 rows 23 tickers  56s
+[09:03:41]   hour 14: 9,752,187 rows 23 tickers  61s
+[09:03:45]   hour 15: 7,796,257 rows 23 tickers  65s
+[09:03:49]   hour 16: 6,832,340 rows 23 tickers  68s
+[09:03:52]   hour 17: 5,532,416 rows 23 tickers  71s
+[09:03:55]   hour 18: 4,900,302 rows 23 tickers  74s
+[09:03:58]   hour 19: 5,854,551 rows 23 tickers  78s
+[09:04:01]   hour 20: 4,462,037 rows 23 tickers  80s
+[09:04:03]   hour 21: 3,124,180 rows 23 tickers  82s
+[09:04:05]   hour 22: 3,064,683 rows 23 tickers  84s
+[09:04:07]   hour 23: 3,323,538 rows 23 tickers  86s
+[09:04:07]   building 20 markets (of 23)
+[09:04:34] DONE perps 2026-09-18: 20 markets, 113s
+[09:04:35] crypto 2026-09-18: 2499 files, 24 hours
+[09:04:58]   hour 00: 6,346,113 rows 24767 tickers  23s
+[09:05:04]   hour 01: 7,184,241 rows 23963 tickers  28s
+[09:05:09]   hour 02: 6,759,391 rows 23159 tickers  33s
+[09:05:14]   hour 03: 8,048,652 rows 22355 tickers  39s
+[09:05:19]   hour 04: 7,501,071 rows 21363 tickers  44s
+[09:05:25]   hour 05: 8,086,448 rows 20372 tickers  49s
+[09:05:30]   hour 06: 7,162,029 rows 19466 tickers  54s
+[09:05:35]   hour 07: 7,248,780 rows 18568 tickers  59s
+[09:05:40]   hour 08: 7,071,681 rows 17760 tickers  64s
+[09:05:49]   hour 09: 6,797,747 rows 33420 tickers  74s
+[09:05:53]   hour 10: 5,254,395 rows 32616 tickers  77s
+[09:05:57]   hour 11: 6,050,220 rows 31812 tickers  82s
+[09:06:01]   hour 12: 5,996,072 rows 31008 tickers  86s
+[09:06:07]   hour 13: 8,370,248 rows 30204 tickers  91s
+[09:06:15]   hour 14: 12,640,980 rows 29400 tickers  99s
+[09:06:23]   hour 15: 9,674,245 rows 28596 tickers  107s
+[09:06:29]   hour 16: 9,461,633 rows 27792 tickers  114s
+[09:06:34]   hour 17: 8,046,646 rows 26988 tickers  119s
+[09:06:39]   hour 18: 7,730,001 rows 26184 tickers  124s
+[09:06:44]   hour 19: 8,830,963 rows 25192 tickers  129s
+[09:06:48]   hour 20: 5,102,350 rows 24584 tickers  133s
+[09:06:52]   hour 21: 5,402,143 rows 23593 tickers  137s
+[09:06:56]   hour 22: 5,649,036 rows 23376 tickers  141s
+[09:07:00]   hour 23: 5,804,721 rows 22385 tickers  145s
+[09:07:00]   building 2323 markets (of 44424)
+[09:07:19] DONE crypto 2026-09-18: 2323 markets, 163s
+[09:07:20] perps 2026-09-23: 412 files, 24 hours
+[09:07:42]   hour 00: 4,886,840 rows 25 tickers  22s
+[09:07:45]   hour 01: 5,511,355 rows 25 tickers  25s
+[09:07:47]   hour 02: 4,529,923 rows 25 tickers  27s
+[09:07:49]   hour 03: 4,497,857 rows 25 tickers  30s
+[09:07:52]   hour 04: 4,880,852 rows 25 tickers  32s
+[09:07:55]   hour 05: 5,188,780 rows 25 tickers  35s
+[09:07:57]   hour 06: 4,542,625 rows 25 tickers  38s
+[09:08:00]   hour 07: 5,505,391 rows 25 tickers  40s
+[09:08:03]   hour 08: 5,512,683 rows 25 tickers  43s
+[09:08:05]   hour 09: 4,546,747 rows 25 tickers  45s
+[09:08:07]   hour 10: 4,865,239 rows 25 tickers  48s
+[09:08:10]   hour 11: 4,190,469 rows 25 tickers  50s
+[09:08:12]   hour 12: 4,520,361 rows 25 tickers  53s
+[09:08:15]   hour 13: 6,482,410 rows 25 tickers  56s
+[09:08:20]   hour 14: 10,460,300 rows 25 tickers  60s
+[09:08:24]   hour 15: 7,489,037 rows 25 tickers  64s
+[09:08:27]   hour 16: 7,164,631 rows 25 tickers  67s
+[09:08:30]   hour 17: 6,496,185 rows 25 tickers  70s
+[09:08:32]   hour 18: 4,880,202 rows 25 tickers  73s
+[09:08:34]   hour 19: 4,558,188 rows 25 tickers  75s
+[09:08:37]   hour 20: 3,804,882 rows 25 tickers  77s
+[09:08:38]   hour 21: 2,825,472 rows 25 tickers  79s
+[09:08:40]   hour 22: 3,966,882 rows 25 tickers  81s
+[09:08:42]   hour 23: 3,102,823 rows 25 tickers  82s
+[09:08:42]   building 22 markets (of 25)
+[09:09:08] DONE perps 2026-09-23: 22 markets, 109s
+[09:09:10] crypto 2026-09-23: 2456 files, 24 hours
+[09:09:32]   hour 00: 5,784,173 rows 15403 tickers  22s
+[09:09:35]   hour 01: 4,194,081 rows 15401 tickers  25s
+[09:09:39]   hour 02: 5,704,031 rows 15403 tickers  29s
+[09:09:42]   hour 03: 3,232,915 rows 15401 tickers  32s
+[09:09:47]   hour 04: 7,154,752 rows 14710 tickers  37s
+[09:09:51]   hour 05: 6,968,564 rows 14021 tickers  41s
+[09:09:54]   hour 06: 5,449,131 rows 13330 tickers  45s
+[09:09:59]   hour 07: 7,365,967 rows 12637 tickers  49s
+[09:10:04]   hour 08: 7,408,948 rows 12010 tickers  54s
+[09:10:12]   hour 09: 6,438,325 rows 25188 tickers  62s
+[09:10:16]   hour 10: 6,646,100 rows 24684 tickers  66s
+[09:10:20]   hour 11: 6,829,450 rows 24180 tickers  70s
+[09:10:25]   hour 12: 7,338,866 rows 23676 tickers  75s
+[09:10:30]   hour 13: 8,795,164 rows 23263 tickers  80s
+[09:10:38]   hour 14: 12,330,107 rows 23058 tickers  88s
+[09:10:44]   hour 15: 10,685,079 rows 22554 tickers  94s
+[09:10:51]   hour 16: 10,872,404 rows 22050 tickers  101s
+[09:10:56]   hour 17: 9,076,986 rows 21547 tickers  107s
+[09:11:01]   hour 18: 7,658,009 rows 21042 tickers  111s
+[09:11:05]   hour 19: 7,209,212 rows 20539 tickers  116s
+[09:11:09]   hour 20: 4,391,543 rows 19898 tickers  119s
+[09:11:12]   hour 21: 4,734,426 rows 19394 tickers  122s
+[09:11:16]   hour 22: 6,141,147 rows 19626 tickers  127s
+[09:11:20]   hour 23: 5,958,781 rows 19124 tickers  131s
+[09:11:20]   building 2119 markets (of 41192)
+[09:11:37] DONE crypto 2026-09-23: 2119 markets, 148s
+[09:11:40] football 2026-09-19: 9348 files, 24 hours
+[09:12:25]   hour 00: 65,938,151 rows 77213 tickers  45s
+[09:12:55]   hour 01: 58,767,782 rows 77808 tickers  75s
+[09:13:23]   hour 02: 56,246,705 rows 75740 tickers  104s
+[09:13:32] perps 2026-09-22: 453 files, 24 hours
+[09:13:44]   hour 03: 40,176,842 rows 75593 tickers  124s
+[09:13:51]   WARN truncated gzip perps/regime=perps/dt=2026-09-22/hh=07/w00-20260922T070101-1790060461186120062.jsonl.gz: recovered 303882 bytes
+[09:13:55]   hour 07: 4,913,397 rows 25 tickers  23s
+[09:13:58]   hour 04: 27,993,978 rows 73536 tickers  138s
+[09:14:00]   hour 08: 6,541,109 rows 25 tickers  28s
+[09:14:06]   hour 09: 6,512,091 rows 25 tickers  34s
+[09:14:09]   hour 05: 23,237,799 rows 72901 tickers  149s
+[09:14:11]   hour 10: 4,893,907 rows 25 tickers  39s
+[09:14:15]   hour 11: 5,202,205 rows 25 tickers  43s
+[09:14:19]   hour 06: 20,080,010 rows 72695 tickers  159s
+[09:14:20]   hour 12: 5,551,262 rows 25 tickers  48s
+[09:14:28]   hour 13: 8,785,812 rows 25 tickers  56s
+[09:14:29]   hour 07: 21,092,354 rows 72872 tickers  169s
+[09:14:35]   hour 14: 9,119,893 rows 25 tickers  63s
+[09:14:41]   hour 15: 7,163,183 rows 25 tickers  69s
+[09:14:41]   hour 08: 22,467,709 rows 72760 tickers  181s
+[09:14:46]   hour 16: 6,194,995 rows 25 tickers  74s
+[09:14:50]   hour 17: 5,221,705 rows 25 tickers  78s
+[09:14:52]   hour 09: 22,469,034 rows 73241 tickers  192s
+[09:14:55]   hour 18: 5,214,096 rows 25 tickers  83s
+[09:15:00]   hour 19: 5,522,980 rows 25 tickers  88s
+[09:15:03]   hour 20: 3,398,873 rows 25 tickers  91s
+[09:15:03]   hour 10: 22,315,189 rows 73224 tickers  203s
+[09:15:05]   hour 21: 2,685,852 rows 25 tickers  93s
+[09:15:09]   hour 22: 4,101,085 rows 25 tickers  97s
+[09:15:14]   hour 23: 5,160,500 rows 25 tickers  102s
+[09:15:14]   building 20 markets (of 25)
+[09:15:16]   hour 11: 23,970,828 rows 73582 tickers  216s
+[09:15:30]   hour 12: 24,875,900 rows 73743 tickers  230s
+[09:15:43]   hour 13: 26,627,074 rows 73637 tickers  243s
+[09:15:48] DONE perps 2026-09-22: 20 markets, 136s
+[09:15:58]   hour 14: 30,456,131 rows 73881 tickers  258s
+[09:16:18]   hour 15: 29,949,428 rows 73411 tickers  278s
+[09:16:47]   hour 16: 54,320,100 rows 71256 tickers  307s
+[09:17:15]   hour 17: 54,011,742 rows 70848 tickers  335s
+[09:17:47]   hour 18: 55,112,036 rows 69313 tickers  367s
+[09:18:21]   hour 19: 61,740,641 rows 66354 tickers  401s
+[09:19:08]   hour 20: 77,771,165 rows 69645 tickers  448s
+[09:19:46]   hour 21: 71,444,982 rows 68205 tickers  486s
+[09:20:26]   hour 22: 68,724,382 rows 68603 tickers  526s
+[09:21:12]   hour 23: 83,520,051 rows 66032 tickers  573s
+[09:21:13]   building 35924 markets (of 91225)
+[09:23:26] DONE football 2026-09-19: 35924 markets, 706s
+[09:23:31] football 2026-09-20: 9463 files, 24 hours
+[09:24:28]   hour 00: 83,452,011 rows 66117 tickers  56s
+[09:25:14]   hour 01: 80,139,317 rows 61571 tickers  103s
+[09:25:55]   hour 02: 75,419,371 rows 60923 tickers  144s
+[09:26:27]   hour 03: 58,179,814 rows 57118 tickers  176s
+[09:26:52]   hour 04: 47,130,640 rows 55724 tickers  201s
+[09:27:12]   hour 05: 38,839,505 rows 55491 tickers  221s
+[09:27:25]   hour 06: 23,731,063 rows 54863 tickers  234s
+[09:27:33]   hour 07: 16,151,005 rows 54951 tickers  242s
+[09:27:44]   hour 08: 18,167,679 rows 55525 tickers  253s
+[09:27:55]   hour 09: 20,099,062 rows 56229 tickers  264s
+[09:28:09]   hour 10: 20,499,851 rows 57636 tickers  278s
+[09:28:21]   hour 11: 21,083,569 rows 57694 tickers  290s
+[09:28:34]   hour 12: 23,047,823 rows 57828 tickers  303s
+[09:28:48]   hour 13: 25,428,982 rows 57723 tickers  317s
+[09:29:03]   hour 14: 25,511,775 rows 57356 tickers  332s
+[09:29:17]   hour 15: 24,305,801 rows 55824 tickers  346s
+[09:29:33]   hour 16: 23,386,398 rows 54755 tickers  362s
+[09:30:22]   hour 17: 67,606,923 rows 55715 tickers  411s
+[09:31:11]   hour 18: 71,828,379 rows 56935 tickers  460s
+[09:31:58]   hour 19: 76,136,666 rows 56523 tickers  507s
+[09:32:51]   hour 20: 73,916,854 rows 54283 tickers  560s
+[09:33:35]   hour 21: 69,166,691 rows 49569 tickers  604s
+[09:34:17]   hour 22: 65,234,390 rows 47184 tickers  646s
+[09:34:40]   hour 23: 36,802,397 rows 44473 tickers  669s
+[09:34:40]   building 34678 markets (of 79338)
+[09:37:00] DONE football 2026-09-20: 34678 markets, 809s
+[09:37:08] football 2026-09-21: 9216 files, 24 hours
+[09:37:41]   hour 00: 31,584,180 rows 40656 tickers  33s
+[09:37:59]   hour 01: 33,267,537 rows 42804 tickers  51s
+[09:38:15]   hour 02: 28,540,918 rows 42403 tickers  67s
+[09:38:28]   hour 03: 25,011,231 rows 41534 tickers  80s
+[09:38:35]   hour 04: 13,582,270 rows 41741 tickers  88s
+[09:38:42]   hour 05: 13,071,430 rows 41354 tickers  95s
+[09:38:49]   hour 06: 13,236,084 rows 41359 tickers  101s
+[09:38:56]   hour 07: 13,088,413 rows 41437 tickers  108s
+[09:39:04]   hour 08: 14,627,790 rows 41433 tickers  117s
+[09:39:14]   hour 09: 14,764,748 rows 41731 tickers  126s
+[09:39:22]   hour 10: 14,582,786 rows 41855 tickers  135s
+[09:39:31]   hour 11: 14,013,670 rows 41839 tickers  143s
+[09:39:38]   hour 12: 13,567,890 rows 41997 tickers  151s
+[09:39:47]   hour 13: 14,231,543 rows 42169 tickers  159s
+[09:39:56]   hour 14: 16,136,987 rows 42360 tickers  168s
+[09:40:05]   hour 15: 14,763,691 rows 42347 tickers  177s
+[09:40:13]   hour 16: 14,673,376 rows 43518 tickers  186s
+[09:40:21]   hour 17: 13,335,174 rows 43348 tickers  194s
+[09:40:30]   hour 18: 15,043,693 rows 44782 tickers  202s
+[09:40:40]   hour 19: 17,302,454 rows 43671 tickers  212s
+[09:40:48]   hour 20: 14,321,894 rows 44582 tickers  220s
+[09:40:56]   hour 21: 12,405,650 rows 45189 tickers  228s
+[09:41:06]   hour 22: 16,153,468 rows 46542 tickers  238s
+[09:41:18]   hour 23: 22,465,914 rows 44714 tickers  250s
+[09:41:18]   building 11686 markets (of 51185)
+[09:42:01] DONE football 2026-09-21: 11686 markets, 293s
+ALLDONE

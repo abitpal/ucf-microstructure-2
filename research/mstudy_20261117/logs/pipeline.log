@@ -1,0 +1,31 @@
+[09:29:04] START fair_baselines
+[09:31:51] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M baselines
+[09:31:52] START fair_transformer
+[09:42:34] START classical
+[09:47:45] END rc=0 /opt/kalshi/venv/bin/python analysis_classical.py
+[09:47:45] START classify
+[10:06:12] END rc=0 /opt/kalshi/venv/bin/python classify.py
+[10:06:12] START ae
+[10:08:56] START fair_transformer_long (parallel)
+[10:14:54] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M transformer
+[10:14:54] START fair_gru
+[10:40:06] END rc=0 /opt/kalshi/venv/bin/python ae.py
+[10:40:07] START trade
+[10:46:26] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M gru
+CHAIN_A_DONE
+[10:46:47] START perp_baselines
+[10:47:23] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP baselines
+[10:47:24] START perp_transformer
+[11:01:19] END rc=0 /opt/kalshi/venv/bin/python trade_model.py
+[11:01:20] START ae_strict
+[11:13:11] END rc=0 /opt/kalshi/venv/bin/python ae.py
+PIPELINE_DONE
+[11:13:30] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP transformer
+[11:13:30] START perp_gru
+[11:25:39] END rc=0 transformer_long
+[11:33:58] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP gru
+CHAIN_C_DONE
+[11:36:03] START gru_long (scaling check)
+[12:37:05] END rc=0 gru_long
+[19:34:19] START transformer_cont (resume from transformer_long)
+[21:05:20] END rc=0 transformer_cont

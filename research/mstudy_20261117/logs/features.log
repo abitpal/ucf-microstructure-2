@@ -1,0 +1,17 @@
+[08:53:21] DONE feat perps_2026-09-19: win=11960 trades=40288 fair=60000 errs=0 30s
+[08:55:39] DONE feat perps_2026-09-19: win=27497 trades=40288 fair=60000 errs=0 39s
+[08:58:37] DONE feat crypto_2026-09-19: win=139538 trades=717030 fair=576000 errs=0 176s
+[08:59:23] DONE feat perps_2026-09-20: win=27515 trades=43524 fair=60000 errs=0 44s
+[09:01:50] DONE feat crypto_2026-09-20: win=146434 trades=726944 fair=576000 errs=0 146s
+[09:03:05] DONE feat perps_2026-09-21: win=27509 trades=54946 fair=60000 errs=0 73s
+[09:06:41] DONE feat crypto_2026-09-21: win=177780 trades=791411 fair=576000 errs=0 215s
+[09:17:28] DONE feat perps_2026-09-22: win=27534 trades=55842 fair=60000 errs=0 85s
+[09:19:56] DONE feat crypto_2026-09-22: win=140096 trades=589353 fair=456625 errs=0 147s
+[09:21:09] DONE feat perps_2026-09-18: win=27535 trades=46757 fair=60000 errs=0 72s
+[09:24:33] DONE feat crypto_2026-09-18: win=156333 trades=758736 fair=576000 errs=0 204s
+[09:25:41] DONE feat perps_2026-09-23: win=29847 trades=54275 fair=60000 errs=0 66s
+[09:28:38] DONE feat crypto_2026-09-23: win=157907 trades=724822 fair=545419 errs=0 177s
+[09:39:00] DONE feat football_2026-09-19: win=1112811 trades=1070452 fair=0 errs=0 193s
+[09:42:09] DONE feat football_2026-09-20: win=1081288 trades=1262101 fair=0 errs=0 186s
+[09:43:07] DONE feat football_2026-09-21: win=364231 trades=397022 fair=0 errs=0 54s
+FEATDONE

@@ -1,0 +1,141 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%}</style></head><body><title>Run log &amp; data · Microstructure Night Run</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* layout: lab notebook. sticky section rail on the left, one reading column, figures on white plates */
+:root{
+  --paper:#f5f6f8; --surface:#ffffff; --ink:#18202b; --muted:#5b6676; --line:#dde2ea; --accent:#0f6e78;
+  --crypto:#2a6fdb; --sports:#d06a2a; --perp:#2f9472; --good:#2f8a4e; --warn:#b7791f; --bad:#b83a3a;
+  --plate:#ffffff; --code:#eef1f5;
+  --f-display:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --f-body:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --paper:#11161d; --surface:#18202a; --ink:#e6eaf0; --muted:#9aa6b5; --line:#2a3441; --accent:#4fb3bd;
+  --crypto:#6d9ef0; --sports:#ec9a63; --perp:#5cc29d; --good:#5cb97a; --warn:#d9a441; --bad:#e06b6b;
+  --plate:#f4f5f7; --code:#1f2833; color-scheme:dark; }
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);gap:40px;padding-block:28px 80px}
+nav{position:sticky;top:env(safe-area-inset-top, 0px);align-self:start;padding-top:6px}
+nav .brand{font:600 13px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+nav a{display:block;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;font-size:14px}
+nav a:hover{color:var(--ink);background:var(--surface)}
+nav a.on{color:var(--ink);background:var(--surface);box-shadow:inset 3px 0 0 var(--accent)}
+nav a:focus-visible, a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{min-width:0}
+h1{font:600 32px/1.15 var(--f-display);margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
+h2{font:600 21px/1.25 var(--f-display);margin:44px 0 10px;text-wrap:balance}
+h3{font:600 16px/1.3 var(--f-display);margin:26px 0 6px}
+p,li{max-width:72ch}
+.lede{color:var(--muted);font-size:16px;margin:0 0 22px;max-width:72ch}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.answer{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0 8px}
+.answer h3{margin-top:0}
+.answer ul{margin:6px 0 0;padding-left:20px}
+figure{margin:18px 0 26px}
+figure .plate{background:var(--plate);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto}
+figcaption{color:var(--muted);font-size:13px;margin-top:8px;max-width:80ch}
+.tbl{overflow-x:auto;margin:12px 0 22px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font:600 12px/1.3 var(--f-mono);color:var(--muted);letter-spacing:.02em;background:var(--code)}
+tr:last-child td{border-bottom:0}
+code,.mono{font-family:var(--f-mono);font-size:13px;background:var(--code);padding:1px 5px;border-radius:4px}
+.pill{display:inline-block;font:600 11px/1 var(--f-mono);padding:4px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.pill.done{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.pill.run{background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn)}
+.pill.fail{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.pill.wait{background:var(--code);color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .v{font:600 26px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpi .l{color:var(--muted);font-size:13px;margin-top:4px}
+.log{font:13px/1.55 var(--f-mono);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;white-space:pre-wrap}
+.c-crypto{color:var(--crypto)} .c-sports{color:var(--sports)} .c-perp{color:var(--perp)}
+.note{color:var(--muted);font-size:13px}
+.pending{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted);background:var(--surface)}
+footer{color:var(--muted);font-size:12px;margin-top:60px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:820px){ .wrap{grid-template-columns:1fr;gap:12px} nav{position:static;display:flex;flex-wrap:wrap;gap:4px}
+  nav .brand{width:100%} h1{font-size:26px} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+</style>
+<div class="wrap">
+<nav><div class="brand">Kalshi microstructure<br>study · Nov 17</div><a href="index.html" class="">Overview</a><a href="classical.html" class="">Classical microstructure</a><a href="classify.html" class="">Market-type classifiers</a><a href="autoencoder.html" class="">Autoencoder embedding</a><a href="trades.html" class="">Toxic vs retail flow</a><a href="fair.html" class="">Raw-event fair models</a><a href="curves.html" class="">Training curves</a><a href="ops.html" class="on">Run log &amp; data</a></nav>
+<main>
+<div class="eyebrow">Operations</div>
+<h1>Run log &amp; data</h1>
+<p class="lede">What ran overnight, what broke, what was changed on the Azure resources, and where everything lives.</p>
+<h2>Changes made to Azure resources</h2><ul><li><b>Started VM <code>kalshi-collector</code></b> (D4ps_v6) at 08:30 UTC for Part 3. It is still running, with all five collector services writing to the tape. Stop it with <code>az vm deallocate -g KALSHI -n kalshi-collector</code> when you have enough data.</li><li><b>kalshi-analysis</b>: no system changes. Extra Python packages went into <code>/mnt/scratch/mstudy/pylib</code>; <code>/opt/kalshi/venv</code> was not modified. The reproduction replay jobs were left alone and finished on their own around 09:50 UTC.</li><li>No NSG, IP or user changes: the attempt to add an SSH path was blocked by policy and not retried.</li><li>Wrote under <code>tape/research/mstudy_20261117/</code> in blob storage only (bundle of reports, logs, offline wandb runs).</li></ul><h2>Where everything lives</h2><ul><li>Code: <code>research/mstudy_20261117/code/</code> in the repo, and <code>/mnt/scratch/mstudy/code</code> on kalshi-analysis.</li><li>Reports (JSON + figures): <code>research/mstudy_20261117/report/</code>; also blob <code>tape/research/mstudy_20261117/latest.tgz</code>.</li><li>Extracted books (~330 GB of per-market parquet, 6 crypto/perp days + 3 sports days), features and trained models: <code>/mnt/scratch/mstudy/</code> on kalshi-analysis. The extracted books are wiped if the VM is deallocated; the model-ready datasets (<code>data/feat</code>, 44 GB) and all trained models are already backed up to blob <code>tape/research/mstudy_20261117/</code>.</li><li>wandb: project <code>kalshi-microstructure</code>. Runs are logged offline on the VM and synced from the laptop, because the VM has no wandb credentials and I did not copy your API key onto a shared VM.</li></ul><h2>Cost</h2><p>kalshi-analysis is on-demand D32ads_v7 (~$1.82/h), which was already running before this session. kalshi-collector adds roughly $0.13/h. Nothing else was created.</p><h2>Assumptions to check</h2><ul><li>Kalshi taker fee 0.07·P·(1−P) per contract per side for all binaries (some series have different multipliers).</li><li>Perp taker fee assumed 2 bp per side.</li><li>Taker orders = fills with the same exchange millisecond and side; book state taken before the order's own deltas.</li><li>Sports sampled at most 40 windows and 300 orders per market-day; crypto hourly/range strikes capped similarly, so BTC 15m and perps are not drowned out.</li></ul><h2>Timeline</h2><div class="log">08:24 UTC  Confirmed access to kalshi-analysis via Azure Run Command (no public IP, no bastion).
+08:28 UTC  Tried to add an SSH path (NSG rule + user) — blocked by the session&#x27;s safety policy. Continued with Run Command only.
+08:30 UTC  Started kalshi-collector VM (Part 3). All five collector services came up on their own.
+08:35 UTC  Installed numba/orjson/wandb/matplotlib into /mnt/scratch/mstudy/pylib (the shared /opt/kalshi/venv was not modified).
+08:41 UTC  First perps day extracted in 65 s; book rebuild validated (no crossed books; 97–99% of buys print at/above the ask using the pre-fill book).
+08:47 UTC  Rewrote extraction to work hour-by-hour: one sports day is ~1.6B rows and does not fit in memory at once.
+09:00 UTC  perps 2026-09-22 crashed on a truncated .jsonl.gz part in the tape. Fixed: recover all complete lines and log a warning; re-ran that day.
+09:05 UTC  Smoke tests: classical OK; classifier crashed on missing sports classes (fixed) and on a pandas-3 groupby change (fixed).
+09:10 UTC  Found that tick-size differences alone can separate perps from binaries. Added a STRICT feature set and a STRICT autoencoder that remove every tick-grid-dependent quantity.
+09:23 UTC  Sports Sep 19 extracted: 35,924 markets with ≥1,500 book events, 706 s.
+09:31 UTC  BTC 15m handcrafted baselines done (LightGBM R² 0.23 / 0.15 / 0.11 / 0.015 at 0.1 / 0.5 / 1 / 10 s on the held-out day).
+09:36 UTC  Sports feature job would have produced ~9M windows; stopped it and lowered sports caps to 40 windows and 300 orders per market.
+09:38 UTC  First wandb run synced to project kalshi-microstructure. Removed smoke-test outputs so only full runs appear in these pages.
+09:43 UTC  All features done. Sports caps worked: ~1.1M windows per Saturday/Sunday.
+09:47 UTC  Classical analysis done; classifier sweep started.
+09:51 UTC  Load on the VM dropped to ~13: the reproduction replay jobs finished, freeing cores.
+10:06 UTC  Classifier sweep done (77 fits). Autoencoder training started.
+10:08 UTC  Transformer was under-trained (0.85 steps/s). Launched a 75-minute run with 10 threads in parallel; both runs are reported.
+10:14 UTC  Transformer (40 min) finished: test R² equal to handcrafted LightGBM at all four horizons.
+10:40 UTC  Autoencoder + supervised sequence classifier done; trade model started.
+10:46 UTC  GRU finished: beats handcrafted LightGBM at all horizons.
+11:01 UTC  Trade model finished. Strict autoencoder started; BTC-perp Transformer running.
+11:13 UTC  Strict autoencoder done; BTC-perp Transformer done.
+11:25 UTC  75-min Transformer done.
+11:34 UTC  BTC-perp GRU done: clearly beats handcrafted.
+11:42 UTC  Started a 60-min GRU scaling run; copied code + reports into the repo (research/mstudy_20261117/).
+11:40 UTC  Backed up model-ready datasets (44 GB) + trained models to blob tape/research/mstudy_20261117/.
+12:37 UTC  GRU scaling run done: more compute still improves R². All tasks complete; collector left running.
+19:34 UTC  Resumed Transformer training from the 75-min checkpoint (not from scratch) for up to 90 min; the analysis VM had been idle since 12:37.
+19:50 UTC  Added a Training curves page. Fixed wandb runs that were synced mid-training (re-synced; earlier points could not be backfilled, so fair curves come from the VM training log).
+21:05 UTC  Continued Transformer finished at the 90-min cap; test R² up at 0.1–1 s. Checkpoint + results backed up (114 files).</div><h2>Pipeline log (VM)</h2><div class="log">[09:29:04] START fair_baselines
+[09:31:51] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M baselines
+[09:31:52] START fair_transformer
+[09:42:34] START classical
+[09:47:45] END rc=0 /opt/kalshi/venv/bin/python analysis_classical.py
+[09:47:45] START classify
+[10:06:12] END rc=0 /opt/kalshi/venv/bin/python classify.py
+[10:06:12] START ae
+[10:08:56] START fair_transformer_long (parallel)
+[10:14:54] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M transformer
+[10:14:54] START fair_gru
+[10:40:06] END rc=0 /opt/kalshi/venv/bin/python ae.py
+[10:40:07] START trade
+[10:46:26] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M gru
+CHAIN_A_DONE
+[10:46:47] START perp_baselines
+[10:47:23] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP baselines
+[10:47:24] START perp_transformer
+[11:01:19] END rc=0 /opt/kalshi/venv/bin/python trade_model.py
+[11:01:20] START ae_strict
+[11:13:11] END rc=0 /opt/kalshi/venv/bin/python ae.py
+PIPELINE_DONE
+[11:13:30] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP transformer
+[11:13:30] START perp_gru
+[11:25:39] END rc=0 transformer_long
+[11:33:58] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTCPERP gru
+CHAIN_C_DONE
+[11:36:03] START gru_long (scaling check)
+[12:37:05] END rc=0 gru_long
+[19:34:19] START transformer_cont (resume from transformer_long)
+[21:05:20] END rc=0 transformer_cont
+</div>
+<footer>Built from the run on <span class="mono">kalshi-analysis</span>. Last rebuilt 2026-11-17 21:11 UTC. wandb project: <span class="mono">kalshi-microstructure</span>.</footer>
+</main></div></body></html>

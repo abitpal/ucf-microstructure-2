@@ -1,0 +1,10 @@
+#!/bin/bash
+# usage: vmrun script.sh  (or -c 'cmd'); runs under bash on kalshi-analysis
+if [ "$1" = "-c" ]; then SCRIPT="$2"; else SCRIPT="$(cat "$1")"; fi
+WRAP="cat > /tmp/mstudy_cmd.sh <<'MSTUDY_EOS'
+export PYTHONPATH=/mnt/scratch/mstudy/pylib:/mnt/scratch/mstudy/code
+PY=/opt/kalshi/venv/bin/python
+$SCRIPT
+MSTUDY_EOS
+bash /tmp/mstudy_cmd.sh"
+az vm run-command invoke -g KALSHI -n ${VM:-kalshi-analysis} --command-id RunShellScript --scripts "$WRAP" --query "value[0].message" -o tsv 2>&1 | grep -vE 'SyntaxWarning|"""|using brackets|^Enable succeeded'

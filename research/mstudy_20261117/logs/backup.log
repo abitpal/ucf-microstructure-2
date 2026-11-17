@@ -1,0 +1,13 @@
+[11:38:49] backup 0/111 models_ae.pt
+[11:38:50] backup 10/111 data/feat/done_crypto_2026-09-19_all
+[11:38:50] backup 20/111 data/feat/done_perps_2026-09-20_all
+[11:39:03] backup 30/111 data/feat/fair/BTCPERP_2026-09-18.npz
+[11:39:06] backup 40/111 data/feat/seq/crypto_2026-09-22.npy
+[11:39:20] backup 50/111 data/feat/seq/perps_2026-09-23.npy
+[11:39:20] backup 60/111 data/feat/trade/crypto_2026-09-21.parquet
+[11:39:29] backup 70/111 data/feat/trade/football_2026-09-19_emb.npz
+[11:39:40] backup 80/111 data/feat/trade/perps_2026-09-18_seq.npy
+[11:39:40] backup 90/111 data/feat/trade/perps_2026-09-22.parquet
+[11:39:40] backup 100/111 data/feat/win/crypto_2026-09-22.parquet
+[11:39:40] backup 110/111 data/feat/win/perps_2026-09-23.parquet
+[11:39:40] BACKUP DONE 111 files
