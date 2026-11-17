@@ -1,0 +1,563 @@
+{
+ "built_utc": "2026-09-29T01:19:29.435136+00:00",
+ "files": [
+  {
+   "file": "MANIFEST.json",
+   "bytes": 8964,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "coin_pool.json",
+   "bytes": 1531,
+   "tool": "tools.coin_pool",
+   "note": "pool vs separate vs ensemble vs coin interactions, test set held fixed"
+  },
+  {
+   "file": "composite.json",
+   "bytes": 2214,
+   "tool": "tools.composite_probe",
+   "note": "bagged LGBM on a + ridge on (b-a)"
+  },
+  {
+   "file": "ensemble_all.json",
+   "bytes": 11557,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "feature_hist.json",
+   "bytes": 18804,
+   "tool": "tools.feature_hist",
+   "note": "44-bin feature histograms"
+  },
+  {
+   "file": "increments.json",
+   "bytes": 2174,
+   "tool": "tools.increment_probe",
+   "note": "is anything predictable between two horizons"
+  },
+  {
+   "file": "logs/coinpool.log",
+   "bytes": 1118,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/mlp-1s.log",
+   "bytes": 751,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/op-shards.log",
+   "bytes": 6036,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/optim.log",
+   "bytes": 1418,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/robust.log",
+   "bytes": 2081,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/robust2.log",
+   "bytes": 2130,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/s01-shards.log",
+   "bytes": 10008,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/seedcurve.log",
+   "bytes": 564,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/sw-shards.log",
+   "bytes": 8460,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/sweep.log",
+   "bytes": 1450,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/sweep2.log",
+   "bytes": 2058,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/vwap.log",
+   "bytes": 1424,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "logs/vwap2.log",
+   "bytes": 16433,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.json",
+   "bytes": 11049,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard0.json",
+   "bytes": 1082,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard1.json",
+   "bytes": 1083,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard2.json",
+   "bytes": 1087,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard3.json",
+   "bytes": 1084,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard4.json",
+   "bytes": 1090,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard5.json",
+   "bytes": 1084,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard6.json",
+   "bytes": 1084,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep.shard7.json",
+   "bytes": 1082,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep_v2.json",
+   "bytes": 21826,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep_v2.shard0.json",
+   "bytes": 7933,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_deep_v2.shard1.json",
+   "bytes": 7868,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_ensemble.json",
+   "bytes": 12006,
+   "tool": "tools.mlp_ensemble",
+   "note": "residual correlation and blends across ridge / bagged LGBM / MLP"
+  },
+  {
+   "file": "mlp_full_01s.json",
+   "bytes": 4904,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard1.json",
+   "bytes": 1405,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard10.json",
+   "bytes": 1145,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard11.json",
+   "bytes": 1149,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard3.json",
+   "bytes": 1145,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard7.json",
+   "bytes": 1143,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_01s.shard8.json",
+   "bytes": 1147,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_1s.json",
+   "bytes": 2519,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_1s.shard2.json",
+   "bytes": 1136,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_1s.shard3.json",
+   "bytes": 1142,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_1s.shard4.json",
+   "bytes": 868,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_full_1s.shard7.json",
+   "bytes": 877,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_rezero.json",
+   "bytes": 4900,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_rezero.shard0.json",
+   "bytes": 1040,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_rezero.shard1.json",
+   "bytes": 1039,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_rezero.shard2.json",
+   "bytes": 508,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_rezero.shard3.json",
+   "bytes": 506,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_zero.json",
+   "bytes": 3963,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_zero.shard0.json",
+   "bytes": 881,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_zero.shard1.json",
+   "bytes": 878,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_zero.shard2.json",
+   "bytes": 446,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_init_zero.shard3.json",
+   "bytes": 445,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_multitask_01s.json",
+   "bytes": 1998,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_optim_lr_bs.json",
+   "bytes": 5140,
+   "tool": "tools.mlp_optim",
+   "note": "lr x batch at equal ROW budget, so large batches get proportionally fewer steps"
+  },
+  {
+   "file": "mlp_optim_lr_bs.shard0.json",
+   "bytes": 1538,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_optim_lr_bs.shard1.json",
+   "bytes": 422,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_optim_lr_bs.shard2.json",
+   "bytes": 1539,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_optim_lr_bs.shard4.json",
+   "bytes": 1172,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_optim_lr_bs.shard5.json",
+   "bytes": 423,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_ry_k_1s.json",
+   "bytes": 3523,
+   "tool": "tools.mlp_probe",
+   "note": "round 1: capacity test + honest folds, torch threads misconfigured at 32"
+  },
+  {
+   "file": "mlp_sweep.json",
+   "bytes": 2277,
+   "tool": "tools.mlp_sweep",
+   "note": "weight-decay path, width 32/256, FULL panel, 10 of 40 configs before being stopped"
+  },
+  {
+   "file": "mlp_sweep_01s.json",
+   "bytes": 5802,
+   "tool": "tools.mlp_sweep",
+   "note": "bottleneck grid at the 0.1s horizon, 25% market subsample"
+  },
+  {
+   "file": "mlp_sweep_01s.shard0.json",
+   "bytes": 479,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard1.json",
+   "bytes": 477,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard2.json",
+   "bytes": 1162,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard3.json",
+   "bytes": 1175,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard4.json",
+   "bytes": 476,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard5.json",
+   "bytes": 475,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard6.json",
+   "bytes": 476,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_01s.shard7.json",
+   "bytes": 1172,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.json",
+   "bytes": 7209,
+   "tool": "tools.mlp_sweep",
+   "note": "bottleneck grid width 4/8/16, 25% MARKET SUBSAMPLE -- not comparable to full-panel numbers"
+  },
+  {
+   "file": "mlp_sweep_narrow.shard0.json",
+   "bytes": 1169,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard1.json",
+   "bytes": 1166,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard2.json",
+   "bytes": 1180,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard3.json",
+   "bytes": 1182,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard4.json",
+   "bytes": 1167,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard5.json",
+   "bytes": 1172,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard6.json",
+   "bytes": 1181,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "mlp_sweep_narrow.shard7.json",
+   "bytes": 1181,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "paired_test.json",
+   "bytes": 3628,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "paired_test_bestcfg.json",
+   "bytes": 3634,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research.json",
+   "bytes": 20540,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research_returns.json",
+   "bytes": 13388,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research_v2.json",
+   "bytes": 16560,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research_v3.json",
+   "bytes": 23518,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research_v5.json",
+   "bytes": 38022,
+   "tool": "",
+   "note": ""
+  },
+  {
+   "file": "panel_research_v6.json",
+   "bytes": 54165,
+   "tool": "tools.panel_model",
+   "note": "main ridge/LGBM study, 31 feat"
+  },
+  {
+   "file": "robustness.json",
+   "bytes": 2891,
+   "tool": "tools.robustness_probe",
+   "note": "FIRST PASS -- alpha pinned at 1.0 by a selection bug; superseded by robustness2"
+  },
+  {
+   "file": "robustness2.json",
+   "bytes": 2863,
+   "tool": "tools.robustness_probe",
+   "note": "weighting/clipping/vol-norm/BTC-vs-ETH, alpha selected on held-out training markets"
+  },
+  {
+   "file": "seed_curve.json",
+   "bytes": 3626,
+   "tool": "tools.seed_curve",
+   "note": "bagged R^2 vs number of LGBM seeds"
+  },
+  {
+   "file": "study_frame_meta.json",
+   "bytes": 1477,
+   "tool": "",
+   "note": ""
+  }
+ ]
+}

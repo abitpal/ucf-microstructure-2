@@ -1,0 +1,8 @@
+{
+  "dataset": "provisional reconstructed BTC 0.1-second frame",
+  "training": {"markets": 701, "valid_rows": 11820934, "training_rows_sampled_by_original_code": 1000000},
+  "validation": {"markets": 120, "valid_rows": 2617649},
+  "test": {"markets": 351, "valid_rows": 5710846},
+  "original_test_valid_rows_inferred_from_reported_trades_divided_by_rate": 5710846,
+  "limitation": "Identical counts do not establish identical test rows, feature values, labels or fitted weights. Eight feature assumptions remain provisional."
+}

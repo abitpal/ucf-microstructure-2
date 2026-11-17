@@ -1,0 +1,11 @@
+{
+  "test": "synthetic deterministic 4-step fit",
+  "original_vs_reproduction_max_parameter_difference": 0.0,
+  "exact_match": true,
+  "scope": "Original and provisional training/prediction function structure matches apart from progress logging; synthetic numerical check compares the original and full-replay copy. Data equivalence remains provisional.",
+  "ast_comparison_ignoring_print": {
+    "Net": true,
+    "fit": true,
+    "pred": true
+  }
+}

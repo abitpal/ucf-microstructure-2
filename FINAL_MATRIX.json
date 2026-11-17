@@ -1,0 +1,63 @@
+{
+ "BTC|ry_k_0p1s|own|lgbm_cfg": {
+  "num_leaves": 63,
+  "min_child_samples": 500,
+  "learning_rate": 0.05,
+  "trees": 3000
+ },
+ "BTC|ry_k_0p1s|own|mlp_seeds": [
+  0.02433133343467897,
+  0.0240135658816365,
+  0.0242018503851823
+ ],
+ "BTC|ry_k_0p1s|own|ridge": {
+  "r2": 0.010414839021803846,
+  "ci": [
+   0.005629345484664386,
+   0.022307092268812594
+  ],
+  "group": "binary",
+  "test_markets": 361,
+  "train_rows": 4000000
+ },
+ "BTC|ry_k_0p1s|own|lgbm": {
+  "r2": 0.011212498141092042,
+  "ci": [
+   0.0062451824973970725,
+   0.02384086073519604
+  ],
+  "group": "binary",
+  "test_markets": 361,
+  "train_rows": 4000000
+ },
+ "BTC|ry_k_0p1s|own|lgbm_bag": {
+  "r2": 0.011227284743291377,
+  "ci": [
+   0.006251870826149963,
+   0.023879482196344563
+  ],
+  "group": "binary",
+  "test_markets": 361,
+  "train_rows": 4000000
+ },
+ "BTC|ry_k_0p1s|own|mlp": {
+  "r2": 0.02425055912332097,
+  "ci": [
+   0.013222176125215365,
+   0.05178377350654857
+  ],
+  "group": "binary",
+  "test_markets": 361,
+  "train_rows": 4000000
+ },
+ "BTC|ry_k_0p1s|own|ensemble": {
+  "r2": 0.016728521180401246,
+  "ci": [
+   0.009129694025191648,
+   0.03574105714426315
+  ],
+  "group": "binary",
+  "test_markets": 361,
+  "train_rows": 4000000
+ }
+}

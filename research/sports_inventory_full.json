@@ -1,0 +1,470 @@
+{
+  "raw/regime=football": {
+    "dates": [
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-15",
+        "count": 1353,
+        "bytes": 2581731063
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-16",
+        "count": 9213,
+        "bytes": 15906382746
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-17",
+        "count": 9214,
+        "bytes": 14364024159
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-18",
+        "count": 9218,
+        "bytes": 16796806410
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-19",
+        "count": 9348,
+        "bytes": 32395474635
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-20",
+        "count": 9463,
+        "bytes": 36157650516
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-21",
+        "count": 9216,
+        "bytes": 11643321925
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-22",
+        "count": 9225,
+        "bytes": 15131450466
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-23",
+        "count": 9216,
+        "bytes": 16536030323
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-24",
+        "count": 9216,
+        "bytes": 17873009656
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-25",
+        "count": 9249,
+        "bytes": 21539044456
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-26",
+        "count": 9951,
+        "bytes": 41563757909
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-27",
+        "count": 9732,
+        "bytes": 35435924202
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-28",
+        "count": 9217,
+        "bytes": 11787194200
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-29",
+        "count": 9218,
+        "bytes": 15008235574
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-09-30",
+        "count": 9215,
+        "bytes": 16439875634
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-01",
+        "count": 9228,
+        "bytes": 14850164701
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-02",
+        "count": 9219,
+        "bytes": 16951931017
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-03",
+        "count": 9488,
+        "bytes": 29551599453
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-04",
+        "count": 9364,
+        "bytes": 29118983459
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-05",
+        "count": 9217,
+        "bytes": 13882140184
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-06",
+        "count": 9215,
+        "bytes": 17207787781
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-07",
+        "count": 9217,
+        "bytes": 16813345764
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-08",
+        "count": 9214,
+        "bytes": 14997951989
+      },
+      {
+        "prefix": "raw/regime=football",
+        "day": "2026-10-09",
+        "count": 7370,
+        "bytes": 15173413031
+      }
+    ],
+    "blob_count": 222796,
+    "bytes": 489707231253
+  },
+  "polymarket/regime=sports": {
+    "dates": [
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-15",
+        "count": 0,
+        "bytes": 0
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-16",
+        "count": 17101,
+        "bytes": 7316733375
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-17",
+        "count": 54703,
+        "bytes": 19729541354
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-18",
+        "count": 54780,
+        "bytes": 16760005758
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-19",
+        "count": 53905,
+        "bytes": 12647919198
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-20",
+        "count": 55634,
+        "bytes": 13402418878
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-21",
+        "count": 62638,
+        "bytes": 16869563996
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-22",
+        "count": 64069,
+        "bytes": 20068512892
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-23",
+        "count": 64480,
+        "bytes": 16840598884
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-24",
+        "count": 63331,
+        "bytes": 15374616249
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-25",
+        "count": 60463,
+        "bytes": 12797528190
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-26",
+        "count": 58733,
+        "bytes": 12030074659
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-27",
+        "count": 58218,
+        "bytes": 10716385313
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-28",
+        "count": 58016,
+        "bytes": 9499424305
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-29",
+        "count": 58482,
+        "bytes": 17968428738
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-09-30",
+        "count": 65874,
+        "bytes": 20807251800
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-01",
+        "count": 66284,
+        "bytes": 17615576151
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-02",
+        "count": 66226,
+        "bytes": 15882777702
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-03",
+        "count": 66252,
+        "bytes": 14031324509
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-04",
+        "count": 66198,
+        "bytes": 15810120748
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-05",
+        "count": 68563,
+        "bytes": 16542893152
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-06",
+        "count": 70193,
+        "bytes": 20916156881
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-07",
+        "count": 66498,
+        "bytes": 20468158510
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-08",
+        "count": 60455,
+        "bytes": 16736209009
+      },
+      {
+        "prefix": "polymarket/regime=sports",
+        "day": "2026-10-09",
+        "count": 48420,
+        "bytes": 12933862158
+      }
+    ],
+    "blob_count": 1429516,
+    "bytes": 373766082409
+  },
+  "trades/regime=football": {
+    "dates": [
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-15",
+        "count": 6244,
+        "bytes": 24620859
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-16",
+        "count": 42516,
+        "bytes": 154284581
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-17",
+        "count": 39523,
+        "bytes": 136028848
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-18",
+        "count": 42602,
+        "bytes": 163234569
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-19",
+        "count": 43961,
+        "bytes": 251619035
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-20",
+        "count": 44225,
+        "bytes": 285662708
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-21",
+        "count": 41778,
+        "bytes": 143998038
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-22",
+        "count": 42758,
+        "bytes": 148189793
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-23",
+        "count": 42638,
+        "bytes": 142077139
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-24",
+        "count": 40298,
+        "bytes": 147593365
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-25",
+        "count": 43144,
+        "bytes": 183078387
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-26",
+        "count": 43789,
+        "bytes": 243040319
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-27",
+        "count": 43887,
+        "bytes": 282158567
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-28",
+        "count": 42453,
+        "bytes": 151533747
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-29",
+        "count": 42849,
+        "bytes": 158281502
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-09-30",
+        "count": 42694,
+        "bytes": 145662306
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-01",
+        "count": 40031,
+        "bytes": 152884669
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-02",
+        "count": 42744,
+        "bytes": 177135796
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-03",
+        "count": 43793,
+        "bytes": 261098443
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-04",
+        "count": 44127,
+        "bytes": 297978035
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-05",
+        "count": 42600,
+        "bytes": 164900918
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-06",
+        "count": 42987,
+        "bytes": 174931468
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-07",
+        "count": 42607,
+        "bytes": 151094469
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-08",
+        "count": 39229,
+        "bytes": 148415859
+      },
+      {
+        "prefix": "trades/regime=football",
+        "day": "2026-10-09",
+        "count": 34347,
+        "bytes": 150056038
+      }
+    ],
+    "blob_count": 1017824,
+    "bytes": 4439559458
+  }
+}

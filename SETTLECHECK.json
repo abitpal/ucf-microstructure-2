@@ -1,0 +1,918 @@
+{
+ "BTC|deep|r2": {
+  "r2_settle": -0.0002347363230155164
+ },
+ "BTC|deep|model": {
+  "trades": 4514122,
+  "take_rate": 0.766838218156689,
+  "hit": 0.6169509818299107,
+  "cents_per_trade": -1.444116578313236,
+  "bp_of_capital": -998.859689953145,
+  "realised_over_expected": -0.30685861779591234,
+  "ci_cents": [
+   -3.9582763590018257,
+   1.0011005456102058
+  ],
+  "p": 0.25,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 62.112777922262616,
+  "sel_half_spread_cents": 0.36386087925846927,
+  "sel_fee_cents": 1.0264368390416785,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|deep|long": {
+  "trades": 4514122,
+  "take_rate": 0.766838218156689,
+  "hit": 0.5210758592700862,
+  "cents_per_trade": 1.0021274975003993,
+  "bp_of_capital": 22.716806754331575,
+  "realised_over_expected": 0.21294088258264451,
+  "ci_cents": [
+   -2.8819566998046833,
+   4.992411854451693
+  ],
+  "p": 0.6,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 50.079021590466546,
+  "sel_half_spread_cents": 0.36386087925846927,
+  "sel_fee_cents": 1.0264368390416785,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|deep|short": {
+  "trades": 4514122,
+  "take_rate": 0.766838218156689,
+  "hit": 0.4789241407299138,
+  "cents_per_trade": -3.7827229341006956,
+  "bp_of_capital": -1342.6236294071814,
+  "realised_over_expected": -0.8037863067944524,
+  "ci_cents": [
+   -7.786621385919525,
+   0.13891473306464583
+  ],
+  "p": 0.06,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 50.64870016805039,
+  "sel_half_spread_cents": 0.36386087925846927,
+  "sel_fee_cents": 1.0264368390416785,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|small|r2": {
+  "r2_settle": -0.0012401466919145232
+ },
+ "BTC|small|model": {
+  "trades": 4546582,
+  "take_rate": 0.7723523731931204,
+  "hit": 0.6744631461612262,
+  "cents_per_trade": 0.06242344377309122,
+  "bp_of_capital": -331.36543577184335,
+  "realised_over_expected": 0.013361605573515751,
+  "ci_cents": [
+   -2.2156974374122003,
+   2.2924321898144697
+  ],
+  "p": 0.939,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 66.37371420992739,
+  "sel_half_spread_cents": 0.36022426297381194,
+  "sel_fee_cents": 1.010176962422156,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|small|long": {
+  "trades": 4546582,
+  "take_rate": 0.7723523731931204,
+  "hit": 0.5357321170056979,
+  "cents_per_trade": 1.1310873763712495,
+  "bp_of_capital": 17.18724702498166,
+  "realised_over_expected": 0.24210685086826622,
+  "ci_cents": [
+   -2.6745825376231744,
+   4.9927897032719555
+  ],
+  "p": 0.545,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 51.43194736177639,
+  "sel_half_spread_cents": 0.36022426297381194,
+  "sel_fee_cents": 1.010176962422156,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|small|short": {
+  "trades": 4546582,
+  "take_rate": 0.7723523731931204,
+  "hit": 0.4642678829943021,
+  "cents_per_trade": -3.871889827163185,
+  "bp_of_capital": -1460.8231979891293,
+  "realised_over_expected": -0.8287697949302141,
+  "ci_cents": [
+   -7.762788383681155,
+   -0.0499196094113818
+  ],
+  "p": 0.047,
+  "sig": true,
+  "boot_markets": 351,
+  "mean_capital_cents": 49.28850116417124,
+  "sel_half_spread_cents": 0.36022426297381194,
+  "sel_fee_cents": 1.010176962422156,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|ridge|r2": {
+  "r2_settle": -0.0034056489627269926
+ },
+ "BTC|ridge|model": {
+  "trades": 5151637,
+  "take_rate": 0.8751363249974349,
+  "hit": 0.6121883199456793,
+  "cents_per_trade": -1.613809029887733,
+  "bp_of_capital": -432.20125258191337,
+  "realised_over_expected": -0.24365465468561803,
+  "ci_cents": [
+   -4.395341965936446,
+   1.0950150292073908
+  ],
+  "p": 0.237,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 61.77071138746771,
+  "sel_half_spread_cents": 0.3788802180743712,
+  "sel_fee_cents": 1.0619296369879614,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|ridge|long": {
+  "trades": 5151637,
+  "take_rate": 0.8751363249974349,
+  "hit": 0.5392274339205189,
+  "cents_per_trade": 1.3899549387303967,
+  "bp_of_capital": 110.5590986611627,
+  "realised_over_expected": 0.20985691885023355,
+  "ci_cents": [
+   -2.5059290019191764,
+   5.375384106503168
+  ],
+  "p": 0.479,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 51.47085881633353,
+  "sel_half_spread_cents": 0.3788802180743712,
+  "sel_fee_cents": 1.0619296369879614,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|ridge|short": {
+  "trades": 5151637,
+  "take_rate": 0.8751363249974349,
+  "hit": 0.46077256607948114,
+  "cents_per_trade": -4.271574648855063,
+  "bp_of_capital": -1492.8228762556337,
+  "realised_over_expected": -0.6449270184731984,
+  "ci_cents": [
+   -8.26184923948819,
+   -0.3561821343604634
+  ],
+  "p": 0.036,
+  "sig": true,
+  "boot_markets": 351,
+  "mean_capital_cents": 49.28690161981521,
+  "sel_half_spread_cents": 0.3788802180743712,
+  "sel_fee_cents": 1.0619296369879614,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|none|long": {
+  "trades": 5886668,
+  "take_rate": 1.0,
+  "hit": 0.5457406464913598,
+  "cents_per_trade": 1.7047134663102699,
+  "bp_of_capital": 194.62342453847737,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -2.3365511095298395,
+   5.812424945149478
+  ],
+  "p": 0.402,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 51.745972475430925,
+  "sel_half_spread_cents": 0.40096680329177725,
+  "sel_fee_cents": 1.1233787073947863,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "BTC|none|short": {
+  "trades": 5886668,
+  "take_rate": 1.0,
+  "hit": 0.4542593535086402,
+  "cents_per_trade": -4.753404487683397,
+  "bp_of_capital": -1557.3821573621788,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -8.862190605992778,
+   -0.7062374817498491
+  ],
+  "p": 0.02,
+  "sig": true,
+  "boot_markets": 351,
+  "mean_capital_cents": 49.05596113115263,
+  "sel_half_spread_cents": 0.40096680329177725,
+  "sel_fee_cents": 1.1233787073947863,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "ETH|deep|r2": {
+  "r2_settle": -0.011036681774166501
+ },
+ "ETH|deep|model": {
+  "trades": 1162878,
+  "take_rate": 0.6465548300433231,
+  "hit": 0.5670448662714404,
+  "cents_per_trade": -3.4247623903519977,
+  "bp_of_capital": -309.1119539823229,
+  "realised_over_expected": -0.6861583244460278,
+  "ci_cents": [
+   -6.959605571842093,
+   0.007418318216010704
+  ],
+  "p": 0.051,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 59.28014882042655,
+  "sel_half_spread_cents": 0.5182747889288473,
+  "sel_fee_cents": 0.8491001970694692,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|deep|long": {
+  "trades": 1162878,
+  "take_rate": 0.6465548300433231,
+  "hit": 0.4751186280934028,
+  "cents_per_trade": -0.0005883153415499817,
+  "bp_of_capital": 477.81059368940595,
+  "realised_over_expected": -0.00011787021200099606,
+  "ci_cents": [
+   -3.9173324302358115,
+   3.774581315337659
+  ],
+  "p": 0.985,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 46.66335092761235,
+  "sel_half_spread_cents": 0.5182747889288473,
+  "sel_fee_cents": 0.8491001970694692,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|deep|short": {
+  "trades": 1162878,
+  "take_rate": 0.6465548300433231,
+  "hit": 0.5248813719065972,
+  "cents_per_trade": -2.7341616566550835,
+  "bp_of_capital": 430.8780301414794,
+  "realised_over_expected": -0.547795019701266,
+  "ci_cents": [
+   -6.544234381834952,
+   1.167217292880685
+  ],
+  "p": 0.173,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 54.37319865024535,
+  "sel_half_spread_cents": 0.5182747889288473,
+  "sel_fee_cents": 0.8491001970694692,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|small|r2": {
+  "r2_settle": -0.005074957661869384
+ },
+ "ETH|small|model": {
+  "trades": 1407079,
+  "take_rate": 0.7823294650879362,
+  "hit": 0.693570154909568,
+  "cents_per_trade": -2.6551630104127066,
+  "bp_of_capital": -554.4232331751032,
+  "realised_over_expected": -0.6256679117621391,
+  "ci_cents": [
+   -5.935643140189955,
+   0.2559621485307954
+  ],
+  "p": 0.079,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 71.06497566945423,
+  "sel_half_spread_cents": 0.524627330803743,
+  "sel_fee_cents": 0.9472028319152657,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|small|long": {
+  "trades": 1407079,
+  "take_rate": 0.7823294650879362,
+  "hit": 0.5178870553821072,
+  "cents_per_trade": -0.1678750187647606,
+  "bp_of_capital": 395.88331103217143,
+  "realised_over_expected": -0.03955840451816616,
+  "ci_cents": [
+   -4.167947368591863,
+   3.7716679023331685
+  ],
+  "p": 0.909,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 51.00937772506021,
+  "sel_half_spread_cents": 0.524627330803743,
+  "sel_fee_cents": 0.9472028319152657,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|small|short": {
+  "trades": 1407079,
+  "take_rate": 0.7823294650879362,
+  "hit": 0.48211294461789284,
+  "cents_per_trade": -2.7757853066732565,
+  "bp_of_capital": 438.1523973924469,
+  "realised_over_expected": -0.6540915904279404,
+  "ci_cents": [
+   -6.7085211299128655,
+   1.2581024951409059
+  ],
+  "p": 0.191,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 50.039876936547266,
+  "sel_half_spread_cents": 0.524627330803743,
+  "sel_fee_cents": 0.9472028319152657,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|ridge|r2": {
+  "r2_settle": -0.002351189359599326
+ },
+ "ETH|ridge|model": {
+  "trades": 1576526,
+  "take_rate": 0.8765412192756936,
+  "hit": 0.5965819783498655,
+  "cents_per_trade": -4.060661030290493,
+  "bp_of_capital": -758.1013646986535,
+  "realised_over_expected": -0.8878409989885547,
+  "ci_cents": [
+   -7.340507186026049,
+   -0.839139685907051
+  ],
+  "p": 0.012,
+  "sig": true,
+  "boot_markets": 353,
+  "mean_capital_cents": 62.715700851111876,
+  "sel_half_spread_cents": 0.5575133870294559,
+  "sel_fee_cents": 1.0031580141651646,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|ridge|long": {
+  "trades": 1576526,
+  "take_rate": 0.8765412192756936,
+  "hit": 0.5068200587874859,
+  "cents_per_trade": -0.03954066817784831,
+  "bp_of_capital": 388.1921657423112,
+  "realised_over_expected": -0.008645347659857337,
+  "ci_cents": [
+   -4.12090846647891,
+   3.9316408035180217
+  ],
+  "p": 0.962,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 49.71838853276127,
+  "sel_half_spread_cents": 0.5575133870294559,
+  "sel_fee_cents": 1.0031580141651646,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|ridge|short": {
+  "trades": 1576526,
+  "take_rate": 0.8765412192756936,
+  "hit": 0.4931799412125141,
+  "cents_per_trade": -3.0818021342113924,
+  "bp_of_capital": 267.0072949774449,
+  "realised_over_expected": -0.6738189336940451,
+  "ci_cents": [
+   -7.056313389555186,
+   0.9856631821751622
+  ],
+  "p": 0.142,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 51.39663824129763,
+  "sel_half_spread_cents": 0.5575133870294559,
+  "sel_fee_cents": 1.0031580141651646,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|none|long": {
+  "trades": 1798576,
+  "take_rate": 1.0,
+  "hit": 0.5204912108245634,
+  "cents_per_trade": 0.14251763041400478,
+  "bp_of_capital": 378.69790209840716,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -4.093469424777564,
+   4.286839601380818
+  ],
+  "p": 0.97,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 50.84375633834767,
+  "sel_half_spread_cents": 0.5852716815969968,
+  "sel_fee_cents": 1.0628471136946676,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "ETH|none|short": {
+  "trades": 1798576,
+  "take_rate": 1.0,
+  "hit": 0.47950878917543655,
+  "cents_per_trade": -3.4387552209973333,
+  "bp_of_capital": 85.0814695157639,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -7.61683316625768,
+   0.8317414880289045
+  ],
+  "p": 0.12,
+  "sig": false,
+  "boot_markets": 353,
+  "mean_capital_cents": 50.32678702484632,
+  "sel_half_spread_cents": 0.5852716815969968,
+  "sel_fee_cents": 1.0628471136946676,
+  "nfeat": 219,
+  "test_markets": 353
+ },
+ "XRP|deep|r2": {
+  "r2_settle": -0.008574458104905869
+ },
+ "XRP|deep|model": {
+  "trades": 965487,
+  "take_rate": 0.745582048335681,
+  "hit": 0.7577409120992825,
+  "cents_per_trade": -3.507225333957889,
+  "bp_of_capital": -660.5384230299932,
+  "realised_over_expected": -0.995975327260116,
+  "ci_cents": [
+   -6.329835777353314,
+   -0.6469586257759833
+  ],
+  "p": 0.014,
+  "sig": true,
+  "boot_markets": 359,
+  "mean_capital_cents": 78.40832875015407,
+  "sel_half_spread_cents": 0.510698331515598,
+  "sel_fee_cents": 0.8729877937320751,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|deep|long": {
+  "trades": 965487,
+  "take_rate": 0.745582048335681,
+  "hit": 0.5064863638764686,
+  "cents_per_trade": -2.12669664739867,
+  "bp_of_capital": 1672.9634344168414,
+  "realised_over_expected": -0.6039353584919429,
+  "ci_cents": [
+   -5.856550368404251,
+   1.7695192856460384
+  ],
+  "p": 0.269,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 51.90234524131346,
+  "sel_half_spread_cents": 0.510698331515598,
+  "sel_fee_cents": 0.8729877937320751,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|deep|short": {
+  "trades": 965487,
+  "take_rate": 0.745582048335681,
+  "hit": 0.49351363612353144,
+  "cents_per_trade": -0.6406756030966756,
+  "bp_of_capital": -158.41108718973922,
+  "realised_over_expected": -0.18193786617687716,
+  "ci_cents": [
+   -4.524117173256391,
+   3.0819433102413814
+  ],
+  "p": 0.733,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 49.11905142171774,
+  "sel_half_spread_cents": 0.510698331515598,
+  "sel_fee_cents": 0.8729877937320751,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|small|r2": {
+  "r2_settle": -0.008252159987884422
+ },
+ "XRP|small|model": {
+  "trades": 1030367,
+  "take_rate": 0.7956846010329405,
+  "hit": 0.6857905969426428,
+  "cents_per_trade": -3.3311248197304946,
+  "bp_of_capital": -822.7737398987532,
+  "realised_over_expected": -0.8363566173051783,
+  "ci_cents": [
+   -6.012734352679502,
+   -0.7747263828803472
+  ],
+  "p": 0.009,
+  "sig": true,
+  "boot_markets": 359,
+  "mean_capital_cents": 70.99082530787574,
+  "sel_half_spread_cents": 0.5231638338572567,
+  "sel_fee_cents": 0.9193592061190333,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|small|long": {
+  "trades": 1030367,
+  "take_rate": 0.7956846010329405,
+  "hit": 0.4943733640537789,
+  "cents_per_trade": -1.7153785856216768,
+  "bp_of_capital": 1576.904038871515,
+  "realised_over_expected": -0.4306858220294366,
+  "ci_cents": [
+   -5.442074148691962,
+   2.0933462966622463
+  ],
+  "p": 0.364,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 50.23335578488054,
+  "sel_half_spread_cents": 0.5231638338572567,
+  "sel_fee_cents": 0.9193592061190333,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|small|short": {
+  "trades": 1030367,
+  "take_rate": 0.7956846010329405,
+  "hit": 0.5056266359462211,
+  "cents_per_trade": -1.1696674943309031,
+  "bp_of_capital": -291.7030001637346,
+  "realised_over_expected": -0.29367231847216224,
+  "ci_cents": [
+   -5.018813290518769,
+   2.5426003707552116
+  ],
+  "p": 0.549,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 50.81297188283398,
+  "sel_half_spread_cents": 0.5231638338572567,
+  "sel_fee_cents": 0.9193592061190333,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|ridge|r2": {
+  "r2_settle": -0.004258478184269832
+ },
+ "XRP|ridge|model": {
+  "trades": 1221968,
+  "take_rate": 0.9436454394939087,
+  "hit": 0.5337349259555079,
+  "cents_per_trade": -2.0785533621647625,
+  "bp_of_capital": -646.6501539766114,
+  "realised_over_expected": -0.4487813569384487,
+  "ci_cents": [
+   -5.919567907624359,
+   1.4242045744106022
+  ],
+  "p": 0.261,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 54.43072519083969,
+  "sel_half_spread_cents": 0.5430078774566928,
+  "sel_fee_cents": 1.021320766875851,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|ridge|long": {
+  "trades": 1221968,
+  "take_rate": 0.9436454394939087,
+  "hit": 0.4978780131721944,
+  "cents_per_trade": -1.6593842022522287,
+  "bp_of_capital": 1271.4480724501611,
+  "realised_over_expected": -0.35827836202068575,
+  "ci_cents": [
+   -5.490869931115408,
+   2.4270535659146457
+  ],
+  "p": 0.404,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 50.42586475259581,
+  "sel_half_spread_cents": 0.5430078774566928,
+  "sel_fee_cents": 1.021320766875851,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|ridge|short": {
+  "trades": 1221968,
+  "take_rate": 0.9436454394939087,
+  "hit": 0.5021219868278056,
+  "cents_per_trade": -1.4692730864128605,
+  "bp_of_capital": -403.51980451248096,
+  "realised_over_expected": -0.31723138863597683,
+  "ci_cents": [
+   -5.5387496574832955,
+   2.37149067420815
+  ],
+  "p": 0.47,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 50.660151002317576,
+  "sel_half_spread_cents": 0.5430078774566928,
+  "sel_fee_cents": 1.021320766875851,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|none|long": {
+  "trades": 1294944,
+  "take_rate": 1.0,
+  "hit": 0.5049731880297527,
+  "cents_per_trade": -1.963843889076285,
+  "bp_of_capital": 1146.7710042856893,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -5.929991321795645,
+   2.1862017902638615
+  ],
+  "p": 0.346,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 51.42429672634492,
+  "sel_half_spread_cents": 0.573387575061161,
+  "sel_fee_cents": 1.0368659657066253,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "XRP|none|short": {
+  "trades": 1294944,
+  "take_rate": 1.0,
+  "hit": 0.49502681197024734,
+  "cents_per_trade": -1.256663192459288,
+  "bp_of_capital": -301.82211401571914,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -5.414330164488926,
+   2.6998876081016645
+  ],
+  "p": 0.556,
+  "sig": false,
+  "boot_markets": 359,
+  "mean_capital_cents": 49.7224784237774,
+  "sel_half_spread_cents": 0.573387575061161,
+  "sel_fee_cents": 1.0368659657066253,
+  "nfeat": 219,
+  "test_markets": 359
+ },
+ "NEAR|deep|r2": {
+  "r2_settle": -0.00629946855157093
+ },
+ "NEAR|deep|model": {
+  "trades": 511493,
+  "take_rate": 0.6792843976265226,
+  "hit": 0.6643844588293486,
+  "cents_per_trade": -2.6924822971418965,
+  "bp_of_capital": -625.4853283819689,
+  "realised_over_expected": -0.6098880812952342,
+  "ci_cents": [
+   -5.745686307887812,
+   0.1818110116618886
+  ],
+  "p": 0.065,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 68.20609588010002,
+  "sel_half_spread_cents": 1.1770929416433853,
+  "sel_fee_cents": 0.924832299976735,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|deep|long": {
+  "trades": 511493,
+  "take_rate": 0.6792843976265226,
+  "hit": 0.46939449806742223,
+  "cents_per_trade": -2.578017192047594,
+  "bp_of_capital": -888.139520747373,
+  "realised_over_expected": -0.5839599987242451,
+  "ci_cents": [
+   -6.311964945259454,
+   1.2521428133310708
+  ],
+  "p": 0.19,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 48.59263469881308,
+  "sel_half_spread_cents": 1.1770929416433853,
+  "sel_fee_cents": 0.924832299976735,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|deep|short": {
+  "trades": 511493,
+  "take_rate": 0.6792843976265226,
+  "hit": 0.5306055019325777,
+  "cents_per_trade": -1.6258332911926452,
+  "bp_of_capital": -427.1658186576685,
+  "realised_over_expected": -0.36827590195262144,
+  "ci_cents": [
+   -5.458036033654745,
+   2.1322466737823254
+  ],
+  "p": 0.383,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 53.76155118447369,
+  "sel_half_spread_cents": 1.1770929416433853,
+  "sel_fee_cents": 0.924832299976735,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|small|r2": {
+  "r2_settle": -0.0014500745852557007
+ },
+ "NEAR|small|model": {
+  "trades": 497964,
+  "take_rate": 0.6613173118296706,
+  "hit": 0.7038500775156437,
+  "cents_per_trade": -3.8444316833280117,
+  "bp_of_capital": -800.1137513955752,
+  "realised_over_expected": -1.1709262474398239,
+  "ci_cents": [
+   -6.671399567933495,
+   -1.1749667422282046
+  ],
+  "p": 0.007,
+  "sig": true,
+  "boot_markets": 351,
+  "mean_capital_cents": 73.36077788755814,
+  "sel_half_spread_cents": 1.1389388590339866,
+  "sel_fee_cents": 0.868661547334245,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|small|long": {
+  "trades": 497964,
+  "take_rate": 0.6613173118296706,
+  "hit": 0.4805186720325164,
+  "cents_per_trade": -1.9629790080342153,
+  "bp_of_capital": -776.5282024964919,
+  "realised_over_expected": -0.5978786548993646,
+  "ci_cents": [
+   -5.493582816474523,
+   1.667855055985222
+  ],
+  "p": 0.286,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 49.14618466395161,
+  "sel_half_spread_cents": 1.1389388590339866,
+  "sel_fee_cents": 0.868661547334245,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|small|short": {
+  "trades": 497964,
+  "take_rate": 0.6613173118296706,
+  "hit": 0.5194813279674836,
+  "cents_per_trade": -2.0522218047022474,
+  "bp_of_capital": -636.8703759124178,
+  "realised_over_expected": -0.6250599762547943,
+  "ci_cents": [
+   -5.659851825853903,
+   1.5119652056208732
+  ],
+  "p": 0.248,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 53.131693054116354,
+  "sel_half_spread_cents": 1.1389388590339866,
+  "sel_fee_cents": 0.868661547334245,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|ridge|r2": {
+  "r2_settle": -0.004662824263898857
+ },
+ "NEAR|ridge|model": {
+  "trades": 709788,
+  "take_rate": 0.9426285677859408,
+  "hit": 0.474197929522618,
+  "cents_per_trade": -2.2618079444327037,
+  "bp_of_capital": -613.0442165795224,
+  "realised_over_expected": -0.28122653484000426,
+  "ci_cents": [
+   -6.1866612934626355,
+   1.8289759323505357
+  ],
+  "p": 0.295,
+  "sig": false,
+  "boot_markets": 349,
+  "mean_capital_cents": 48.568840273433764,
+  "sel_half_spread_cents": 1.3592523401353644,
+  "sel_fee_cents": 1.1127606232607483,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|ridge|long": {
+  "trades": 709788,
+  "take_rate": 0.9426285677859408,
+  "hit": 0.525802070477382,
+  "cents_per_trade": -2.6822179823595214,
+  "bp_of_capital": -544.1090895347377,
+  "realised_over_expected": -0.3334990801147392,
+  "ci_cents": [
+   -6.761908331598273,
+   1.2622782701384974
+  ],
+  "p": 0.189,
+  "sig": false,
+  "boot_markets": 349,
+  "mean_capital_cents": 54.14966440683696,
+  "sel_half_spread_cents": 1.3592523401353644,
+  "sel_fee_cents": 1.1127606232607483,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|ridge|short": {
+  "trades": 709788,
+  "take_rate": 0.9426285677859408,
+  "hit": 0.474197929522618,
+  "cents_per_trade": -2.2618079444327037,
+  "bp_of_capital": -613.0442165795224,
+  "realised_over_expected": -0.28122653484000426,
+  "ci_cents": [
+   -6.1866612934626355,
+   1.8289759323505357
+  ],
+  "p": 0.295,
+  "sig": false,
+  "boot_markets": 349,
+  "mean_capital_cents": 48.568840273433764,
+  "sel_half_spread_cents": 1.3592523401353644,
+  "sel_fee_cents": 1.1127606232607483,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|none|long": {
+  "trades": 752988,
+  "take_rate": 1.0,
+  "hit": 0.5005537936859552,
+  "cents_per_trade": -2.577351830544444,
+  "bp_of_capital": -700.4555688763597,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -6.536969590616621,
+   1.414123124521859
+  ],
+  "p": 0.213,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 51.55980679638985,
+  "sel_half_spread_cents": 1.3943053541357897,
+  "sel_fee_cents": 1.0729244027501104,
+  "nfeat": 219,
+  "test_markets": 351
+ },
+ "NEAR|none|short": {
+  "trades": 752988,
+  "take_rate": 1.0,
+  "hit": 0.49944620631404485,
+  "cents_per_trade": -2.3571076832273548,
+  "bp_of_capital": -602.824399128307,
+  "realised_over_expected": NaN,
+  "ci_cents": [
+   -6.332495306008836,
+   1.5701640860966315
+  ],
+  "p": 0.242,
+  "sig": false,
+  "boot_markets": 351,
+  "mean_capital_cents": 51.22880391188173,
+  "sel_half_spread_cents": 1.3943053541357897,
+  "sel_fee_cents": 1.0729244027501104,
+  "nfeat": 219,
+  "test_markets": 351
+ }
+}

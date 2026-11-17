@@ -1,0 +1,214 @@
+{
+ "BTC|avail": {
+  "trades": 26622,
+  "trades_per_market": 75.84615384615384,
+  "trades_per_day": 7281.230769230769,
+  "markets": 351,
+  "pctl": {
+   "p1": 0.01,
+   "p5": 0.01,
+   "p10": 0.02,
+   "p25": 0.02,
+   "p50": 18.03,
+   "p75": 151.02,
+   "p90": 600.02
+  },
+  "mean": 250.26525016903315,
+  "median": 18.03
+ },
+ "BTC|clip|10": {
+  "frac_fully_filled": 0.5965366989707761,
+  "avg_filled_contracts": 6.385977011494252,
+  "usd_per_day_at_0.30c": 139.4933169230769,
+  "usd_per_day_at_0.36c": 167.39198030769228
+ },
+ "BTC|clip|50": {
+  "frac_fully_filled": 0.39534971076553227,
+  "avg_filled_contracts": 24.75674667568176,
+  "usd_per_day_at_0.30c": 540.7787569230768,
+  "usd_per_day_at_0.36c": 648.9345083076921
+ },
+ "BTC|clip|100": {
+  "frac_fully_filled": 0.3069266020584479,
+  "avg_filled_contracts": 41.80178498985801,
+  "usd_per_day_at_0.30c": 913.1053292307691,
+  "usd_per_day_at_0.36c": 1095.726395076923
+ },
+ "BTC|clip|500": {
+  "frac_fully_filled": 0.11817293967395387,
+  "avg_filled_contracts": 113.04788708586882,
+  "usd_per_day_at_0.30c": 2469.3832615384613,
+  "usd_per_day_at_0.36c": 2963.2599138461533
+ },
+ "BTC|clip|1000": {
+  "frac_fully_filled": 0.06607317256404477,
+  "avg_filled_contracts": 156.20599166103224,
+  "usd_per_day_at_0.30c": 3412.115618461539,
+  "usd_per_day_at_0.36c": 4094.538742153846
+ },
+ "BTC|clip|5000": {
+  "frac_fully_filled": 0.0020659604838103823,
+  "avg_filled_contracts": 224.7442960709188,
+  "usd_per_day_at_0.30c": 4909.245251282051,
+  "usd_per_day_at_0.36c": 5891.094301538461
+ },
+ "ETH|avail": {
+  "trades": 4865,
+  "trades_per_market": 13.78186968838527,
+  "trades_per_day": 1323.0594900849858,
+  "markets": 353,
+  "pctl": {
+   "p1": 0.01,
+   "p5": 0.20200000000000018,
+   "p10": 1.0,
+   "p25": 2.36,
+   "p50": 10.0,
+   "p75": 32.0,
+   "p90": 72.49
+  },
+  "mean": 87.56684069886947,
+  "median": 10.0
+ },
+ "ETH|clip|10": {
+  "frac_fully_filled": 0.5225077081192189,
+  "avg_filled_contracts": 6.716018499486125,
+  "usd_per_day_at_0.30c": 26.657076033994333,
+  "usd_per_day_at_0.36c": 31.9884912407932
+ },
+ "ETH|clip|50": {
+  "frac_fully_filled": 0.15354573484069886,
+  "avg_filled_contracts": 17.687430626927032,
+  "usd_per_day_at_0.30c": 70.20456883852692,
+  "usd_per_day_at_0.36c": 84.2454826062323
+ },
+ "ETH|clip|100": {
+  "frac_fully_filled": 0.07831449126413155,
+  "avg_filled_contracts": 22.793169578622813,
+  "usd_per_day_at_0.30c": 90.47015796033993,
+  "usd_per_day_at_0.36c": 108.56418955240791
+ },
+ "ETH|clip|500": {
+  "frac_fully_filled": 0.019527235354573486,
+  "avg_filled_contracts": 38.23536485097636,
+  "usd_per_day_at_0.30c": 151.7629869688385,
+  "usd_per_day_at_0.36c": 182.1155843626062
+ },
+ "ETH|clip|1000": {
+  "frac_fully_filled": 0.011921891058581706,
+  "avg_filled_contracts": 45.18953340184995,
+  "usd_per_day_at_0.30c": 179.36532305949007,
+  "usd_per_day_at_0.36c": 215.2383876713881
+ },
+ "ETH|clip|5000": {
+  "frac_fully_filled": 0.0041109969167523125,
+  "avg_filled_contracts": 73.44733607399795,
+  "usd_per_day_at_0.30c": 291.52558504249293,
+  "usd_per_day_at_0.36c": 349.8307020509915
+ },
+ "XRP|avail": {
+  "trades": 2561,
+  "trades_per_market": 7.113888888888889,
+  "trades_per_day": 682.9333333333334,
+  "markets": 360,
+  "pctl": {
+   "p1": 0.01,
+   "p5": 0.01,
+   "p10": 0.1,
+   "p25": 1.0,
+   "p50": 5.0,
+   "p75": 15.0,
+   "p90": 28.95
+  },
+  "mean": 16.745333853963295,
+  "median": 5.0
+ },
+ "XRP|clip|10": {
+  "frac_fully_filled": 0.3744631003514252,
+  "avg_filled_contracts": 5.182346739554862,
+  "usd_per_day_at_0.30c": 10.617592000000002,
+  "usd_per_day_at_0.36c": 12.741110400000002
+ },
+ "XRP|clip|50": {
+  "frac_fully_filled": 0.04763764154627099,
+  "avg_filled_contracts": 10.384299101913316,
+  "usd_per_day_at_0.30c": 21.275352,
+  "usd_per_day_at_0.36c": 25.530422400000003
+ },
+ "XRP|clip|100": {
+  "frac_fully_filled": 0.023037875829754,
+  "avg_filled_contracts": 11.925907848496681,
+  "usd_per_day_at_0.30c": 24.433800000000005,
+  "usd_per_day_at_0.36c": 29.320560000000004
+ },
+ "XRP|clip|500": {
+  "frac_fully_filled": 0.0007809449433814916,
+  "avg_filled_contracts": 13.355044904334246,
+  "usd_per_day_at_0.30c": 27.361816000000005,
+  "usd_per_day_at_0.36c": 32.8341792
+ },
+ "XRP|clip|1000": {
+  "frac_fully_filled": 0.0007809449433814916,
+  "avg_filled_contracts": 13.745517376024992,
+  "usd_per_day_at_0.30c": 28.16181600000001,
+  "usd_per_day_at_0.36c": 33.79417920000001
+ },
+ "XRP|clip|5000": {
+  "frac_fully_filled": 0.0003904724716907458,
+  "avg_filled_contracts": 15.699324482623975,
+  "usd_per_day_at_0.30c": 32.164776,
+  "usd_per_day_at_0.36c": 38.5977312
+ },
+ "NEAR|avail": {
+  "trades": 1445,
+  "trades_per_market": 4.116809116809117,
+  "trades_per_day": 395.21367521367523,
+  "markets": 351,
+  "pctl": {
+   "p1": 0.01,
+   "p5": 0.502,
+   "p10": 1.0,
+   "p25": 1.0,
+   "p50": 3.0,
+   "p75": 8.0,
+   "p90": 31.570000000000128
+  },
+  "mean": 12.93878892733564,
+  "median": 3.0
+ },
+ "NEAR|clip|10": {
+  "frac_fully_filled": 0.23252595155709344,
+  "avg_filled_contracts": 4.26877508650519,
+  "usd_per_day_at_0.30c": 5.0612348717948725,
+  "usd_per_day_at_0.36c": 6.073481846153847
+ },
+ "NEAR|clip|50": {
+  "frac_fully_filled": 0.058823529411764705,
+  "avg_filled_contracts": 8.761750865051903,
+  "usd_per_day_at_0.30c": 10.388291282051282,
+  "usd_per_day_at_0.36c": 12.465949538461539
+ },
+ "NEAR|clip|100": {
+  "frac_fully_filled": 0.02768166089965398,
+  "avg_filled_contracts": 10.770671280276817,
+  "usd_per_day_at_0.30c": 12.770149743589744,
+  "usd_per_day_at_0.36c": 15.324179692307693
+ },
+ "NEAR|clip|500": {
+  "frac_fully_filled": 0.0006920415224913495,
+  "avg_filled_contracts": 12.89726643598616,
+  "usd_per_day_at_0.30c": 15.291528205128206,
+  "usd_per_day_at_0.36c": 18.349833846153846
+ },
+ "NEAR|clip|1000": {
+  "frac_fully_filled": 0.0,
+  "avg_filled_contracts": 12.93878892733564,
+  "usd_per_day_at_0.30c": 15.340758974358977,
+  "usd_per_day_at_0.36c": 18.408910769230772
+ },
+ "NEAR|clip|5000": {
+  "frac_fully_filled": 0.0,
+  "avg_filled_contracts": 12.93878892733564,
+  "usd_per_day_at_0.30c": 15.340758974358977,
+  "usd_per_day_at_0.36c": 18.408910769230772
+ }
+}

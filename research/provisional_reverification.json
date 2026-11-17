@@ -1,0 +1,10 @@
+{
+  "available_rich_panels_checked": 547,
+  "transient_unreadable": 0,
+  "inactive_distance_nonzero": 0,
+  "inactive_slope_finite": 0,
+  "samples_bitwise_matched": 14,
+  "features_compared_bitwise": 211,
+  "feature_count": 219,
+  "limitation": "Only completed rich panels were checked; other markets remain unverified. The number of tested contracts with midpoint tapes was 14 of 16 selected."
+}

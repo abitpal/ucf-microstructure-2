@@ -1,0 +1,49 @@
+{
+  "ticker": "KXBTC15M-26SEP232000-00",
+  "rebuilt_panel_rows": 20857,
+  "historical_frame_rows": 20857,
+  "feature_count_rebuilt": 219,
+  "historical_frame_feature_count": 210,
+  "tolerance": {
+    "rtol": 1e-05,
+    "atol": 1e-07
+  },
+  "finite_pair_results": {
+    "k_imbalance_1": {
+      "n": 20857,
+      "fraction_close": 1.0
+    },
+    "k_imbalance_3": {
+      "n": 20857,
+      "fraction_close": 1.0
+    },
+    "rel_spread": {
+      "n": 20674,
+      "fraction_close": 1.0
+    },
+    "p_ret_1s": {
+      "n": 20857,
+      "fraction_close": 1.0
+    }
+  },
+  "limitations": "One market only. The 210 common features and masks were checked, not the nine newer features, other markets, exact full-resolution targets, training split or final score.",
+  "midpoint_tape_check": {
+    "entry_rows": 20674,
+    "entry_exact_matches": 20674,
+    "target_finite_pairs": 20162,
+    "target_close_pairs": 18952,
+    "target_rtol": 1e-05,
+    "target_atol": 1e-08,
+    "mean_absolute_target_difference": 0.0018415615100136305,
+    "scope": "One market only. Full-resolution target uses first tape event at or after 100ms, subject to the original 130ms lateness limit; preserved frame target is from the sampled panel."
+  },
+  "full_common_feature_check": {
+    "common_feature_count": 210,
+    "rows": 20857,
+    "features_with_different_finite_masks": 0,
+    "features_with_values_outside_tolerance": 0,
+    "rtol": 1e-05,
+    "atol": 1e-07,
+    "scope": "One market; finite values compared row by row."
+  }
+}

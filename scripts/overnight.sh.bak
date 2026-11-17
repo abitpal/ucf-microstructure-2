@@ -1,0 +1,47 @@
+#!/bin/bash
+# Overnight queue. Serial, resumable, every study persists incrementally.
+#
+# Three hard lessons are encoded here. Running studies concurrently OOM-killed
+# six jobs. Writing results only at cell boundaries lost 3h36m and then 7h14m of
+# CPU to interruptions. And /mnt/scratch is wiped on every deallocate, so the
+# frame is rebuilt from the durable panels at the start of each run rather than
+# assumed to still exist.
+set -u
+PY=/opt/kalshi/venv/bin/python
+D=/var/lib/kalshi-study/scripts
+LOG=/var/lib/kalshi-study/OVERNIGHT.log
+export PYTHONPATH=/opt/kalshi
+export KALSHI_BLOB_ACCOUNT=kalshiobfdfaed53 KALSHI_BLOB_CONTAINER=tape
+export KALSHI_CACHE=/opt/kalshi/data/cache SCALE_FREE_STRICT=1
+run() {
+  local n="$1"; shift
+  echo "=== $(date -u +%m-%dT%H:%M) START $n" | tee -a "$LOG"
+  if "$@" >>"/var/lib/kalshi-study/${n}.out" 2>&1; then
+    echo "=== $(date -u +%m-%dT%H:%M) OK    $n" | tee -a "$LOG"
+  else
+    echo "=== $(date -u +%m-%dT%H:%M) FAIL  $n" | tee -a "$LOG"
+  fi
+}
+# scratch and the rich frame first -- both vanish on deallocate
+mountpoint -q /mnt/scratch || sudo /opt/kalshi/infra/provision_scratch.sh
+mkdir -p /mnt/scratch/{cache_blob,frames,merge,tmp}
+[ -s /var/lib/kalshi-study/frame_rich.parquet ] || run richframe /bin/bash $D/rich_frame.sh
+# full-resolution (ts, mid) tape -- unblocks exact sub-100ms entry lags
+[ "$(ls /var/lib/kalshi-study/midtape/mid_*.parquet 2>/dev/null|wc -l)" -ge 1100 ] || \
+  run midtape $PY -u -m tools.mid_tape --coin BTC \
+    --dates 2026-09-15 2026-09-16 2026-09-17 2026-09-18 2026-09-19 2026-09-20 \
+            2026-09-21 2026-09-22 2026-09-23 2026-09-24 2026-09-25 2026-09-26 \
+            2026-09-27 2026-09-28 \
+    --out /var/lib/kalshi-study/midtape --workers 12
+# exact-lag increment sweep: entry 0.02/0.05/0.10s x hold 0.08/0.4/0.9s,
+# resolved against the full-resolution mid tape rather than the sampled grid
+run lagsweep $PY -u $D/ls.py
+run richstudy $PY -u $D/rs.py          # rich features + extended capacity
+run multiobj $PY -u $D/mo.py
+run ffight2   $PY -u $D/ff.py          # regularisation, 1e-3..1e3
+run incroute  $PY -u $D/ir.py          # finish XRP + NEAR
+run featexp   $PY -u $D/fe.py          # 334 derived feats, remaining cells
+run seedens2  $PY -u $D/se.py          # simplex blends, remaining cells
+run volstab   $PY -u $D/vs.py          # vol-norm stability, all divisors
+run xhorizon  $PY -u $D/xh.py          # 0.1s vs 1s teacher
+echo "=== $(date -u +%m-%dT%H:%M) QUEUE DONE" | tee -a "$LOG"

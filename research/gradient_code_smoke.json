@@ -1,0 +1,9 @@
+{
+  "synthetic_rows": 1000,
+  "synthetic_markets": 10,
+  "features": 219,
+  "active_features": 211,
+  "weights": "seed 11 checkpoint duplicated for both network slots",
+  "status": "passed",
+  "limitation": "Checks execution and output shape only; not a real-market gradient or model validation."
+}

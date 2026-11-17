@@ -1,0 +1,139 @@
+{
+ "target": "ry_k_1s",
+ "stage": null,
+ "rows": [
+  {
+   "width": 8,
+   "dropout": 0.5,
+   "weight_decay": 1.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.1029065447994619,
+   "r2_inner_val": 0.02640253807742124,
+   "r2_oos": 0.020340954883822954,
+   "r2_oos_folds": [
+    0.05518,
+    0.01152,
+    0.00082,
+    0.01384
+   ],
+   "seconds": 55.6
+  },
+  {
+   "width": 8,
+   "dropout": 0.5,
+   "weight_decay": 3.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.09687421957997588,
+   "r2_inner_val": 0.024901501894139283,
+   "r2_oos": 0.0191866239794537,
+   "r2_oos_folds": [
+    0.05255,
+    0.01115,
+    0.00079,
+    0.01226
+   ],
+   "seconds": 62.5
+  },
+  {
+   "width": 16,
+   "dropout": 0.2,
+   "weight_decay": 1.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.11763097742302603,
+   "r2_inner_val": 0.030269351778376113,
+   "r2_oos": 0.02325425173592352,
+   "r2_oos_folds": [
+    0.06307,
+    0.0105,
+    0.00173,
+    0.01771
+   ],
+   "seconds": 84.6
+  },
+  {
+   "width": 16,
+   "dropout": 0.5,
+   "weight_decay": 3.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.10500214816867143,
+   "r2_inner_val": 0.027405057766541258,
+   "r2_oos": 0.022551016521175277,
+   "r2_oos_folds": [
+    0.06077,
+    0.01272,
+    0.00177,
+    0.01494
+   ],
+   "seconds": 109.7
+  },
+  {
+   "width": 32,
+   "dropout": 0.5,
+   "weight_decay": 1.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.11531248447965345,
+   "r2_inner_val": 0.028870465322301614,
+   "r2_oos": 0.0226501571173634,
+   "r2_oos_folds": [
+    0.05969,
+    0.01345,
+    0.00208,
+    0.01538
+   ],
+   "seconds": 85.4
+  },
+  {
+   "width": 32,
+   "dropout": 0.5,
+   "weight_decay": 3.0,
+   "bs": 1024,
+   "lr": 0.001,
+   "sample_markets": 1.0,
+   "r2_is": 0.11001562155881703,
+   "r2_inner_val": 0.028310113260535064,
+   "r2_oos": 0.022076932122489984,
+   "r2_oos_folds": [
+    0.05664,
+    0.01537,
+    0.00183,
+    0.01447
+   ],
+   "seconds": 86.4
+  }
+ ],
+ "_merged_from_shards": 4,
+ "_shard_files": [
+  "mlp_full_1s.shard2.json",
+  "mlp_full_1s.shard3.json",
+  "mlp_full_1s.shard4.json",
+  "mlp_full_1s.shard7.json"
+ ],
+ "best_oos": {
+  "width": 16,
+  "dropout": 0.2,
+  "weight_decay": 1.0,
+  "bs": 1024,
+  "lr": 0.001,
+  "sample_markets": 1.0,
+  "r2_is": 0.11763097742302603,
+  "r2_inner_val": 0.030269351778376113,
+  "r2_oos": 0.02325425173592352,
+  "r2_oos_folds": [
+   0.06307,
+   0.0105,
+   0.00173,
+   0.01771
+  ],
+  "seconds": 84.6
+ }
+}

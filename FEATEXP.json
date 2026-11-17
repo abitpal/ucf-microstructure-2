@@ -1,0 +1,531 @@
+{
+ "BTC|ry_k_1s|base106|raw|ridge": {
+  "r2_norm": 0.0034121688252579663,
+  "r2_raw": 0.0034121688252579663,
+  "nfeat": 106
+ },
+ "_pred_key": {},
+ "BTC|ry_k_1s|base106|raw|lgbm": {
+  "r2_norm": 0.0027898333263349784,
+  "r2_raw": 0.0027898333263349784,
+  "nfeat": 106
+ },
+ "BTC|ry_k_1s|base106|raw|mlp": {
+  "r2_norm": 0.00781756894681962,
+  "r2_raw": 0.00781756894681962,
+  "nfeat": 106
+ },
+ "BTC|ry_k_1s|base106|volnorm|ridge": {
+  "r2_norm": 3.441553243721529e-05,
+  "r2_raw": -0.4196213762598613,
+  "nfeat": 106
+ },
+ "BTC|ry_k_1s|base106|volnorm|lgbm": {
+  "r2_norm": 1.2387318480078235e-05,
+  "r2_raw": 0.002048124112421834,
+  "nfeat": 106
+ },
+ "BTC|ry_k_1s|base106|volnorm|mlp": {
+  "r2_norm": 9.253518897878177e-05,
+  "r2_raw": 0.00043057987221362115,
+  "nfeat": 106
+ },
+ "BTC|ry_k_1s|expanded|raw|ridge": {
+  "r2_norm": 0.005527523977874926,
+  "r2_raw": 0.005527523977874926,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|expanded|raw|lgbm": {
+  "r2_norm": 0.003004603430156738,
+  "r2_raw": 0.003004603430156738,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|expanded|raw|mlp": {
+  "r2_norm": 0.007975946826973446,
+  "r2_raw": 0.007975946826973446,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|expanded|volnorm|ridge": {
+  "r2_norm": 3.379566296657366e-05,
+  "r2_raw": -0.4183192785895522,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|expanded|volnorm|lgbm": {
+  "r2_norm": 1.1097095721668282e-05,
+  "r2_raw": 0.0015991390223886182,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|expanded|volnorm|mlp": {
+  "r2_norm": 6.094343866824836e-05,
+  "r2_raw": 0.004103706260304096,
+  "nfeat": 334
+ },
+ "BTC|ry_k_1s|paired|ridge|expanded feats": {
+  "delta": 0.0031585443092810544,
+  "ci": [
+   0.0008271484607370236,
+   0.008455522236858248
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_1s|paired|ridge|volnorm target": {
+  "delta": -0.6218566560157363,
+  "ci": [
+   -1.7844185483030894,
+   -0.14873659363771569
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_1s|paired|ridge|both": {
+  "delta": -0.6166121738110448,
+  "ci": [
+   -1.818106773343087,
+   -0.14722940606313903
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_1s|paired|lgbm|expanded feats": {
+  "delta": 0.0003324176573769577,
+  "ci": [
+   7.600067269074084e-05,
+   0.001035443215475765
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_1s|paired|lgbm|volnorm target": {
+  "delta": -0.0003051663128591792,
+  "ci": [
+   -0.002672388457383612,
+   0.004139500455540622
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_1s|paired|lgbm|both": {
+  "delta": -0.0004935395824068132,
+  "ci": [
+   -0.0025885063250185945,
+   0.003325240934507787
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_1s|paired|mlp|expanded feats": {
+  "delta": 0.00019009414962307256,
+  "ci": [
+   -0.00034373252183755203,
+   0.0009353378138930604
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_1s|paired|mlp|volnorm target": {
+  "delta": -0.010142986707023077,
+  "ci": [
+   -0.029055781947201723,
+   -0.0031427029097369687
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_1s|paired|mlp|both": {
+  "delta": -0.004530043189752191,
+  "ci": [
+   -0.011011883321290206,
+   -0.0017937848137448368
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|raw|ridge": {
+  "r2_norm": 0.001211945549315252,
+  "r2_raw": 0.001211945549315252,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|raw|lgbm": {
+  "r2_norm": 0.001925173162788285,
+  "r2_raw": 0.001925173162788285,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|raw|mlp": {
+  "r2_norm": 0.003512012606382231,
+  "r2_raw": 0.003512012606382231,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|volnorm|ridge": {
+  "r2_norm": 1.846722797371747e-05,
+  "r2_raw": -0.5055486560247233,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|volnorm|lgbm": {
+  "r2_norm": 6.965937899394703e-06,
+  "r2_raw": 0.0025165461123434207,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|base106|volnorm|mlp": {
+  "r2_norm": 3.238518965842374e-05,
+  "r2_raw": -0.008770145299584087,
+  "nfeat": 106
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|raw|ridge": {
+  "r2_norm": 0.00207310540218153,
+  "r2_raw": 0.00207310540218153,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|raw|lgbm": {
+  "r2_norm": 0.002099759074559504,
+  "r2_raw": 0.002099759074559504,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|raw|mlp": {
+  "r2_norm": 0.0033619810684690776,
+  "r2_raw": 0.0033619810684690776,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|volnorm|ridge": {
+  "r2_norm": 1.4997324401466727e-05,
+  "r2_raw": -0.2995947783545041,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|volnorm|lgbm": {
+  "r2_norm": 6.47208119175513e-06,
+  "r2_raw": 0.0026174173319550853,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|expanded|volnorm|mlp": {
+  "r2_norm": 3.55315406425083e-05,
+  "r2_raw": -0.0030104963530190876,
+  "nfeat": 334
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|ridge|expanded feats": {
+  "delta": 0.0010012808835360846,
+  "ci": [
+   -0.00011396516705904976,
+   0.002475686711068008
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|ridge|volnorm target": {
+  "delta": -0.5550126620106858,
+  "ci": [
+   -1.1344285831185161,
+   -0.2245920923554388
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|ridge|both": {
+  "delta": -0.3298792327217287,
+  "ci": [
+   -0.6735425140287072,
+   -0.13269384776954704
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|lgbm|expanded feats": {
+  "delta": 0.0002093476013365466,
+  "ci": [
+   2.5584940372881016e-05,
+   0.0005043846920443736
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|lgbm|volnorm target": {
+  "delta": 0.0006644209897529672,
+  "ci": [
+   -0.00032083807411614323,
+   0.0019196980892159832
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|lgbm|both": {
+  "delta": 0.0007779392612957716,
+  "ci": [
+   -0.00027925414442448994,
+   0.0021463473787753182
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|mlp|expanded feats": {
+  "delta": -2.4961904067813373e-05,
+  "ci": [
+   -0.0007998313001210463,
+   0.0011342193539651158
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|mlp|volnorm target": {
+  "delta": -0.012868853523545156,
+  "ci": [
+   -0.022936643379086526,
+   -0.005885125381478274
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_inc_0p1_to_1s|paired|mlp|both": {
+  "delta": -0.0069558764475691195,
+  "ci": [
+   -0.013506066190412249,
+   -0.0020193705124597326
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|base106|raw|ridge": {
+  "r2_norm": 0.006995258560013373,
+  "r2_raw": 0.006995258560013373,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|base106|raw|lgbm": {
+  "r2_norm": 0.004146326217815188,
+  "r2_raw": 0.004146326217815188,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|base106|raw|mlp": {
+  "r2_norm": 0.017415795559824865,
+  "r2_raw": 0.017415795559824865,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|base106|volnorm|ridge": {
+  "r2_norm": -3.470847195874427e-06,
+  "r2_raw": -0.6284205027991367,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|base106|volnorm|lgbm": {
+  "r2_norm": -4.890809980784283e-06,
+  "r2_raw": 0.010414982014141927,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|base106|volnorm|mlp": {
+  "r2_norm": 5.104523500554237e-07,
+  "r2_raw": 0.013591393699260657,
+  "nfeat": 106
+ },
+ "XRP|ry_k_1s|expanded|raw|ridge": {
+  "r2_norm": 0.011554850062176714,
+  "r2_raw": 0.011554850062176714,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|expanded|raw|lgbm": {
+  "r2_norm": 0.004103622098860504,
+  "r2_raw": 0.004103622098860504,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|expanded|raw|mlp": {
+  "r2_norm": 0.018700502497602578,
+  "r2_raw": 0.018700502497602578,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|expanded|volnorm|ridge": {
+  "r2_norm": -5.681349568575911e-08,
+  "r2_raw": 0.00025928172152378526,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|expanded|volnorm|lgbm": {
+  "r2_norm": -5.297356936218023e-06,
+  "r2_raw": 0.010867549414602329,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|expanded|volnorm|mlp": {
+  "r2_norm": 8.654022205956124e-06,
+  "r2_raw": 0.007900630872161196,
+  "nfeat": 334
+ },
+ "XRP|ry_k_1s|paired|ridge|expanded feats": {
+  "delta": 0.0047291028633844445,
+  "ci": [
+   0.0029444236876260783,
+   0.007352439304618606
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|paired|ridge|volnorm target": {
+  "delta": -0.6641657868746735,
+  "ci": [
+   -1.0437762958955046,
+   -0.380207340067291
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|paired|ridge|both": {
+  "delta": -0.00725573448055336,
+  "ci": [
+   -0.013006544153101603,
+   -0.0031874633043073404
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|paired|lgbm|expanded feats": {
+  "delta": -7.625992876352484e-06,
+  "ci": [
+   -0.00047264359471501326,
+   0.00045985351422164533
+  ],
+  "sig": false
+ },
+ "XRP|ry_k_1s|paired|lgbm|volnorm target": {
+  "delta": 0.006291496728194712,
+  "ci": [
+   0.0025424322660030836,
+   0.010205052098836844
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|paired|lgbm|both": {
+  "delta": 0.006841004568159292,
+  "ci": [
+   0.00296057040921031,
+   0.012072274250860484
+  ],
+  "sig": true
+ },
+ "XRP|ry_k_1s|paired|mlp|expanded feats": {
+  "delta": 0.0014897328926698984,
+  "ci": [
+   -0.002649115644372121,
+   0.005037642110298714
+  ],
+  "sig": false
+ },
+ "XRP|ry_k_1s|paired|mlp|volnorm target": {
+  "delta": -0.0042098991382002885,
+  "ci": [
+   -0.009651050348408529,
+   0.0006807164459340331
+  ],
+  "sig": false
+ },
+ "XRP|ry_k_1s|paired|mlp|both": {
+  "delta": -0.009977769907967754,
+  "ci": [
+   -0.017197131740228994,
+   -0.004275260144014619
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_0p1s|base106|raw|ridge": {
+  "r2_norm": 0.012213027061949377,
+  "r2_raw": 0.012213027061949377,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|base106|raw|lgbm": {
+  "r2_norm": 0.006844464300617803,
+  "r2_raw": 0.006844464300617803,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|base106|raw|mlp": {
+  "r2_norm": 0.02982256068295841,
+  "r2_raw": 0.02982256068295841,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|base106|volnorm|ridge": {
+  "r2_norm": 1.5033105730921648e-05,
+  "r2_raw": -0.5773876843075008,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|base106|volnorm|lgbm": {
+  "r2_norm": 4.008035654812225e-06,
+  "r2_raw": 0.010546489419659633,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|base106|volnorm|mlp": {
+  "r2_norm": 2.764349358097551e-05,
+  "r2_raw": 0.029247754035305995,
+  "nfeat": 106
+ },
+ "BTC|ry_k_0p1s|expanded|raw|ridge": {
+  "r2_norm": 0.01999422453982347,
+  "r2_raw": 0.01999422453982347,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|expanded|raw|lgbm": {
+  "r2_norm": 0.007465728879583744,
+  "r2_raw": 0.007465728879583744,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|expanded|raw|mlp": {
+  "r2_norm": 0.030245651778165517,
+  "r2_raw": 0.030245651778165517,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|expanded|volnorm|ridge": {
+  "r2_norm": 1.4326611040726966e-05,
+  "r2_raw": -0.9746307594344252,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|expanded|volnorm|lgbm": {
+  "r2_norm": 3.987553247930542e-06,
+  "r2_raw": 0.009988853318797286,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|expanded|volnorm|mlp": {
+  "r2_norm": 1.628489553129331e-05,
+  "r2_raw": 0.037411663889825864,
+  "nfeat": 334
+ },
+ "BTC|ry_k_0p1s|paired|ridge|expanded feats": {
+  "delta": 0.009244731307391202,
+  "ci": [
+   0.004326973199335657,
+   0.0164349777610847
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_0p1s|paired|ridge|volnorm target": {
+  "delta": -0.7401102096324998,
+  "ci": [
+   -1.8697490365811067,
+   -0.15372774499234518
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_0p1s|paired|ridge|both": {
+  "delta": -1.2183017202811683,
+  "ci": [
+   -3.0644065612515936,
+   -0.2959047361293437
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_0p1s|paired|lgbm|expanded feats": {
+  "delta": 0.0007570688862041703,
+  "ci": [
+   0.0003062333465333803,
+   0.0014451779391904498
+  ],
+  "sig": true
+ },
+ "BTC|ry_k_0p1s|paired|lgbm|volnorm target": {
+  "delta": 0.00029134848067663004,
+  "ci": [
+   -0.020276228654799975,
+   0.013109397508368793
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_0p1s|paired|lgbm|both": {
+  "delta": 0.0013921311260821413,
+  "ci": [
+   -0.01228260039982856,
+   0.00871534092947865
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_0p1s|paired|mlp|expanded feats": {
+  "delta": 0.0005113296858003257,
+  "ci": [
+   -0.0003506150211212224,
+   0.0016638404197551282
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_0p1s|paired|mlp|volnorm target": {
+  "delta": -0.00850830951973598,
+  "ci": [
+   -0.060554298424929036,
+   0.021334486684328163
+  ],
+  "sig": false
+ },
+ "BTC|ry_k_0p1s|paired|mlp|both": {
+  "delta": 0.004296951297947048,
+  "ci": [
+   -0.014540584699019758,
+   0.016393487858287197
+  ],
+  "sig": false
+ }
+}

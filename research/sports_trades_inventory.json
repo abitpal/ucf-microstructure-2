@@ -1,0 +1,157 @@
+{
+  "days": [
+    {
+      "day": "2026-09-15",
+      "bytes": 19064629,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-16",
+      "bytes": 29187222,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-17",
+      "bytes": 24169201,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-18",
+      "bytes": 37923702,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-19",
+      "bytes": 35409483,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-20",
+      "bytes": 46340175,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-21",
+      "bytes": 33201357,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-22",
+      "bytes": 35297168,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-23",
+      "bytes": 25407159,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-24",
+      "bytes": 23560500,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-25",
+      "bytes": 39640394,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-26",
+      "bytes": 33289376,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-27",
+      "bytes": 51089591,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-28",
+      "bytes": 30317885,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-29",
+      "bytes": 31947728,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-09-30",
+      "bytes": 26769381,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-01",
+      "bytes": 24315768,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-02",
+      "bytes": 36011112,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-03",
+      "bytes": 34013958,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-04",
+      "bytes": 42289658,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-05",
+      "bytes": 30300135,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-06",
+      "bytes": 37116274,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-07",
+      "bytes": 30284497,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-08",
+      "bytes": 32743010,
+      "count": 5000,
+      "truncated": true
+    },
+    {
+      "day": "2026-10-09",
+      "bytes": 42556612,
+      "count": 5000,
+      "truncated": true
+    }
+  ],
+  "blob_count": 125000,
+  "bytes": 832245975,
+  "truncated": true
+}

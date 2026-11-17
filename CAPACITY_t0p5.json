@@ -1,0 +1,55 @@
+{
+ "BTC|avail": {
+  "trades": 90352,
+  "trades_per_market": 257.4131054131054,
+  "trades_per_day": 24711.65811965812,
+  "markets": 351,
+  "pctl": {
+   "p1": 0.01,
+   "p5": 0.02,
+   "p10": 0.02,
+   "p25": 0.04,
+   "p50": 27.94,
+   "p75": 187.02,
+   "p90": 705.9600000000034
+  },
+  "mean": 344.1770353727643,
+  "median": 27.94
+ },
+ "BTC|clip|10": {
+  "frac_fully_filled": 0.6408601912519922,
+  "avg_filled_contracts": 6.764105941207721,
+  "usd_per_day_at_0.30c": 501.45682051282057,
+  "usd_per_day_at_0.36c": 601.7481846153847
+ },
+ "BTC|clip|50": {
+  "frac_fully_filled": 0.4429896405170887,
+  "avg_filled_contracts": 26.915804077386223,
+  "usd_per_day_at_0.30c": 1995.4024451282055,
+  "usd_per_day_at_0.36c": 2394.482934153846
+ },
+ "BTC|clip|100": {
+  "frac_fully_filled": 0.3493337170178856,
+  "avg_filled_contracts": 46.15885060651673,
+  "usd_per_day_at_0.30c": 3421.9852061538463,
+  "usd_per_day_at_0.36c": 4106.382247384615
+ },
+ "BTC|clip|500": {
+  "frac_fully_filled": 0.13776120063750663,
+  "avg_filled_contracts": 127.98912885160262,
+  "usd_per_day_at_0.30c": 9488.470785641026,
+  "usd_per_day_at_0.36c": 11386.164942769232
+ },
+ "BTC|clip|1000": {
+  "frac_fully_filled": 0.0755710996989552,
+  "avg_filled_contracts": 177.4554172569506,
+  "usd_per_day_at_0.30c": 13155.65280820513,
+  "usd_per_day_at_0.36c": 15786.783369846156
+ },
+ "BTC|clip|5000": {
+  "frac_fully_filled": 0.00827873207012573,
+  "avg_filled_contracts": 277.5478706614131,
+  "usd_per_day_at_0.30c": 20576.004274871797,
+  "usd_per_day_at_0.36c": 24691.205129846156
+ }
+}

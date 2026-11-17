@@ -1,0 +1,202 @@
+{
+ "BTC|direct   -> ry_k_inc": {
+  "r2": 0.0023184243787746084
+ },
+ "BTC|diff_corr-> ry_k_inc": {
+  "r2": 0.001769514310282716
+ },
+ "BTC|twohead  -> ry_k_inc": {
+  "r2": 0.002482843245758315
+ },
+ "BTC|directT  -> ry_k_incT": {
+  "r2": 0.0024798874637552704
+ },
+ "BTC|diffT    -> ry_k_incT": {
+  "r2": 0.0020997282338465206
+ },
+ "BTC|twoheadT -> ry_k_incT": {
+  "r2": 0.0025848228556382136
+ },
+ "BTC|paired|diff_corr vs direct (ry_k_inc)": {
+  "delta": -0.0005305322861782696,
+  "ci": [
+   -0.001161778055478346,
+   0.00012023172457081045
+  ],
+  "sig": false
+ },
+ "BTC|paired|twohead   vs direct (ry_k_inc)": {
+  "delta": 0.00014066324739255806,
+  "ci": [
+   -0.0005991341451807085,
+   0.0008622725983928413
+  ],
+  "sig": false
+ },
+ "BTC|paired|diffT     vs directT (ry_k_incT)": {
+  "delta": -0.00034057338875621325,
+  "ci": [
+   -0.0008697642068208692,
+   0.00034906069219688927
+  ],
+  "sig": false
+ },
+ "BTC|paired|twoheadT  vs directT (ry_k_incT)": {
+  "delta": 8.445282932711493e-05,
+  "ci": [
+   -0.0006891443173553234,
+   0.0008499947890486108
+  ],
+  "sig": false
+ },
+ "ETH|direct   -> ry_k_inc": {
+  "r2": 0.00119078623583746
+ },
+ "ETH|diff_corr-> ry_k_inc": {
+  "r2": 0.0009458404437356904
+ },
+ "ETH|twohead  -> ry_k_inc": {
+  "r2": 0.0006471657273457998
+ },
+ "ETH|directT  -> ry_k_incT": {
+  "r2": 0.0010572024582542472
+ },
+ "ETH|diffT    -> ry_k_incT": {
+  "r2": 0.0007829482140385702
+ },
+ "ETH|twoheadT -> ry_k_incT": {
+  "r2": 0.00078903698501398
+ },
+ "ETH|paired|diff_corr vs direct (ry_k_inc)": {
+  "delta": -0.0005892792895550081,
+  "ci": [
+   -0.0029631704948737715,
+   0.00018736750038925648
+  ],
+  "sig": false
+ },
+ "ETH|paired|twohead   vs direct (ry_k_inc)": {
+  "delta": -0.0006133142589717446,
+  "ci": [
+   -0.001483661707629041,
+   -6.106403781354809e-05
+  ],
+  "sig": true
+ },
+ "ETH|paired|diffT     vs directT (ry_k_incT)": {
+  "delta": -0.0006319148883708397,
+  "ci": [
+   -0.003199587872281648,
+   0.00016360840161727685
+  ],
+  "sig": false
+ },
+ "ETH|paired|twoheadT  vs directT (ry_k_incT)": {
+  "delta": -0.0002049820914599776,
+  "ci": [
+   -0.0006642681614931941,
+   0.0007744367171631338
+  ],
+  "sig": false
+ },
+ "XRP|direct   -> ry_k_inc": {
+  "r2": 0.0015663247897076404
+ },
+ "XRP|diff_corr-> ry_k_inc": {
+  "r2": 0.0020519125237890012
+ },
+ "XRP|twohead  -> ry_k_inc": {
+  "r2": 0.003426685264582341
+ },
+ "XRP|directT  -> ry_k_incT": {
+  "r2": 0.0034592184418306138
+ },
+ "XRP|diffT    -> ry_k_incT": {
+  "r2": 0.0042672874490179424
+ },
+ "XRP|twoheadT -> ry_k_incT": {
+  "r2": 0.004794063183648611
+ },
+ "XRP|paired|diff_corr vs direct (ry_k_inc)": {
+  "delta": 0.0006369519494349302,
+  "ci": [
+   -0.001551981491929179,
+   0.0032499997929544247
+  ],
+  "sig": false
+ },
+ "XRP|paired|twohead   vs direct (ry_k_inc)": {
+  "delta": 0.0019138928328226244,
+  "ci": [
+   0.000923224122785352,
+   0.0034210013899048375
+  ],
+  "sig": true
+ },
+ "XRP|paired|diffT     vs directT (ry_k_incT)": {
+  "delta": 0.0008403245707304568,
+  "ci": [
+   -0.00017878533942138053,
+   0.0019472416228502759
+  ],
+  "sig": false
+ },
+ "XRP|paired|twoheadT  vs directT (ry_k_incT)": {
+  "delta": 0.001328666524382658,
+  "ci": [
+   0.0007414316019172271,
+   0.0019331710124512616
+  ],
+  "sig": true
+ },
+ "NEAR|direct   -> ry_k_inc": {
+  "r2": -0.001107611442609624
+ },
+ "NEAR|diff_corr-> ry_k_inc": {
+  "r2": -0.0019302555535845034
+ },
+ "NEAR|twohead  -> ry_k_inc": {
+  "r2": -0.0013450207534433378
+ },
+ "NEAR|directT  -> ry_k_incT": {
+  "r2": 0.0004419785679203869
+ },
+ "NEAR|diffT    -> ry_k_incT": {
+  "r2": 0.0012082244092247452
+ },
+ "NEAR|twoheadT -> ry_k_incT": {
+  "r2": 0.0014364157338208061
+ },
+ "NEAR|paired|diff_corr vs direct (ry_k_inc)": {
+  "delta": -0.0008485289107069131,
+  "ci": [
+   -0.002262183776183188,
+   0.000477802596876479
+  ],
+  "sig": false
+ },
+ "NEAR|paired|twohead   vs direct (ry_k_inc)": {
+  "delta": -0.0002909304169384747,
+  "ci": [
+   -0.0015207340735367183,
+   0.0006257650409594727
+  ],
+  "sig": false
+ },
+ "NEAR|paired|diffT     vs directT (ry_k_incT)": {
+  "delta": 0.0008975047128942281,
+  "ci": [
+   6.060339963159127e-05,
+   0.0021334667775417967
+  ],
+  "sig": true
+ },
+ "NEAR|paired|twoheadT  vs directT (ry_k_incT)": {
+  "delta": 0.0010684063001557263,
+  "ci": [
+   -3.00404951725223e-05,
+   0.002429940483802345
+  ],
+  "sig": false
+ }
+}
