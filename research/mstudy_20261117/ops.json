@@ -104,7 +104,8 @@
   "12:37 UTC  GRU scaling run done: more compute still improves R\u00b2. All tasks complete; collector left running.",
   "19:34 UTC  Resumed Transformer training from the 75-min checkpoint (not from scratch) for up to 90 min; the analysis VM had been idle since 12:37.",
   "19:50 UTC  Added a Training curves page. Fixed wandb runs that were synced mid-training (re-synced; earlier points could not be backfilled, so fair curves come from the VM training log).",
-  "21:05 UTC  Continued Transformer finished at the 90-min cap; test R\u00b2 up at 0.1\u20131 s. Checkpoint + results backed up (114 files)."
+  "21:05 UTC  Continued Transformer finished at the 90-min cap; test R\u00b2 up at 0.1\u20131 s. Checkpoint + results backed up (114 files).",
+  "23:13\u201300:08 UTC  out-of-sample validation: 20 BTC15M + 19 BTCPERP unseen days incl. today (Nov 17), frozen checkpoints; results on the Out-of-sample page"
  ],
  "sections": [
   {

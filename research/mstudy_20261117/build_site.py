@@ -15,6 +15,7 @@ PAGES = [
     ('trades.html', 'Toxic vs retail flow'),
     ('fair.html', 'Raw-event fair models'),
     ('curves.html', 'Training curves'),
+    ('oos.html', 'Out-of-sample days'),
     ('ops.html', 'Run log & data'),
 ]
 
@@ -337,6 +338,14 @@ def build():
     page('curves.html', 'Training curves', 'How each model learned: validation scores over the course of training, for the raw-event fair models and the analysis models.', cb, 'Predict · Part 2',
          extra_css=ccss, extra_js=f'<script type="application/json" id="curve-data">{cdata}</script><script>{cjs}</script>')
     b_link = ''
+
+    # ---------------- out-of-sample
+    if os.path.exists(f'{R}/fair_oos/summary.json'):
+        import oos_page
+        ob, ocss, ojs, odata = oos_page.body(answer('oos', 'What held up'))
+        ob += '<h2>Method</h2>' + narr('oos_method', '')
+        page('oos.html', 'Out-of-sample days', 'The trained fair models, frozen, re-scored on every other day on the tape, including today\'s collection.', ob, 'Predict · Validation',
+             extra_css=ocss, extra_js=f'<script type="application/json" id="curve-data">{odata}</script><script>{ojs}</script>')
 
     # ---------------- ops
     b = narr('ops_intro', '')

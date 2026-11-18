@@ -43,10 +43,16 @@ Tape: Kalshi crypto binaries, sports, and perps, 2026-09-18 → 09-23. Splits ar
 
    On BTC perps, the GRU (0.187 at 0.1s) beats LightGBM (0.128) and the Transformer (0.123).
 
-7. **Training curves.**
+7. **Out-of-sample days.** Frozen checkpoints were run on 20 unseen BTC15M days and 19 unseen perp days, including today (Nov 17).
+   - Pooled 0.1s R², BTC15M: GRU 60 min 0.262, Transformer continued 0.247, LightGBM 0.235. The GRU beats LightGBM on 17 of 20 days.
+   - Perp: GRU 0.173 vs LightGBM 0.092. The GRU wins on 19 of 19 days.
+   - No decay over 18 days. Today every model drops to about 0.13 (larger, more frequent mid moves), but the raw-event models still lead.
+   - Source: `site/oos.html`, `report/fair_oos/per_day_*.png`, `report/fair_oos/summary.json`.
+
+8. **Training curves.**
    - Source: `site/curves.html` and `data/curves_data.json`.
    - Transformer validation R² was still rising when stopped: 0.224 → 0.252.
 
-8. **Takeaways and next steps.** The structure is real and learnable. Edge after fees is not shown. Raw-event models match or beat handcrafted features, and scale with compute.
+9. **Takeaways and next steps.** The structure is real and learnable. Edge after fees is not shown. Raw-event models match or beat handcrafted features, and scale with compute.
 
 Ops and issues log: `site/ops.html`, `logs/`. Code: `code/`. Rebuild the site with `build_site.py`.

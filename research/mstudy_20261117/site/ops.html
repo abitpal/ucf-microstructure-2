@@ -70,7 +70,7 @@ footer{color:var(--muted);font-size:12px;margin-top:60px;border-top:1px solid va
 @media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
 </style>
 <div class="wrap">
-<nav><div class="brand">Kalshi microstructure<br>study · Nov 17</div><a href="index.html" class="">Overview</a><a href="classical.html" class="">Classical microstructure</a><a href="classify.html" class="">Market-type classifiers</a><a href="autoencoder.html" class="">Autoencoder embedding</a><a href="trades.html" class="">Toxic vs retail flow</a><a href="fair.html" class="">Raw-event fair models</a><a href="curves.html" class="">Training curves</a><a href="ops.html" class="on">Run log &amp; data</a></nav>
+<nav><div class="brand">Kalshi microstructure<br>study · Nov 17</div><a href="index.html" class="">Overview</a><a href="classical.html" class="">Classical microstructure</a><a href="classify.html" class="">Market-type classifiers</a><a href="autoencoder.html" class="">Autoencoder embedding</a><a href="trades.html" class="">Toxic vs retail flow</a><a href="fair.html" class="">Raw-event fair models</a><a href="curves.html" class="">Training curves</a><a href="oos.html" class="">Out-of-sample days</a><a href="ops.html" class="on">Run log &amp; data</a></nav>
 <main>
 <div class="eyebrow">Operations</div>
 <h1>Run log &amp; data</h1>
@@ -105,7 +105,8 @@ footer{color:var(--muted);font-size:12px;margin-top:60px;border-top:1px solid va
 12:37 UTC  GRU scaling run done: more compute still improves R². All tasks complete; collector left running.
 19:34 UTC  Resumed Transformer training from the 75-min checkpoint (not from scratch) for up to 90 min; the analysis VM had been idle since 12:37.
 19:50 UTC  Added a Training curves page. Fixed wandb runs that were synced mid-training (re-synced; earlier points could not be backfilled, so fair curves come from the VM training log).
-21:05 UTC  Continued Transformer finished at the 90-min cap; test R² up at 0.1–1 s. Checkpoint + results backed up (114 files).</div><h2>Pipeline log (VM)</h2><div class="log">[09:29:04] START fair_baselines
+21:05 UTC  Continued Transformer finished at the 90-min cap; test R² up at 0.1–1 s. Checkpoint + results backed up (114 files).
+23:13–00:08 UTC  out-of-sample validation: 20 BTC15M + 19 BTCPERP unseen days incl. today (Nov 17), frozen checkpoints; results on the Out-of-sample page</div><h2>Pipeline log (VM)</h2><div class="log">[09:29:04] START fair_baselines
 [09:31:51] END rc=0 /opt/kalshi/venv/bin/python fair_models.py BTC15M baselines
 [09:31:52] START fair_transformer
 [09:42:34] START classical
@@ -137,5 +138,5 @@ CHAIN_C_DONE
 [19:34:19] START transformer_cont (resume from transformer_long)
 [21:05:20] END rc=0 transformer_cont
 </div>
-<footer>Built from the run on <span class="mono">kalshi-analysis</span>. Last rebuilt 2026-11-17 21:11 UTC. wandb project: <span class="mono">kalshi-microstructure</span>.</footer>
+<footer>Built from the run on <span class="mono">kalshi-analysis</span>. Last rebuilt 2026-11-18 00:09 UTC. wandb project: <span class="mono">kalshi-microstructure</span>.</footer>
 </main></div></body></html>
